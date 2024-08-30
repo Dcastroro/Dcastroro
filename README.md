@@ -25,8 +25,11 @@
 <!-- CONTACTO -->
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="[https://www.linkedin.com/in/david-castro-6447741a1]" target="blank"> <img align="center" src="https://t3.ftcdn.net/jpg/03/80/30/76/360_F_380307604_qQ1f0GUKe7PICFk7CJ21Xd3XfjXrzt2f.jpg" alt="Linkedin" height="30" width="40" /></a>
+  <a href="https://www.linkedin.com/in/david-castro-6447741a1" target="_blank">
+    <img align="center" src="https://t3.ftcdn.net/jpg/03/80/30/76/360_F_380307604_qQ1f0GUKe7PICFk7CJ21Xd3XfjXrzt2f.jpg" alt="Linkedin" height="30" width="40" />
+  </a>
 </p>
+
 
 
 <!-- LENGUAJES Y HERRAMIENTAS -->
