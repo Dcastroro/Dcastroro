@@ -1,5 +1,57 @@
 <div align="center">
 
+
+<img src="https://github.com/Dcastroro/Dcastroro/raw/main/assets/banner-header.gif" alt="banner" />
+
+
+# Hi, I'm David Castro 👋
+
+
+### AI Enablement & Growth Infrastructure Lead
+### Production AI Agents · Cross-Functional Automation · AdTech
+
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/david-castro-rojo/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:castro.rojo.david@gmail.com)
+[![Location](https://img.shields.io/badge/Spain-Remote%20%2F%20León-0078D4?style=for-the-badge&logo=googlemaps&logoColor=white)](https://github.com/Dcastroro)
+
+
+<img src="https://komarev.com/ghpvc/?username=dcastroro&label=Profile%20views&color=0e75b6&style=flat" alt="profile views" />
+
+
+</div>
+
+
+---
+
+
+## 🧠 About Me
+
+
+- 🤖 **Hands-on AI builder** — shipping production AI agents with autonomous remediation and spec-to-feature delivery
+- 🏢 **AI Lead @ Refinery89 (AdTech)** — owning the AI roadmap on AWS Bedrock + Agent Core
+- 🌐 **Business-wide AI enablement** — governance, adoption workflows and AI Champions across Sales, Finance, Data, UX/UI, Product and Engineering
+- 🧪 **AdTech operator** — A/B testing, CMP consent flows, Prebid.js, ad refresh experimentation
+- 🎓 **BSc Telecommunications Engineering** @ Universitat Oberta de Catalunya
+- 📍 Spain · Remote / León
+
+
+---
+
+
+## 🚀 AI Systems in Production
+
+
+### ⚡ Zero-Touch Auto-Remediation AI
+> Sentry → AWS Bedrock → Root Cause Analysis → Code Fix → Autonomous PR
+
+
+Multi-agent system for error detection, fix generation, validation and autonomous pull requests.
+**Impact: 60%+ reduction in manual triage · MTTR from hours to minutes**
+
+
+`AWS Bedrock` `Agent Core` `Multi-Agent` `Lambda` `ECS Fargate` `Sentry` `GitHub API`<div align="center">
+
 <img src="https://github.com/Dcastroro/Dcastroro/raw/main/assets/banner-header.gif" alt="banner" />
 
 # Hi, I'm David Castro 👋
