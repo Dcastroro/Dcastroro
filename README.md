@@ -1,83 +1,72 @@
-<!-- RAINBOW LINE TOP -->
+<div align="center">
+
+<img src="https://github.com/Dcastroro/Dcastroro/raw/main/assets/banner-header.gif" alt="banner" />
+
 <img src="https://github.com/Dcastroro/Dcastroro/raw/main/assets/line-neon.gif" width="100%">
 
+# Hi there, I'm David Castro 👋
 
-<!-- GIF HEADER -->
-<img src="https://github.com/Dcastroro/Dcastroro/raw/main/assets/banner-header.gif">
+### QA Engineer · Test Automation · Playwright
 
+<img src="https://github.com/Dcastroro/Dcastroro/raw/main/assets/line-neon.gif" width="100%">
 
-<!-- VISTAS DEL PERFIL -->
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=dcastroro&label=Profile%20views&color=0e75b6&style=flat" alt="dcastroro" /> </p>
-
-
-<!-- TROFEOS GITHUB -->
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=dcastroro&theme=dracula&column=7" alt="dcastroro" /></a> </p>
-
-
-<!-- BREVE DESCRIPCION -->
-- 📚 I am currently studying at Open University of Catalonia
-
-- 🌱 I am currently in the race **QA Engineering**
-
-- 📫 How to reach me **castro.rojo.david@gmail.com**
-
-
-<!-- CONTACTO -->
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-  <a href="https://www.linkedin.com/in/david-castro-6447741a1" target="_blank">
-    <img align="center" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Linkedin" height="30" width="30" />
-  </a>
-</p>
-
-
-
-<!-- LENGUAJES Y HERRAMIENTAS -->
-<h3 align="left">Languages and Tools:</h3>
-<p align="left">
-  <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/>
-  </a>
-  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
-  </a>
-  <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/>
-  </a>
-  <a href="https://www.figma.com/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/>
-  </a>
-  <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
-  </a>
-  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
-  </a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
-  </a>
-  <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="visual_studio_code" width="40" height="40"/>
-  </a>
-  <a href="https://robotframework.org/" target="_blank" rel="noreferrer">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Robot-framework-logo.png" alt="robot_framework" width="40" height="40"/>
-  </a>
-</p>
-
-
-<!-- STATS Y LENGUAJES MAS USADOS -->
-<div style="display:grid;align-items:center;justify-content:center">
-  <img style="height:100%;width:49%;max-width: 100%" src="https://github-readme-stats.vercel.app/api?username=dcastroro&theme=gotham&count_private=true&show_icons=true&include_all_commits=true"/>
-  <img style="height:100%;width:49%;max-width: 10%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dcastroro&layout=compact&theme=gotham&langs_count=8"/>
 </div>
 
+## 🙋‍♂️ About Me
 
-<!-- GIF FOOTER -->
-<img src="https://github.com/Dcastroro/Dcastroro/raw/main/assets/banner-footer.gif">
+- 🎓 Studying at **Open University of Catalonia**
+- - 🔭 Building expertise in **QA Engineering & Test Automation**
+  - - 🛠️ Specializing in **Playwright**, end-to-end testing and CI/CD pipelines
+    - - 📍 Based in **León, Spain**
+      - - 📫 Reach me at **castro.rojo.david@gmail.com**
+       
+        - ---
 
+        ## 🔗 Connect with Me
 
-<!-- RAINBOW LINE BOT -->
-<img src="https://github.com/Dcastroro/Dcastroro/raw/main/assets/line-neon.gif" width="100%">
+        [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/david-castro-rojo/)
 
------
+        ---
 
+        ## 🛠️ Languages & Tools
+
+        ![Playwright](https://img.shields.io/badge/Playwright-45ba4b?style=for-the-badge&logo=playwright&logoColor=white)
+        ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+        ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+        ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
+        ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+        ![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-0078D7?style=for-the-badge&logo=azure-devops&logoColor=white)
+        ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+        ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+        ![VS Code](https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+        ![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)
+
+        ---
+
+        ## 📊 GitHub Stats
+
+        <div align="center">
+
+        ![Dcastroro's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Dcastroro&show_icons=true&theme=tokyonight&hide_border=true)
+
+        ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Dcastroro&layout=compact&theme=tokyonight&hide_border=true)
+
+        </div>
+
+        ---
+
+        ## 🏆 GitHub Trophies
+
+        <div align="center">
+
+        [![trophy](https://github-profile-trophy.vercel.app/?username=Dcastroro&theme=tokyonight&no-frame=true&row=1)](https://github.com/ryo-ma/github-profile-trophy)
+
+        </div>
+
+        ---
+
+        <div align="center">
+
+        <img src="https://komarev.com/ghpvc/?username=dcastroro&label=Profile%20views&color=0e75b6&style=flat" alt="dcastroro" />
+
+        </div>
