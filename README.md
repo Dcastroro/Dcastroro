@@ -71,10 +71,11 @@ OpenMetadata-based governance: data catalog, PII policies, access controls & res
 
 ---
 
-### 🏆 GitHub Trophies
+### 🏆 GitHub Highlights
 
 <div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=Dcastroro&theme=darkhub&no-frame=true&no-bg=true&row=1&column=7" alt="trophies" />
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Dcastroro&theme=github_dark" alt="Productive time" />
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Dcastroro&theme=github_dark" alt="Most used languages by commit" />
 </div>
 
 ---
@@ -83,8 +84,8 @@ OpenMetadata-based governance: data catalog, PII policies, access controls & res
 
 <div align="center">
 
-<img height="170em" src="https://github-readme-stats.vercel.app/api?username=Dcastroro&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true" />
-<img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dcastroro&layout=compact&theme=github_dark&hide_border=true&langs_count=6" />
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Dcastroro&theme=github_dark" alt="GitHub stats" />
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Dcastroro&theme=github_dark" alt="Top languages by repository" />
 
 <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Dcastroro&theme=github_dark" />
 
