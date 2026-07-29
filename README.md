@@ -74,7 +74,7 @@ OpenMetadata-based governance: data catalog, PII policies, access controls & res
 ### 🏆 GitHub Trophies
 
 <div align="center">
-<img src="https://trophy.ryglcloud.net/?username=Dcastroro&theme=darkhub&no-frame=true&no-bg=true&row=1&column=7" alt="GitHub trophies" />
+<img src="https://trophy.ryglcloud.net/?username=Dcastroro&theme=darkhub&no-frame=true&no-bg=true&margin-w=12&margin-h=12&column=3&title=Experience,Commits,PullRequest,Repositories,MultiLanguage,Reviews" alt="GitHub trophies for experience, commits, pull requests, repositories, languages and reviews" />
 </div>
 
 ---
@@ -84,9 +84,12 @@ OpenMetadata-based governance: data catalog, PII policies, access controls & res
 <div align="center">
 
 <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Dcastroro&theme=github_dark" alt="GitHub stats" />
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Dcastroro&theme=github_dark&utcOffset=2" alt="Most productive coding hours" />
+
+<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Dcastroro&theme=github_dark" alt="Top languages by commits" />
 <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Dcastroro&theme=github_dark" alt="Top languages by repository" />
 
-<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Dcastroro&theme=github_dark" />
+<img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Dcastroro&theme=github_dark" alt="GitHub contribution activity" />
 
 </div>
 
