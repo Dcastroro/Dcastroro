@@ -71,11 +71,10 @@ OpenMetadata-based governance: data catalog, PII policies, access controls & res
 
 ---
 
-### 🏆 GitHub Highlights
+### 🏆 GitHub Trophies
 
 <div align="center">
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Dcastroro&theme=github_dark" alt="Productive time" />
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Dcastroro&theme=github_dark" alt="Most used languages by commit" />
+<img src="https://trophy.ryglcloud.net/?username=Dcastroro&theme=darkhub&no-frame=true&no-bg=true&row=1&column=7" alt="GitHub trophies" />
 </div>
 
 ---
