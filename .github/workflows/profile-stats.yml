@@ -1,0 +1,33 @@
+name: Refresh profile stats
+
+on:
+  push:
+    paths:
+      - ".github/workflows/profile-stats.yml"
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-stats-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Generate profile cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN || github.token }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          BRANCH_NAME: ${{ github.ref_name }}
+          UTC_OFFSET: 2
+          AUTO_PUSH: true
