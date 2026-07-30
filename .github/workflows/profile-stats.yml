@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - ".github/workflows/profile-stats.yml"
+      - "scripts/generate-adventure-trophies.mjs"
   schedule:
     # GitHub does not forward push events from other repositories to the
     # profile repository, so poll twice an hour away from the busy :00 slot.
@@ -29,7 +30,7 @@ jobs:
       - name: Check out profile repository
         uses: actions/checkout@v5
 
-      - name: Generate adventure trophies
+      - name: Generate animated profile visuals
         env:
           GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN || github.token }}
           GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}

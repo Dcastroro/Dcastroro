@@ -41,6 +41,12 @@ quality and measurable business outcomes.
 </tr>
 </table>
 
+<div align="center">
+
+<img width="100%" src="./assets/capability-constellation.svg?v=overview-3" alt="Animated constellation of production AI, cybersecurity, web data, conversational RAG and Kiro with AWS capabilities" />
+
+</div>
+
 ---
 
 ## ⚔️ Current Mission
@@ -162,8 +168,7 @@ workflows responsibly.
 
 <img width="100%" src="./profile-summary-card-output/tokyonight/0-profile-details.svg" alt="GitHub contribution activity" />
 
-<img width="49%" src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" alt="Top languages by commits" />
-<img width="49%" src="./profile-summary-card-output/tokyonight/3-stats.svg" alt="GitHub statistics" />
+<img width="100%" src="./assets/animated-ledger.svg?v=overview-3" alt="Animated engineering ledger with code composition and GitHub activity metrics" />
 
 </div>
 

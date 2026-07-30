@@ -59,8 +59,19 @@ const yearlyFields = Array.from(
 const stats = await request(`
   query ProfileTrophies($login: String!) {
     user(login: $login) {
-      repositories(first: 1, ownerAffiliations: OWNER) {
+      repositories(first: 100, ownerAffiliations: OWNER, isFork: false) {
         totalCount
+        nodes {
+          languages(first: 10, orderBy: { field: SIZE, direction: DESC }) {
+            edges {
+              size
+              node {
+                name
+                color
+              }
+            }
+          }
+        }
       }
       ${yearlyFields}
     }
@@ -78,6 +89,27 @@ const totals = yearlyStats.reduce(
     reviews: sum.reviews + year.totalPullRequestReviewContributions,
   }),
   { commits: 0, pullRequests: 0, reviews: 0 },
+);
+
+const languageTotals = new Map();
+for (const repository of stats.repositories.nodes) {
+  for (const { size, node } of repository.languages.edges) {
+    const current = languageTotals.get(node.name) ?? {
+      name: node.name,
+      color: node.color ?? "#72e8dc",
+      size: 0,
+    };
+    current.size += size;
+    languageTotals.set(node.name, current);
+  }
+}
+
+const topLanguages = [...languageTotals.values()]
+  .sort((a, b) => b.size - a.size)
+  .slice(0, 5);
+const totalLanguageSize = topLanguages.reduce(
+  (sum, language) => sum + language.size,
+  0,
 );
 
 const experience = Math.max(
@@ -334,6 +366,170 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" v
 await mkdir("assets", { recursive: true });
 await writeFile("assets/adventure-trophies.svg", svg);
 
+const languageMarkup = topLanguages
+  .map((language, index) => {
+    const percentage =
+      totalLanguageSize === 0
+        ? 0
+        : Math.round((language.size / totalLanguageSize) * 100);
+    const width = Math.max(8, Math.round((percentage / 100) * 360));
+    const y = 112 + index * 43;
+
+    return `
+      <g transform="translate(0 ${y})">
+        <text x="78" y="-7" class="language">${language.name}</text>
+        <text x="470" y="-7" class="percentage">${percentage}%</text>
+        <rect x="78" y="4" width="392" height="12" rx="6" fill="#091522" stroke="#29475a"/>
+        <rect class="language-bar" style="--delay:${index * 55}ms" x="78" y="4" width="${width}" height="12" rx="6" fill="${language.color}"/>
+        <circle class="language-spark" style="--delay:${index * 55}ms" cx="${78 + width}" cy="10" r="4" fill="${language.color}" filter="url(#glow)"/>
+      </g>
+    `;
+  })
+  .join("");
+
+const metrics = [
+  { label: "COMMITS", value: totals.commits, color: "#d69cff", x: 620, y: 105 },
+  {
+    label: "PULL REQUESTS",
+    value: totals.pullRequests,
+    color: "#72e8dc",
+    x: 810,
+    y: 105,
+  },
+  {
+    label: "REPOSITORIES",
+    value: stats.repositories.totalCount,
+    color: "#ffcf70",
+    x: 620,
+    y: 225,
+  },
+  { label: "REVIEWS", value: totals.reviews, color: "#75a7ff", x: 810, y: 225 },
+];
+
+const metricMarkup = metrics
+  .map(
+    ({ label, value, color, x, y }, index) => `
+      <g transform="translate(${x} ${y})">
+        <g class="metric" style="--delay:${index * 60}ms">
+          <rect width="160" height="90" rx="17" fill="#101b2e" stroke="${color}" stroke-opacity=".75" stroke-width="2"/>
+          <circle class="metric-orbit" cx="125" cy="23" r="12" fill="none" stroke="${color}" stroke-dasharray="3 5"/>
+          <circle cx="125" cy="11" r="3" fill="${color}" filter="url(#glow)"/>
+          <text x="18" y="29" class="metric-label">${label}</text>
+          <text x="18" y="67" class="metric-value" fill="${color}">${value.toLocaleString("en-US")}</text>
+        </g>
+      </g>
+    `,
+  )
+  .join("");
+
+const ledgerSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" role="img" aria-labelledby="title desc">
+  <title id="title">Animated engineering signal matrix</title>
+  <desc id="desc">A live overview of programming languages, commits, pull requests, repositories and reviews.</desc>
+  <defs>
+    <linearGradient id="ledger-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#071321"/>
+      <stop offset=".48" stop-color="#102a3b"/>
+      <stop offset="1" stop-color="#18142a"/>
+    </linearGradient>
+    <radialGradient id="aura">
+      <stop stop-color="#72e8dc" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#72e8dc" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="ledger-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#72e8dc" stroke-opacity=".04"/>
+    </pattern>
+  </defs>
+  <style>
+    text { font-family:"Segoe UI",Arial,sans-serif; }
+    .language { fill:#dcebef; font-size:13px; font-weight:700; }
+    .percentage { fill:#88acb2; font-size:11px; text-anchor:end; }
+    .metric-label { fill:#a9c7cb; font-size:10px; font-weight:700; letter-spacing:1px; }
+    .metric-value { font-family:Georgia,serif; font-size:29px; font-weight:700; }
+    .language-bar,.language-spark {
+      animation:bar-enter 700ms cubic-bezier(.23,1,.32,1) both var(--delay);
+      transform-box:fill-box;
+      transform-origin:left center;
+    }
+    .metric {
+      animation:metric-enter 550ms cubic-bezier(.23,1,.32,1) both var(--delay);
+      transform-box:fill-box;
+      transform-origin:center;
+    }
+    .metric-orbit {
+      animation:orbit 8s linear infinite;
+      transform-box:fill-box;
+      transform-origin:center;
+    }
+    .aura {
+      animation:aura-breathe 5s cubic-bezier(.77,0,.175,1) infinite alternate;
+      transform-box:fill-box;
+      transform-origin:center;
+    }
+    .spark-a { animation:twinkle 2.8s ease infinite alternate; }
+    .spark-b { animation:twinkle 3.7s ease 900ms infinite alternate-reverse; }
+    @keyframes bar-enter {
+      from { opacity:0; transform:scaleX(.03); }
+      to { opacity:1; transform:scaleX(1); }
+    }
+    @keyframes metric-enter {
+      from { opacity:0; transform:translateY(8px) scale(.97); }
+      to { opacity:1; transform:translateY(0) scale(1); }
+    }
+    @keyframes orbit { to { transform:rotate(360deg); } }
+    @keyframes aura-breathe {
+      from { opacity:.55; transform:scale(.97); }
+      to { opacity:1; transform:scale(1.04); }
+    }
+    @keyframes twinkle {
+      from { opacity:.2; }
+      to { opacity:1; }
+    }
+    @keyframes fade {
+      from { opacity:.6; }
+      to { opacity:1; }
+    }
+    @media (prefers-reduced-motion:reduce) {
+      .language-bar,.language-spark,.metric {
+        animation:fade 200ms ease both;
+        transform:none;
+      }
+      .metric-orbit { animation:none; }
+      .aura,.spark-a,.spark-b {
+        animation:twinkle 3s ease infinite alternate;
+        transform:none;
+      }
+      .ledger-traveler { display:none; }
+    }
+  </style>
+  <rect x="2" y="2" width="996" height="356" rx="20" fill="url(#ledger-bg)" stroke="#d9a84f" stroke-width="3"/>
+  <rect x="13" y="13" width="974" height="334" rx="14" fill="url(#ledger-grid)" stroke="#62492b"/>
+  <circle class="aura" cx="805" cy="178" r="178" fill="url(#aura)"/>
+  <path d="M544 72 V316" stroke="#29475a" stroke-width="1"/>
+  <path id="signal-path" d="M570 300 C620 265 655 315 705 275 S790 215 842 242 S918 194 966 214" fill="none" stroke="#72e8dc" stroke-opacity=".24" stroke-width="2"/>
+  <g class="ledger-traveler" filter="url(#glow)">
+    <circle r="4" fill="#fff0a6">
+      <animateMotion dur="6.5s" repeatCount="indefinite" path="M570 300 C620 265 655 315 705 275 S790 215 842 242 S918 194 966 214"/>
+    </circle>
+  </g>
+  <text x="54" y="48" fill="#fff7d6" font-family="Georgia,serif" font-size="20" font-weight="700" letter-spacing="2">CODE COMPOSITION</text>
+  <text x="54" y="70" fill="#72e8dc" font-size="10" letter-spacing="1.6">LIVE LANGUAGE SIGNALS</text>
+  <text x="594" y="48" fill="#fff7d6" font-family="Georgia,serif" font-size="20" font-weight="700" letter-spacing="2">ACTIVITY PULSE</text>
+  <text x="594" y="70" fill="#d69cff" font-size="10" letter-spacing="1.6">ENGINEERING TELEMETRY</text>
+  ${languageMarkup}
+  ${metricMarkup}
+  <g fill="#fff8cf" filter="url(#glow)">
+    <circle class="spark-a" cx="38" cy="92" r="1.8"/>
+    <circle class="spark-b" cx="520" cy="46" r="1.5"/>
+    <circle class="spark-a" cx="957" cy="64" r="2"/>
+  </g>
+</svg>`;
+
+await writeFile("assets/animated-ledger.svg", ledgerSvg);
+
 console.log(
-  `Generated trophies: ${totals.commits} commits, ${totals.pullRequests} pull requests, ${stats.repositories.totalCount} repositories, ${totals.reviews} reviews`,
+  `Generated profile visuals: ${totals.commits} commits, ${totals.pullRequests} pull requests, ${stats.repositories.totalCount} repositories, ${totals.reviews} reviews`,
 );

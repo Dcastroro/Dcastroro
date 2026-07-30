@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="330" viewBox="0 0 1000 330" role="img" aria-labelledby="title desc">
+  <title id="title">Production AI capability constellation</title>
+  <desc id="desc">An animated constellation connecting AI systems, cybersecurity, web data, conversational RAG and Kiro with AWS.</desc>
+  <defs>
+    <linearGradient id="space" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#071321"/>
+      <stop offset=".5" stop-color="#0d2636"/>
+      <stop offset="1" stop-color="#18142a"/>
+    </linearGradient>
+    <radialGradient id="core">
+      <stop stop-color="#203c51"/>
+      <stop offset=".72" stop-color="#111c30"/>
+      <stop offset="1" stop-color="#090f1c"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#72e8dc" stroke-opacity=".045"/>
+    </pattern>
+  </defs>
+  <style>
+    text { font-family:"Segoe UI",Arial,sans-serif; text-anchor:middle; }
+    .node {
+      animation:node-enter 600ms cubic-bezier(.23,1,.32,1) both var(--delay);
+      transform-box:fill-box;
+      transform-origin:center;
+    }
+    .float {
+      animation:float 3.8s cubic-bezier(.77,0,.175,1) infinite alternate var(--float-delay);
+      transform-box:fill-box;
+      transform-origin:center;
+    }
+    .core {
+      animation:core-breathe 4s cubic-bezier(.77,0,.175,1) infinite alternate;
+      transform-box:fill-box;
+      transform-origin:center;
+    }
+    .orbit {
+      animation:orbit 26s linear infinite;
+      transform-box:fill-box;
+      transform-origin:center;
+    }
+    .spark-a { animation:twinkle 2.6s ease infinite alternate; }
+    .spark-b { animation:twinkle 3.5s ease 700ms infinite alternate-reverse; }
+    @keyframes node-enter {
+      from { opacity:0; transform:translateY(8px) scale(.96); }
+      to { opacity:1; transform:translateY(0) scale(1); }
+    }
+    @keyframes float {
+      from { transform:translateY(-3px); }
+      to { transform:translateY(3px); }
+    }
+    @keyframes core-breathe {
+      from { opacity:.82; transform:scale(.985); }
+      to { opacity:1; transform:scale(1.025); }
+    }
+    @keyframes orbit { to { transform:rotate(360deg); } }
+    @keyframes twinkle {
+      from { opacity:.2; }
+      to { opacity:1; }
+    }
+    @keyframes fade {
+      from { opacity:.6; }
+      to { opacity:1; }
+    }
+    @media (prefers-reduced-motion:reduce) {
+      .node { animation:fade 200ms ease both; }
+      .float,.core,.spark-a,.spark-b {
+        animation:twinkle 3s ease infinite alternate;
+        transform:none;
+      }
+      .orbit { animation:none; }
+      .traveler { display:none; }
+    }
+  </style>
+  <rect x="2" y="2" width="996" height="326" rx="20" fill="url(#space)" stroke="#d9a84f" stroke-width="3"/>
+  <rect x="13" y="13" width="974" height="304" rx="14" fill="url(#grid)" stroke="#62492b"/>
+  <g fill="none" stroke="#72e8dc" stroke-opacity=".32" stroke-width="1.5">
+    <path id="p1" d="M500 165 C405 112 304 82 190 82"/>
+    <path id="p2" d="M500 165 C590 105 696 76 815 86"/>
+    <path id="p3" d="M500 165 C400 220 306 260 185 250"/>
+    <path id="p4" d="M500 165 C600 222 702 260 826 247"/>
+    <path id="p5" d="M500 165 C500 230 500 264 500 286"/>
+  </g>
+  <g class="orbit" fill="none" stroke="#d69cff" stroke-opacity=".55">
+    <ellipse cx="500" cy="165" rx="135" ry="84" stroke-dasharray="3 10"/>
+    <circle cx="500" cy="81" r="4" fill="#d69cff" stroke="none" filter="url(#glow)"/>
+    <circle cx="635" cy="165" r="3" fill="#72e8dc" stroke="none" filter="url(#glow)"/>
+  </g>
+  <g class="traveler" fill="#fff0a6" filter="url(#glow)">
+    <circle r="3"><animateMotion dur="5.5s" repeatCount="indefinite" path="M500 165 C405 112 304 82 190 82"/></circle>
+    <circle r="3"><animateMotion dur="6.5s" begin="1s" repeatCount="indefinite" path="M500 165 C600 222 702 260 826 247"/></circle>
+  </g>
+  <g class="core">
+    <circle cx="500" cy="165" r="72" fill="url(#core)" stroke="#fff0a6" stroke-width="2.5"/>
+    <circle cx="500" cy="165" r="61" fill="none" stroke="#72e8dc" stroke-opacity=".45" stroke-dasharray="2 6"/>
+    <path d="M500 121 L510 149 L539 153 L517 172 L523 201 L500 185 L477 201 L483 172 L461 153 L490 149Z" fill="#fff0a6" fill-opacity=".18" stroke="#fff0a6"/>
+    <text x="500" y="158" fill="#fff7d6" font-size="15" font-weight="800" letter-spacing="2">PRODUCTION</text>
+    <text x="500" y="180" fill="#72e8dc" font-size="18" font-weight="800" letter-spacing="3">AI</text>
+    <text x="500" y="202" fill="#9abec3" font-size="10" letter-spacing="1.5">RELIABLE · USEFUL · SAFE</text>
+  </g>
+  <g transform="translate(190 82)">
+    <g class="node" style="--delay:0ms"><g class="float" style="--float-delay:0ms">
+      <rect x="-92" y="-39" width="184" height="78" rx="18" fill="#111c30" stroke="#d69cff" stroke-width="2"/>
+      <circle cx="-57" cy="0" r="19" fill="#261c3b" stroke="#d69cff"/>
+      <path d="M-67 5 L-57-13 L-47 5 L-57 14Z" fill="#d69cff" fill-opacity=".4" stroke="#d69cff"/>
+      <text x="20" y="-5" fill="#f1dcff" font-size="14" font-weight="800">AI SYSTEMS</text>
+      <text x="20" y="16" fill="#a9c7cb" font-size="10">Agents · Automation</text>
+    </g></g>
+  </g>
+  <g transform="translate(815 86)">
+    <g class="node" style="--delay:50ms"><g class="float" style="--float-delay:500ms">
+      <rect x="-92" y="-39" width="184" height="78" rx="18" fill="#111c30" stroke="#72e8dc" stroke-width="2"/>
+      <circle cx="-57" cy="0" r="19" fill="#12343a" stroke="#72e8dc"/>
+      <path d="M-57-13 L-44-7 V2 C-44 10-50 15-57 19 C-64 15-70 10-70 2 V-7Z" fill="#72e8dc" fill-opacity=".25" stroke="#72e8dc"/>
+      <text x="20" y="-5" fill="#c6fff9" font-size="14" font-weight="800">CYBERSECURITY</text>
+      <text x="20" y="16" fill="#a9c7cb" font-size="10">Quality · Resilience</text>
+    </g></g>
+  </g>
+  <g transform="translate(185 250)">
+    <g class="node" style="--delay:100ms"><g class="float" style="--float-delay:900ms">
+      <rect x="-92" y="-39" width="184" height="78" rx="18" fill="#111c30" stroke="#75a7ff" stroke-width="2"/>
+      <circle cx="-57" cy="0" r="19" fill="#152945" stroke="#75a7ff"/>
+      <path d="M-69-6 Q-57-16-45-6 M-69 6 Q-57 16-45 6 M-57-17 V17" fill="none" stroke="#75a7ff" stroke-width="2"/>
+      <text x="20" y="-5" fill="#d5e2ff" font-size="14" font-weight="800">WEB DATA</text>
+      <text x="20" y="16" fill="#a9c7cb" font-size="10">Collection · Signals</text>
+    </g></g>
+  </g>
+  <g transform="translate(826 247)">
+    <g class="node" style="--delay:150ms"><g class="float" style="--float-delay:1200ms">
+      <rect x="-92" y="-39" width="184" height="78" rx="18" fill="#111c30" stroke="#ffcf70" stroke-width="2"/>
+      <circle cx="-57" cy="0" r="19" fill="#3a2b16" stroke="#ffcf70"/>
+      <path d="M-70-8 H-44 V8 H-57 L-65 15 V8 H-70Z" fill="#ffcf70" fill-opacity=".2" stroke="#ffcf70"/>
+      <circle cx="-63" cy="0" r="2" fill="#ffcf70"/><circle cx="-57" cy="0" r="2" fill="#ffcf70"/><circle cx="-51" cy="0" r="2" fill="#ffcf70"/>
+      <text x="20" y="-5" fill="#fff0bd" font-size="14" font-weight="800">CONVERSATIONAL RAG</text>
+      <text x="20" y="16" fill="#a9c7cb" font-size="10">Discovery · Traceability</text>
+    </g></g>
+  </g>
+  <g transform="translate(500 286)">
+    <g class="node" style="--delay:200ms">
+      <rect x="-97" y="-25" width="194" height="50" rx="17" fill="#111c30" stroke="#ff9c55" stroke-width="2"/>
+      <text x="0" y="-3" fill="#ffe0ca" font-size="14" font-weight="800">KIRO + AWS</text>
+      <text x="0" y="15" fill="#a9c7cb" font-size="10">Spec-driven development</text>
+    </g>
+  </g>
+  <g fill="#fff8cf" filter="url(#glow)">
+    <circle class="spark-a" cx="78" cy="164" r="2"/>
+    <circle class="spark-b" cx="340" cy="42" r="1.8"/>
+    <circle class="spark-a" cx="692" cy="45" r="1.5"/>
+    <circle class="spark-b" cx="936" cy="169" r="2"/>
+  </g>
+</svg>
