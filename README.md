@@ -53,6 +53,8 @@ quality and measurable business outcomes.
 
 - Reliable AI-enabled engineering workflows
 - Quality automation and testing foundations
+- AI-assisted cybersecurity automation
+- Web scraping and data collection workflows
 - Reusable internal platform capabilities
 - Cross-functional enablement patterns
 
@@ -80,7 +82,7 @@ quality and measurable business outcomes.
 
 <table>
 <tr>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
 ### ⚡ AI Engineering
 
@@ -90,17 +92,29 @@ signals and requirements to reviewed outcomes.
 **Focus:** reliability, traceability and human oversight.
 
 </td>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
-### 🏗️ Quality Systems
+### 🛡️ Quality & Cybersecurity
 
-Automation foundations that improve confidence and support safer,
-faster software delivery.
+Automation foundations for software quality, security monitoring and
+response support within authorized environments.
 
-**Focus:** consistency, maintainability and reviewability.
+**Focus:** resilience, validation and controlled automation.
 
 </td>
-<td width="33%" valign="top">
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🕸️ Web Data Automation
+
+Responsible web scraping, collection and transformation workflows that
+turn permitted web data into useful, structured signals.
+
+**Focus:** robustness, data quality and maintainability.
+
+</td>
+<td width="50%" valign="top">
 
 ### 🛡️ AI Enablement
 
