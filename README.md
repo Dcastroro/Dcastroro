@@ -23,7 +23,7 @@ quality and measurable business outcomes.
 
 <div align="center">
 
-<img width="100%" src="./assets/capability-constellation.svg?v=overview-3" alt="Animated constellation of production AI, cybersecurity, web data, conversational RAG and Kiro with AWS capabilities" />
+<img width="100%" src="./assets/capability-constellation.svg?v=overview-4" alt="Animated constellation of production AI, cybersecurity, web data, conversational RAG and Kiro with AWS capabilities" />
 
 </div>
 

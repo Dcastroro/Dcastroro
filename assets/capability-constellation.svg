@@ -90,8 +90,8 @@
     <circle cx="635" cy="165" r="3" fill="#72e8dc" stroke="none" filter="url(#glow)"/>
   </g>
   <g class="traveler" fill="#fff0a6" filter="url(#glow)">
-    <circle r="3"><animateMotion dur="5.5s" repeatCount="indefinite" path="M500 165 C405 112 304 82 190 82"/></circle>
-    <circle r="3"><animateMotion dur="6.5s" begin="1s" repeatCount="indefinite" path="M500 165 C600 222 702 260 826 247"/></circle>
+    <circle cx="500" cy="165" r="3"><animateMotion dur="5.5s" repeatCount="indefinite" path="M0 0 C-95-53-196-83-310-83"/></circle>
+    <circle cx="500" cy="165" r="3"><animateMotion dur="6.5s" begin="1s" repeatCount="indefinite" path="M0 0 C100 57 202 95 326 82"/></circle>
   </g>
   <g class="core">
     <circle cx="500" cy="165" r="72" fill="url(#core)" stroke="#fff0a6" stroke-width="2.5"/>
@@ -103,39 +103,39 @@
   </g>
   <g transform="translate(190 82)">
     <g class="node" style="--delay:0ms"><g class="float" style="--float-delay:0ms">
-      <rect x="-92" y="-39" width="184" height="78" rx="18" fill="#111c30" stroke="#d69cff" stroke-width="2"/>
-      <circle cx="-57" cy="0" r="19" fill="#261c3b" stroke="#d69cff"/>
-      <path d="M-67 5 L-57-13 L-47 5 L-57 14Z" fill="#d69cff" fill-opacity=".4" stroke="#d69cff"/>
-      <text x="20" y="-5" fill="#f1dcff" font-size="14" font-weight="800">AI SYSTEMS</text>
-      <text x="20" y="16" fill="#a9c7cb" font-size="10">Agents · Automation</text>
+      <rect x="-100" y="-39" width="200" height="78" rx="18" fill="#111c30" stroke="#d69cff" stroke-width="2"/>
+      <circle cx="-63" cy="0" r="19" fill="#261c3b" stroke="#d69cff"/>
+      <path d="M-73 5 L-63-13 L-53 5 L-63 14Z" fill="#d69cff" fill-opacity=".4" stroke="#d69cff"/>
+      <text x="23" y="-5" fill="#f1dcff" font-size="13" font-weight="800">AI SYSTEMS</text>
+      <text x="23" y="16" fill="#a9c7cb" font-size="9.5">Agents · Automation</text>
     </g></g>
   </g>
   <g transform="translate(815 86)">
     <g class="node" style="--delay:50ms"><g class="float" style="--float-delay:500ms">
-      <rect x="-92" y="-39" width="184" height="78" rx="18" fill="#111c30" stroke="#72e8dc" stroke-width="2"/>
-      <circle cx="-57" cy="0" r="19" fill="#12343a" stroke="#72e8dc"/>
-      <path d="M-57-13 L-44-7 V2 C-44 10-50 15-57 19 C-64 15-70 10-70 2 V-7Z" fill="#72e8dc" fill-opacity=".25" stroke="#72e8dc"/>
-      <text x="20" y="-5" fill="#c6fff9" font-size="14" font-weight="800">CYBERSECURITY</text>
-      <text x="20" y="16" fill="#a9c7cb" font-size="10">Quality · Resilience</text>
+      <rect x="-100" y="-39" width="200" height="78" rx="18" fill="#111c30" stroke="#72e8dc" stroke-width="2"/>
+      <circle cx="-63" cy="0" r="19" fill="#12343a" stroke="#72e8dc"/>
+      <path d="M-63-13 L-50-7 V2 C-50 10-56 15-63 19 C-70 15-76 10-76 2 V-7Z" fill="#72e8dc" fill-opacity=".25" stroke="#72e8dc"/>
+      <text x="23" y="-5" fill="#c6fff9" font-size="11.5" font-weight="800">CYBERSECURITY</text>
+      <text x="23" y="16" fill="#a9c7cb" font-size="9.5">Quality · Resilience</text>
     </g></g>
   </g>
   <g transform="translate(185 250)">
     <g class="node" style="--delay:100ms"><g class="float" style="--float-delay:900ms">
-      <rect x="-92" y="-39" width="184" height="78" rx="18" fill="#111c30" stroke="#75a7ff" stroke-width="2"/>
-      <circle cx="-57" cy="0" r="19" fill="#152945" stroke="#75a7ff"/>
-      <path d="M-69-6 Q-57-16-45-6 M-69 6 Q-57 16-45 6 M-57-17 V17" fill="none" stroke="#75a7ff" stroke-width="2"/>
-      <text x="20" y="-5" fill="#d5e2ff" font-size="14" font-weight="800">WEB DATA</text>
-      <text x="20" y="16" fill="#a9c7cb" font-size="10">Collection · Signals</text>
+      <rect x="-100" y="-39" width="200" height="78" rx="18" fill="#111c30" stroke="#75a7ff" stroke-width="2"/>
+      <circle cx="-63" cy="0" r="19" fill="#152945" stroke="#75a7ff"/>
+      <path d="M-75-6 Q-63-16-51-6 M-75 6 Q-63 16-51 6 M-63-17 V17" fill="none" stroke="#75a7ff" stroke-width="2"/>
+      <text x="23" y="-5" fill="#d5e2ff" font-size="13" font-weight="800">WEB DATA</text>
+      <text x="23" y="16" fill="#a9c7cb" font-size="9.5">Collection · Signals</text>
     </g></g>
   </g>
   <g transform="translate(826 247)">
     <g class="node" style="--delay:150ms"><g class="float" style="--float-delay:1200ms">
-      <rect x="-92" y="-39" width="184" height="78" rx="18" fill="#111c30" stroke="#ffcf70" stroke-width="2"/>
-      <circle cx="-57" cy="0" r="19" fill="#3a2b16" stroke="#ffcf70"/>
-      <path d="M-70-8 H-44 V8 H-57 L-65 15 V8 H-70Z" fill="#ffcf70" fill-opacity=".2" stroke="#ffcf70"/>
-      <circle cx="-63" cy="0" r="2" fill="#ffcf70"/><circle cx="-57" cy="0" r="2" fill="#ffcf70"/><circle cx="-51" cy="0" r="2" fill="#ffcf70"/>
-      <text x="20" y="-5" fill="#fff0bd" font-size="14" font-weight="800">CONVERSATIONAL RAG</text>
-      <text x="20" y="16" fill="#a9c7cb" font-size="10">Discovery · Traceability</text>
+      <rect x="-105" y="-39" width="210" height="78" rx="18" fill="#111c30" stroke="#ffcf70" stroke-width="2"/>
+      <circle cx="-68" cy="0" r="19" fill="#3a2b16" stroke="#ffcf70"/>
+      <path d="M-81-8 H-55 V8 H-68 L-76 15 V8 H-81Z" fill="#ffcf70" fill-opacity=".2" stroke="#ffcf70"/>
+      <circle cx="-74" cy="0" r="2" fill="#ffcf70"/><circle cx="-68" cy="0" r="2" fill="#ffcf70"/><circle cx="-62" cy="0" r="2" fill="#ffcf70"/>
+      <text x="23" y="-5" fill="#fff0bd" font-size="11.2" font-weight="800" letter-spacing="-.15">CONVERSATIONAL RAG</text>
+      <text x="23" y="16" fill="#a9c7cb" font-size="9.2">Discovery · Traceability</text>
     </g></g>
   </g>
   <g transform="translate(500 286)">
