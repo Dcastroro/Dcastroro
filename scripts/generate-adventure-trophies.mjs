@@ -99,6 +99,41 @@ const arcane = { rank: "A", name: "ARCANE", color: "#75a7ff" };
 const awakened = { rank: "B", name: "AWAKENED", color: "#a8bed1" };
 const dormant = { rank: "?", name: "DORMANT", color: "#788595" };
 
+function tierSymbol(name) {
+  const symbols = {
+    CELESTIAL: `
+      <path d="M0-24 L5-7 L22-11 L9 2 L22 14 L5 9 L0 26 L-5 9 L-22 14 L-9 2 L-22-11 L-5-7Z" fill="currentColor" opacity=".95"/>
+      <circle r="7" fill="#fff8cf" stroke="currentColor" stroke-width="2"/>
+      <circle r="25" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2 5"/>
+    `,
+    MYTHIC: `
+      <path d="M0-24 L17-9 L11 15 L0 25 L-11 15 L-17-9Z" fill="currentColor" fill-opacity=".2" stroke="currentColor" stroke-width="2"/>
+      <path d="M0-24 L0 25 M-17-9 L17-9 M-11 15 L0-9 L11 15" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M-23-2 L-30 4 L-22 8 M23-2 L30 4 L22 8" fill="none" stroke="currentColor" stroke-width="2"/>
+    `,
+    LEGENDARY: `
+      <path d="M-21 12 L-17-14 L-6-3 L0-21 L7-3 L18-14 L21 12Z" fill="currentColor" fill-opacity=".25" stroke="currentColor" stroke-width="2"/>
+      <path d="M-19 13 Q0 24 19 13 M-25-5 Q-34 2-24 12 M25-5 Q34 2 24 12" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cy="4" r="5" fill="currentColor"/>
+    `,
+    ARCANE: `
+      <path d="M0-24 L21-12 L21 12 L0 24 L-21 12 L-21-12Z" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M0-15 L12 13 L0 7 L-12 13Z" fill="currentColor" fill-opacity=".25" stroke="currentColor" stroke-width="2"/>
+      <circle r="4" fill="currentColor"/>
+    `,
+    AWAKENED: `
+      <path d="M2-25 C17-10 18 0 10 14 C5 23-8 24-15 14 C-22 3-13-8-4-13 C-6-3-1 1 4 0 C8-2 8-10 2-25Z" fill="currentColor" fill-opacity=".3" stroke="currentColor" stroke-width="2"/>
+      <path d="M1-5 C8 3 6 14 0 17 C-7 12-8 4 1-5Z" fill="currentColor"/>
+    `,
+    DORMANT: `
+      <path d="M9-22 A25 25 0 1 0 20 16 A20 20 0 1 1 9-22Z" fill="currentColor" fill-opacity=".35" stroke="currentColor" stroke-width="2"/>
+      <path d="M-19 17 L-13 11 M18-18 L23-23 M-22-5 L-28-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    `,
+  };
+
+  return symbols[name].replace(/[ \t]+$/gm, "").trim();
+}
+
 const trophies = [
   {
     title: "EXPERIENCE",
@@ -182,7 +217,11 @@ const trophyMarkup = trophies
           <path d="M0-52 L-6-34 L-24-42 L-17-24 L-36-18 L-18-10" opacity=".75"/>
         </g>
         <circle cy="-17" r="30" fill="#11233f" stroke="${tier.color}" stroke-width="2.5"/>
-        <text y="-7" class="rank" fill="${tier.color}">${tier.rank}</text>
+        <g transform="translate(0 -17)" style="color:${tier.color}" filter="url(#glow)">
+          ${tierSymbol(tier.name)}
+        </g>
+        <circle cx="25" cy="1" r="13" fill="${tier.color}" stroke="#0b1020" stroke-width="2"/>
+        <text x="25" y="5" class="rank-badge">${tier.rank}</text>
         <text y="-56" class="title">${title}</text>
         <text y="34" class="value">${value}</text>
         <text y="54" class="subtitle">${subtitle}</text>
@@ -225,7 +264,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" v
     .title { fill:#ffcf70; font-size:13px; font-weight:700; letter-spacing:1.3px; }
     .value { fill:#f8f1d4; font-size:24px; font-weight:700; }
     .subtitle { fill:#71d7cd; font-size:11px; font-style:italic; }
-    .rank { font-size:25px; font-weight:800; filter:url(#glow); }
+    .rank-badge { fill:#0b1020; font-family:"Segoe UI",sans-serif; font-size:11px; font-weight:900; }
     .tier-name { font-size:10px; font-weight:700; letter-spacing:1.2px; }
     .trophy { opacity:1; }
     .road { stroke-dasharray:12 9; animation:march 8s linear infinite; }
