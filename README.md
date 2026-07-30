@@ -52,6 +52,7 @@ quality and measurable business outcomes.
 ### Building
 
 - Reliable AI-enabled engineering workflows
+- Spec-driven development with Kiro in the AWS ecosystem
 - Quality automation and testing foundations
 - AI-assisted cybersecurity automation
 - Web scraping and data collection workflows
@@ -175,6 +176,7 @@ workflows responsibly.
 ### AI & Agents
 
 ![AWS Bedrock](https://img.shields.io/badge/AWS_Bedrock-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+[![Kiro](https://img.shields.io/badge/Kiro-Agentic_Development-7C5CFC?style=flat-square)](https://kiro.dev/)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square)
 ![MCP](https://img.shields.io/badge/MCP-181717?style=flat-square)
