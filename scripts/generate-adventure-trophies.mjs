@@ -218,8 +218,10 @@ const trophyMarkup = trophies
           <path d="M0-52 L-6-34 L-24-42 L-17-24 L-36-18 L-18-10" opacity=".75"/>
         </g>
         <circle cy="-17" r="30" fill="#11233f" stroke="${tier.color}" stroke-width="2.5"/>
-        <g transform="translate(0 -17)" style="color:${tier.color}" filter="url(#glow)">
+        <g transform="translate(0 -17)">
+        <g class="sigil" style="color:${tier.color}" filter="url(#glow)">
           ${tierSymbol(tier.name)}
+        </g>
         </g>
         <circle cx="25" cy="1" r="13" fill="${tier.color}" stroke="#0b1020" stroke-width="2"/>
         <text x="25" y="5" class="rank-badge">${tier.rank}</text>
@@ -273,6 +275,14 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" v
       transform-box:fill-box;
       transform-origin:center;
     }
+    .sigil {
+      animation:sigil-breathe 3.6s cubic-bezier(.77,0,.175,1) infinite alternate;
+      animation-delay:var(--delay);
+      transform-box:fill-box;
+      transform-origin:center;
+    }
+    .twinkle-a { animation:twinkle 2.7s ease infinite alternate; }
+    .twinkle-b { animation:twinkle 3.4s ease 800ms infinite alternate-reverse; }
     .road { stroke-dasharray:12 9; }
     @keyframes trophy-enter {
       from { opacity:0; transform:translateY(8px) scale(.96); }
@@ -282,8 +292,21 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" v
       from { opacity:.6; }
       to { opacity:1; }
     }
+    @keyframes sigil-breathe {
+      from { opacity:.72; transform:scale(.97); }
+      to { opacity:1; transform:scale(1.035); }
+    }
+    @keyframes twinkle {
+      from { opacity:.2; }
+      to { opacity:.9; }
+    }
     @media (prefers-reduced-motion:reduce) {
       .trophy { animation:trophy-fade 200ms ease both; }
+      .sigil,.twinkle-a,.twinkle-b {
+        animation:twinkle 3s ease infinite alternate;
+        transform:none;
+      }
+      .route-scout { display:none; }
     }
   </style>
   <rect x="2" y="2" width="996" height="416" rx="18" fill="url(#night)" stroke="#d8ad58" stroke-width="3"/>
@@ -291,6 +314,16 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" v
   <path d="M25 344 Q120 280 194 348 T390 335 T585 345 T780 337 T975 346" fill="none" stroke="#173f4f" stroke-width="70" opacity=".65"/>
   <path d="M112 145 C195 180 220 265 306 295 S420 180 500 145 S610 260 694 295 S790 185 888 145" fill="none" stroke="#4b311e" stroke-width="10" opacity=".9"/>
   <path class="road" d="M112 145 C195 180 220 265 306 295 S420 180 500 145 S610 260 694 295 S790 185 888 145" fill="none" stroke="url(#road)" stroke-width="4" filter="url(#glow)"/>
+  <g class="route-scout" filter="url(#glow)">
+    <circle r="4" fill="#fff8cf">
+      <animateMotion dur="8s" repeatCount="indefinite" path="M112 145 C195 180 220 265 306 295 S420 180 500 145 S610 260 694 295 S790 185 888 145"/>
+    </circle>
+  </g>
+  <g fill="#fff8cf" filter="url(#glow)">
+    <circle class="twinkle-a" cx="198" cy="92" r="2"/>
+    <circle class="twinkle-b" cx="600" cy="84" r="1.8"/>
+    <circle class="twinkle-a" cx="814" cy="245" r="1.5"/>
+  </g>
   <path d="M20 390 L80 322 L125 372 L174 305 L230 390Z" fill="#0a1824" stroke="#29475a"/>
   <path d="M770 390 L820 315 L855 360 L912 292 L980 390Z" fill="#0a1824" stroke="#29475a"/>
   <text x="500" y="35" fill="#f8f1d4" font-size="21" font-weight="700" letter-spacing="3">THE ACHIEVEMENT REALM</text>

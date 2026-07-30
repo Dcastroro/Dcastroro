@@ -38,9 +38,24 @@
     .hero-3 { animation-delay:120ms; }
     .hero-4 { animation-delay:180ms; }
     .beacon { animation-delay:240ms; }
+    .beacon-glow {
+      animation:breathe 4s cubic-bezier(.77,0,.175,1) infinite alternate;
+      transform-box:fill-box;
+      transform-origin:center;
+    }
+    .twinkle-a { animation:twinkle 2.8s ease infinite alternate; }
+    .twinkle-b { animation:twinkle 3.6s ease 900ms infinite alternate-reverse; }
     @keyframes enter {
       from { opacity:0; transform:translateY(8px) scale(.98); }
       to { opacity:1; transform:translateY(0) scale(1); }
+    }
+    @keyframes breathe {
+      from { opacity:.68; transform:scale(.96); }
+      to { opacity:1; transform:scale(1.04); }
+    }
+    @keyframes twinkle {
+      from { opacity:.25; }
+      to { opacity:.95; }
     }
     @keyframes fade {
       from { opacity:.6; }
@@ -50,6 +65,11 @@
       .hero-1,.hero-2,.hero-3,.hero-4,.beacon {
         animation:fade 200ms ease both;
       }
+      .beacon-glow,.twinkle-a,.twinkle-b {
+        animation:twinkle 3s ease infinite alternate;
+        transform:none;
+      }
+      .route-scout { display:none; }
     }
   </style>
   <rect x="2" y="2" width="996" height="276" rx="22" fill="url(#sky)" stroke="#d9a84f" stroke-width="3"/>
@@ -58,6 +78,16 @@
   <path d="M0 258 Q130 205 245 254 T470 245 T710 254 T1000 231" fill="none" stroke="#164053" stroke-width="48" opacity=".75"/>
   <path d="M85 225 C180 184 233 211 315 194 S455 142 535 164 S655 218 744 179 S846 113 922 121" fill="none" stroke="#50341e" stroke-width="10"/>
   <path class="path" d="M85 225 C180 184 233 211 315 194 S455 142 535 164 S655 218 744 179 S846 113 922 121" fill="none" stroke="url(#gold)" stroke-width="4" filter="url(#glow)"/>
+  <g class="route-scout" filter="url(#glow)">
+    <circle r="4" fill="#fff8cf">
+      <animateMotion dur="7s" repeatCount="indefinite" path="M85 225 C180 184 233 211 315 194 S455 142 535 164 S655 218 744 179 S846 113 922 121"/>
+    </circle>
+  </g>
+  <g fill="#fff8cf" filter="url(#glow)">
+    <circle class="twinkle-a" cx="190" cy="72" r="2.2"/>
+    <circle class="twinkle-b" cx="792" cy="78" r="1.8"/>
+    <circle class="twinkle-a" cx="850" cy="186" r="1.5"/>
+  </g>
   <g fill="#fff0a6" filter="url(#glow)">
     <circle cx="85" cy="225" r="5"/>
     <circle cx="315" cy="194" r="5"/>
@@ -65,7 +95,9 @@
     <circle cx="744" cy="179" r="5"/>
     <circle cx="922" cy="121" r="6"/>
   </g>
-  <circle class="beacon" cx="922" cy="121" r="38" fill="url(#orb)" opacity=".9"/>
+  <g class="beacon">
+    <circle class="beacon-glow" cx="922" cy="121" r="38" fill="url(#orb)" opacity=".9"/>
+  </g>
   <text class="hero-1" x="500" y="72" fill="#fff7d6" font-family="Georgia,serif" font-size="38" font-weight="700" letter-spacing="5">DAVID CASTRO</text>
   <text class="hero-2" x="500" y="107" fill="#72e8dc" font-size="17" font-weight="600" letter-spacing="3">AI SYSTEMS · AUTOMATION · ENABLEMENT</text>
   <text class="hero-3" x="500" y="135" fill="#a9c7cb" font-family="Georgia,serif" font-size="13" font-style="italic">Turning ambitious AI quests into reliable production systems</text>
