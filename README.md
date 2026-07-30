@@ -56,6 +56,7 @@ quality and measurable business outcomes.
 - Quality automation and testing foundations
 - AI-assisted cybersecurity automation
 - Web scraping and data collection workflows
+- Conversational RAG for A/B/n experiment traceability
 - Reusable internal platform capabilities
 - Cross-functional enablement patterns
 
@@ -88,9 +89,10 @@ quality and measurable business outcomes.
 ### ⚡ AI Engineering
 
 Production-oriented workflows that help engineering teams move from
-signals and requirements to reviewed outcomes.
+signals and requirements to reviewed outcomes, including conversational
+retrieval for discovering and tracing experimentation knowledge.
 
-**Focus:** reliability, traceability and human oversight.
+**Focus:** reliability, experiment traceability and human oversight.
 
 </td>
 <td width="50%" valign="top">
@@ -178,6 +180,7 @@ workflows responsibly.
 ![AWS Bedrock](https://img.shields.io/badge/AWS_Bedrock-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
 [![Kiro](https://img.shields.io/badge/Kiro-Agentic_Development-7C5CFC?style=flat-square)](https://kiro.dev/)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+![RAG](https://img.shields.io/badge/RAG-Conversational_Retrieval-167D8D?style=flat-square)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square)
 ![MCP](https://img.shields.io/badge/MCP-181717?style=flat-square)
 
