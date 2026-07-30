@@ -11,7 +11,7 @@
 **AI Enablement & Growth Infrastructure Lead**
 
 I design and ship production AI systems that connect engineering,
-quality, governance and measurable business outcomes.
+quality and measurable business outcomes.
 
 </div>
 
@@ -19,23 +19,23 @@ quality, governance and measurable business outcomes.
 <tr>
 <td width="33%" align="center">
 
-### 60%+
+### Production
 
-<sub>less manual triage</sub>
-
-</td>
-<td width="33%" align="center">
-
-### 6
-
-<sub>business units enabled</sub>
+<sub>reliable systems, not demos</sub>
 
 </td>
 <td width="33%" align="center">
 
-### 3
+### Cross-functional
 
-<sub>production system pillars</sub>
+<sub>engineering and business enablement</sub>
+
+</td>
+<td width="33%" align="center">
+
+### Responsible
+
+<sub>security-aware by design</sub>
 
 </td>
 </tr>
@@ -51,20 +51,20 @@ quality, governance and measurable business outcomes.
 
 ### Building
 
-- Production agents with autonomous remediation
-- Spec-to-feature multi-agent delivery pipelines
-- Playwright quality systems with AI-assisted testing
-- Reusable automation for cross-functional teams
+- Reliable AI-enabled engineering workflows
+- Quality automation and testing foundations
+- Reusable internal platform capabilities
+- Cross-functional enablement patterns
 
 </td>
 <td width="50%" valign="top">
 
 ### Leading
 
-- AI roadmap and enablement in AdTech
-- AWS Bedrock and Agent Core adoption
-- Governance, PII policies and responsible AI
-- AI Champions across six business units
+- AI strategy and production adoption
+- Platform direction and technical enablement
+- Responsible, security-aware delivery practices
+- Collaboration across technical and business teams
 
 </td>
 </tr>
@@ -74,50 +74,40 @@ quality, governance and measurable business outcomes.
 
 ---
 
-## 🏰 Systems in Production
+## 🏰 Selected Focus Areas
+
+<sub>Selected work is intentionally described at a high level. Internal architecture, controls and operational details are not disclosed.</sub>
 
 <table>
 <tr>
 <td width="33%" valign="top">
 
-### ⚡ Auto-Remediation
+### ⚡ AI Engineering
 
-`Sentry → Bedrock → Fix → PR`
+Production-oriented workflows that help engineering teams move from
+signals and requirements to reviewed outcomes.
 
-Multi-agent detection, diagnosis and autonomous pull requests.
-
-**Impact:** 60%+ less manual triage.
-
-![AWS Bedrock](https://img.shields.io/badge/AWS_Bedrock-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
-![Multi-Agent](https://img.shields.io/badge/Multi--Agent-412991?style=flat-square&logo=openai&logoColor=white)
+**Focus:** reliability, traceability and human oversight.
 
 </td>
 <td width="33%" valign="top">
 
-### 🏗️ Auto-Dev Pipeline
+### 🏗️ Quality Systems
 
-`Specs → Code → UI → Tests → Docs`
+Automation foundations that improve confidence and support safer,
+faster software delivery.
 
-An orchestrator routes work to specialized agents for complete feature delivery.
-
-**Focus:** consistency and reviewability.
-
-![OpenSpec](https://img.shields.io/badge/OpenSpec-0052CC?style=flat-square)
-![Playwright](https://img.shields.io/badge/Playwright-45BA4B?style=flat-square&logo=playwright&logoColor=white)
+**Focus:** consistency, maintainability and reviewability.
 
 </td>
 <td width="33%" valign="top">
 
-### 🛡️ Governance Layer
+### 🛡️ AI Enablement
 
-`Catalog → Policy → Access → Audit`
+Practical adoption patterns for bringing AI into technical and business
+workflows responsibly.
 
-OpenMetadata-based controls for safe AI adoption across the organization.
-
-**Scope:** six business units.
-
-![OpenMetadata](https://img.shields.io/badge/OpenMetadata-1890FF?style=flat-square)
-![Responsible AI](https://img.shields.io/badge/Responsible_AI-2E8B57?style=flat-square)
+**Focus:** useful outcomes within organizational guardrails.
 
 </td>
 </tr>
