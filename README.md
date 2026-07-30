@@ -71,25 +71,11 @@ OpenMetadata-based governance: data catalog, PII policies, access controls & res
 
 ---
 
-### 🗺️ The Achievement Realm
+### 🏆 Live GitHub Trophies
 
 <div align="center">
 
-<img width="100%" src="./assets/achievement-realm.webp" alt="An illustrated fantasy kingdom map connecting five achievement landmarks along a golden quest path" />
-
-<sub>Crystal Citadel · Commit Forge · Moonlit Bridge · Repository Archives · Council Tower</sub>
-
-</div>
-
-<br />
-
-#### 🏆 Live GitHub Trophies
-
-<div align="center">
-
-<img width="100%" src="https://trophy.ryglcloud.net/?username=Dcastroro&theme=radical&no-bg=true&no-frame=false&margin-w=15&margin-h=15&column=3&row=2&title=Experience,Commits,PullRequest,Repositories,MultiLanguage,Reviews&v=20260730" alt="GitHub trophies for experience, commits, pull requests, repositories, languages and reviews" />
-
-<sub>Experience · Commits · Pull Requests · Repositories · Languages · Reviews</sub>
+<img width="100%" src="./assets/adventure-trophies.svg" alt="Live GitHub achievements displayed as medallions across an epic fantasy kingdom map" />
 
 </div>
 
