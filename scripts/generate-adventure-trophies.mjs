@@ -275,19 +275,19 @@ const trophyMarkup = trophies
           <path d="M0-52 L6-34 L24-42 L17-24 L36-18 L18-10" opacity=".75"/>
           <path d="M0-52 L-6-34 L-24-42 L-17-24 L-36-18 L-18-10" opacity=".75"/>
         </g>
-        <circle cy="-17" r="30" fill="#11233f" stroke="${tier.color}" stroke-width="2.5"/>
-        <g transform="translate(0 -17)">
+        <circle cy="-14" r="25" fill="#11233f" stroke="${tier.color}" stroke-width="2.5"/>
+        <g transform="translate(0 -14) scale(.78)">
         <g class="sigil" style="color:${tier.color}" filter="url(#glow)">
           ${trophySymbol(title, tier.name)}
         </g>
         </g>
-        <circle cx="25" cy="1" r="13" fill="${tier.color}" stroke="#0b1020" stroke-width="2"/>
-        <text x="25" y="5" class="rank-badge">${tier.rank}</text>
-        <text y="-56" class="title">${title}</text>
-        <text y="34" class="value">${value}</text>
-        <text y="54" class="subtitle">${subtitle}</text>
-        <rect x="-43" y="60" width="86" height="18" rx="9" fill="#0b1020" stroke="${tier.color}" stroke-opacity=".8"/>
-        <text y="72" class="tier-name" fill="${tier.color}">${tier.name}</text>
+        <circle cx="21" cy="1" r="11" fill="${tier.color}" stroke="#0b1020" stroke-width="2"/>
+        <text x="21" y="5" class="rank-badge">${tier.rank}</text>
+        <text y="-48" class="title">${title}</text>
+        <text y="25" class="value">${value}</text>
+        <text y="43" class="subtitle">${subtitle}</text>
+        <rect x="-43" y="51" width="86" height="17" rx="8.5" fill="#0b1020" stroke="${tier.color}" stroke-opacity=".8"/>
+        <text y="63" class="tier-name" fill="${tier.color}">${tier.name}</text>
       </g>
       </g>
     `,
@@ -324,11 +324,11 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" v
   </defs>
   <style>
     text { font-family: Georgia, "Times New Roman", serif; text-anchor: middle; }
-    .title { fill:#ffcf70; font-size:13px; font-weight:700; letter-spacing:1.3px; }
-    .value { fill:#f8f1d4; font-size:24px; font-weight:700; }
-    .subtitle { fill:#71d7cd; font-size:11px; font-style:italic; }
-    .rank-badge { fill:#0b1020; font-family:"Segoe UI",sans-serif; font-size:11px; font-weight:900; }
-    .tier-name { font-size:10px; font-weight:700; letter-spacing:1.2px; }
+    .title { fill:#ffcf70; font-size:11px; font-weight:700; letter-spacing:.7px; }
+    .value { fill:#f8f1d4; font-size:21px; font-weight:700; }
+    .subtitle { fill:#71d7cd; font-size:9px; font-style:italic; }
+    .rank-badge { fill:#0b1020; font-family:"Segoe UI",sans-serif; font-size:9px; font-weight:900; }
+    .tier-name { font-size:8.5px; font-weight:700; letter-spacing:.7px; }
     .trophy {
       animation:trophy-enter 550ms cubic-bezier(.23,1,.32,1) both var(--delay);
       transform-box:fill-box;

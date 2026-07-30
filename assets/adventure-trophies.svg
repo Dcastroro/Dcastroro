@@ -28,11 +28,11 @@
   </defs>
   <style>
     text { font-family: Georgia, "Times New Roman", serif; text-anchor: middle; }
-    .title { fill:#ffcf70; font-size:13px; font-weight:700; letter-spacing:1.3px; }
-    .value { fill:#f8f1d4; font-size:24px; font-weight:700; }
-    .subtitle { fill:#71d7cd; font-size:11px; font-style:italic; }
-    .rank-badge { fill:#0b1020; font-family:"Segoe UI",sans-serif; font-size:11px; font-weight:900; }
-    .tier-name { font-size:10px; font-weight:700; letter-spacing:1.2px; }
+    .title { fill:#ffcf70; font-size:11px; font-weight:700; letter-spacing:.7px; }
+    .value { fill:#f8f1d4; font-size:21px; font-weight:700; }
+    .subtitle { fill:#71d7cd; font-size:9px; font-style:italic; }
+    .rank-badge { fill:#0b1020; font-family:"Segoe UI",sans-serif; font-size:9px; font-weight:900; }
+    .tier-name { font-size:8.5px; font-weight:700; letter-spacing:.7px; }
     .trophy {
       animation:trophy-enter 550ms cubic-bezier(.23,1,.32,1) both var(--delay);
       transform-box:fill-box;
@@ -101,21 +101,21 @@
           <path d="M0-52 L6-34 L24-42 L17-24 L36-18 L18-10" opacity=".75"/>
           <path d="M0-52 L-6-34 L-24-42 L-17-24 L-36-18 L-18-10" opacity=".75"/>
         </g>
-        <circle cy="-17" r="30" fill="#11233f" stroke="#fff0a6" stroke-width="2.5"/>
-        <g transform="translate(0 -17)">
+        <circle cy="-14" r="25" fill="#11233f" stroke="#fff0a6" stroke-width="2.5"/>
+        <g transform="translate(0 -14) scale(.78)">
         <g class="sigil" style="color:#fff0a6" filter="url(#glow)">
           <path d="M0-24 L5-7 L22-11 L9 2 L22 14 L5 9 L0 26 L-5 9 L-22 14 L-9 2 L-22-11 L-5-7Z" fill="currentColor" opacity=".95"/>
       <circle r="7" fill="#fff8cf" stroke="currentColor" stroke-width="2"/>
       <circle r="25" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2 5"/>
         </g>
         </g>
-        <circle cx="25" cy="1" r="13" fill="#fff0a6" stroke="#0b1020" stroke-width="2"/>
-        <text x="25" y="5" class="rank-badge">S+</text>
-        <text y="-56" class="title">EXPERIENCE</text>
-        <text y="34" class="value">3 YEARS</text>
-        <text y="54" class="subtitle">Journey began 2022</text>
-        <rect x="-43" y="60" width="86" height="18" rx="9" fill="#0b1020" stroke="#fff0a6" stroke-opacity=".8"/>
-        <text y="72" class="tier-name" fill="#fff0a6">CELESTIAL</text>
+        <circle cx="21" cy="1" r="11" fill="#fff0a6" stroke="#0b1020" stroke-width="2"/>
+        <text x="21" y="5" class="rank-badge">S+</text>
+        <text y="-48" class="title">EXPERIENCE</text>
+        <text y="25" class="value">3 YEARS</text>
+        <text y="43" class="subtitle">Journey began 2022</text>
+        <rect x="-43" y="51" width="86" height="17" rx="8.5" fill="#0b1020" stroke="#fff0a6" stroke-opacity=".8"/>
+        <text y="63" class="tier-name" fill="#fff0a6">CELESTIAL</text>
       </g>
       </g>
     
@@ -128,21 +128,21 @@
           <path d="M0-52 L6-34 L24-42 L17-24 L36-18 L18-10" opacity=".75"/>
           <path d="M0-52 L-6-34 L-24-42 L-17-24 L-36-18 L-18-10" opacity=".75"/>
         </g>
-        <circle cy="-17" r="30" fill="#11233f" stroke="#d69cff" stroke-width="2.5"/>
-        <g transform="translate(0 -17)">
+        <circle cy="-14" r="25" fill="#11233f" stroke="#d69cff" stroke-width="2.5"/>
+        <g transform="translate(0 -14) scale(.78)">
         <g class="sigil" style="color:#d69cff" filter="url(#glow)">
           <path d="M0-24 L17-9 L11 15 L0 25 L-11 15 L-17-9Z" fill="currentColor" fill-opacity=".2" stroke="currentColor" stroke-width="2"/>
       <path d="M0-24 L0 25 M-17-9 L17-9 M-11 15 L0-9 L11 15" fill="none" stroke="currentColor" stroke-width="1.5"/>
       <path d="M-23-2 L-30 4 L-22 8 M23-2 L30 4 L22 8" fill="none" stroke="currentColor" stroke-width="2"/>
         </g>
         </g>
-        <circle cx="25" cy="1" r="13" fill="#d69cff" stroke="#0b1020" stroke-width="2"/>
-        <text x="25" y="5" class="rank-badge">S</text>
-        <text y="-56" class="title">COMMITS</text>
-        <text y="34" class="value">168</text>
-        <text y="54" class="subtitle">Runes forged</text>
-        <rect x="-43" y="60" width="86" height="18" rx="9" fill="#0b1020" stroke="#d69cff" stroke-opacity=".8"/>
-        <text y="72" class="tier-name" fill="#d69cff">MYTHIC</text>
+        <circle cx="21" cy="1" r="11" fill="#d69cff" stroke="#0b1020" stroke-width="2"/>
+        <text x="21" y="5" class="rank-badge">S</text>
+        <text y="-48" class="title">COMMITS</text>
+        <text y="25" class="value">169</text>
+        <text y="43" class="subtitle">Runes forged</text>
+        <rect x="-43" y="51" width="86" height="17" rx="8.5" fill="#0b1020" stroke="#d69cff" stroke-opacity=".8"/>
+        <text y="63" class="tier-name" fill="#d69cff">MYTHIC</text>
       </g>
       </g>
     
@@ -155,21 +155,21 @@
           <path d="M0-52 L6-34 L24-42 L17-24 L36-18 L18-10" opacity=".75"/>
           <path d="M0-52 L-6-34 L-24-42 L-17-24 L-36-18 L-18-10" opacity=".75"/>
         </g>
-        <circle cy="-17" r="30" fill="#11233f" stroke="#d69cff" stroke-width="2.5"/>
-        <g transform="translate(0 -17)">
+        <circle cy="-14" r="25" fill="#11233f" stroke="#d69cff" stroke-width="2.5"/>
+        <g transform="translate(0 -14) scale(.78)">
         <g class="sigil" style="color:#d69cff" filter="url(#glow)">
           <path d="M0-24 L17-9 L11 15 L0 25 L-11 15 L-17-9Z" fill="currentColor" fill-opacity=".2" stroke="currentColor" stroke-width="2"/>
       <path d="M0-24 L0 25 M-17-9 L17-9 M-11 15 L0-9 L11 15" fill="none" stroke="currentColor" stroke-width="1.5"/>
       <path d="M-23-2 L-30 4 L-22 8 M23-2 L30 4 L22 8" fill="none" stroke="currentColor" stroke-width="2"/>
         </g>
         </g>
-        <circle cx="25" cy="1" r="13" fill="#d69cff" stroke="#0b1020" stroke-width="2"/>
-        <text x="25" y="5" class="rank-badge">S</text>
-        <text y="-56" class="title">PULL REQUESTS</text>
-        <text y="34" class="value">26</text>
-        <text y="54" class="subtitle">Bridges opened</text>
-        <rect x="-43" y="60" width="86" height="18" rx="9" fill="#0b1020" stroke="#d69cff" stroke-opacity=".8"/>
-        <text y="72" class="tier-name" fill="#d69cff">MYTHIC</text>
+        <circle cx="21" cy="1" r="11" fill="#d69cff" stroke="#0b1020" stroke-width="2"/>
+        <text x="21" y="5" class="rank-badge">S</text>
+        <text y="-48" class="title">PULL REQUESTS</text>
+        <text y="25" class="value">26</text>
+        <text y="43" class="subtitle">Bridges opened</text>
+        <rect x="-43" y="51" width="86" height="17" rx="8.5" fill="#0b1020" stroke="#d69cff" stroke-opacity=".8"/>
+        <text y="63" class="tier-name" fill="#d69cff">MYTHIC</text>
       </g>
       </g>
     
@@ -182,21 +182,21 @@
           <path d="M0-52 L6-34 L24-42 L17-24 L36-18 L18-10" opacity=".75"/>
           <path d="M0-52 L-6-34 L-24-42 L-17-24 L-36-18 L-18-10" opacity=".75"/>
         </g>
-        <circle cy="-17" r="30" fill="#11233f" stroke="#72e8dc" stroke-width="2.5"/>
-        <g transform="translate(0 -17)">
+        <circle cy="-14" r="25" fill="#11233f" stroke="#72e8dc" stroke-width="2.5"/>
+        <g transform="translate(0 -14) scale(.78)">
         <g class="sigil" style="color:#72e8dc" filter="url(#glow)">
           <path d="M-22 17V-7L0-23 22-7v24H8V3H-8v14Z" fill="currentColor" fill-opacity=".22" stroke="currentColor" stroke-width="2"/>
       <path d="M-15-12v-10h8v5M7-17v-5h8v10M-25-5 0-27 25-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
       <path d="M-4 17V7h8v10M-14-2h7M7-2h7" fill="none" stroke="currentColor" stroke-width="2"/>
         </g>
         </g>
-        <circle cx="25" cy="1" r="13" fill="#72e8dc" stroke="#0b1020" stroke-width="2"/>
-        <text x="25" y="5" class="rank-badge">A+</text>
-        <text y="-56" class="title">REPOSITORIES</text>
-        <text y="34" class="value">5</text>
-        <text y="54" class="subtitle">5 to Mythic</text>
-        <rect x="-43" y="60" width="86" height="18" rx="9" fill="#0b1020" stroke="#72e8dc" stroke-opacity=".8"/>
-        <text y="72" class="tier-name" fill="#72e8dc">LEGENDARY</text>
+        <circle cx="21" cy="1" r="11" fill="#72e8dc" stroke="#0b1020" stroke-width="2"/>
+        <text x="21" y="5" class="rank-badge">A+</text>
+        <text y="-48" class="title">REPOSITORIES</text>
+        <text y="25" class="value">5</text>
+        <text y="43" class="subtitle">5 to Mythic</text>
+        <rect x="-43" y="51" width="86" height="17" rx="8.5" fill="#0b1020" stroke="#72e8dc" stroke-opacity=".8"/>
+        <text y="63" class="tier-name" fill="#72e8dc">LEGENDARY</text>
       </g>
       </g>
     
@@ -209,21 +209,21 @@
           <path d="M0-52 L6-34 L24-42 L17-24 L36-18 L18-10" opacity=".75"/>
           <path d="M0-52 L-6-34 L-24-42 L-17-24 L-36-18 L-18-10" opacity=".75"/>
         </g>
-        <circle cy="-17" r="30" fill="#11233f" stroke="#8fa3b8" stroke-width="2.5"/>
-        <g transform="translate(0 -17)">
+        <circle cy="-14" r="25" fill="#11233f" stroke="#8fa3b8" stroke-width="2.5"/>
+        <g transform="translate(0 -14) scale(.78)">
         <g class="sigil" style="color:#8fa3b8" filter="url(#glow)">
           <path d="M0-24V20M-18-14H18M-18-14-28 5M-18-14-8 5M18-14 8 5M18-14 28 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
       <path d="M-30 5H-6c-2 9-20 9-24 0ZM6 5h24c-4 9-22 9-24 0Z" fill="currentColor" fill-opacity=".25" stroke="currentColor" stroke-width="2"/>
       <path d="M-12 22H12M-7 17H7" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
         </g>
         </g>
-        <circle cx="25" cy="1" r="13" fill="#8fa3b8" stroke="#0b1020" stroke-width="2"/>
-        <text x="25" y="5" class="rank-badge">—</text>
-        <text y="-56" class="title">REVIEWS</text>
-        <text y="34" class="value">0</text>
-        <text y="54" class="subtitle">1 unlocks Arcane</text>
-        <rect x="-43" y="60" width="86" height="18" rx="9" fill="#0b1020" stroke="#8fa3b8" stroke-opacity=".8"/>
-        <text y="72" class="tier-name" fill="#8fa3b8">UNCHARTED</text>
+        <circle cx="21" cy="1" r="11" fill="#8fa3b8" stroke="#0b1020" stroke-width="2"/>
+        <text x="21" y="5" class="rank-badge">—</text>
+        <text y="-48" class="title">REVIEWS</text>
+        <text y="25" class="value">0</text>
+        <text y="43" class="subtitle">1 unlocks Arcane</text>
+        <rect x="-43" y="51" width="86" height="17" rx="8.5" fill="#0b1020" stroke="#8fa3b8" stroke-opacity=".8"/>
+        <text y="63" class="tier-name" fill="#8fa3b8">UNCHARTED</text>
       </g>
       </g>
     
