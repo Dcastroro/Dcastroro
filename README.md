@@ -75,7 +75,7 @@ OpenMetadata-based governance: data catalog, PII policies, access controls & res
 
 <div align="center">
 
-<img width="100%" src="https://trophy.ryglcloud.net/?username=Dcastroro&theme=algolia&no-bg=true&no-frame=false&margin-w=8&margin-h=8&column=6&row=1&title=Experience,Commits,PullRequest,Repositories,MultiLanguage,Reviews" alt="GitHub trophies for experience, commits, pull requests, repositories, languages and reviews" />
+<img width="100%" src="https://trophy.ryglcloud.net/?username=Dcastroro&theme=radical&no-bg=true&no-frame=false&margin-w=15&margin-h=15&column=3&row=2&title=Experience,Commits,PullRequest,Repositories,MultiLanguage,Reviews&v=20260730" alt="GitHub trophies for experience, commits, pull requests, repositories, languages and reviews" />
 
 <sub>Experience · Commits · Pull Requests · Repositories · Languages · Reviews</sub>
 
@@ -87,13 +87,13 @@ OpenMetadata-based governance: data catalog, PII policies, access controls & res
 
 <div align="center">
 
-<img width="100%" src="./profile-summary-card-output/tokyonight/0-profile-details.svg" alt="GitHub contribution activity" />
+<img width="100%" src="./profile-summary-card-output/tokyonight/0-profile-details.svg?v=20260730" alt="GitHub contribution activity" />
 
-<img width="49%" src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg" alt="Top languages by repository" />
-<img width="49%" src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" alt="Top languages by commits" />
+<img width="49%" src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg?v=20260730" alt="Top languages by repository" />
+<img width="49%" src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg?v=20260730" alt="Top languages by commits" />
 
-<img width="49%" src="./profile-summary-card-output/tokyonight/3-stats.svg" alt="GitHub stats" />
-<img width="49%" src="./profile-summary-card-output/tokyonight/4-productive-time.svg" alt="Most productive coding hours" />
+<img width="49%" src="./profile-summary-card-output/tokyonight/3-stats.svg?v=20260730" alt="GitHub stats" />
+<img width="49%" src="./profile-summary-card-output/tokyonight/4-productive-time.svg?v=20260730" alt="Most productive coding hours" />
 
 </div>
 
