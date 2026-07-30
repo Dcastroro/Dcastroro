@@ -138,7 +138,7 @@
         <circle cx="25" cy="1" r="13" fill="#d69cff" stroke="#0b1020" stroke-width="2"/>
         <text x="25" y="5" class="rank-badge">S</text>
         <text y="-56" class="title">COMMITS</text>
-        <text y="34" class="value">156</text>
+        <text y="34" class="value">161</text>
         <text y="54" class="subtitle">Runes forged</text>
         <text y="81" class="tier-name" fill="#d69cff">MYTHIC</text>
       </g>
@@ -164,7 +164,7 @@
         <circle cx="25" cy="1" r="13" fill="#d69cff" stroke="#0b1020" stroke-width="2"/>
         <text x="25" y="5" class="rank-badge">S</text>
         <text y="-56" class="title">PULL REQUESTS</text>
-        <text y="34" class="value">19</text>
+        <text y="34" class="value">21</text>
         <text y="54" class="subtitle">Bridges opened</text>
         <text y="81" class="tier-name" fill="#d69cff">MYTHIC</text>
       </g>
