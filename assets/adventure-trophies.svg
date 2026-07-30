@@ -28,7 +28,7 @@
   </defs>
   <style>
     text { font-family: Georgia, "Times New Roman", serif; text-anchor: middle; }
-    .title { fill:#ffcf70; font-size:11px; font-weight:700; letter-spacing:.7px; }
+    .title { fill:#ffcf70; font-size:10px; font-weight:700; }
     .value { fill:#f8f1d4; font-size:21px; font-weight:700; }
     .subtitle { fill:#71d7cd; font-size:9px; font-style:italic; }
     .rank-badge { fill:#0b1020; font-family:"Segoe UI",sans-serif; font-size:9px; font-weight:900; }
@@ -111,7 +111,7 @@
         </g>
         <circle cx="21" cy="1" r="11" fill="#fff0a6" stroke="#0b1020" stroke-width="2"/>
         <text x="21" y="5" class="rank-badge">S+</text>
-        <text y="-48" class="title">EXPERIENCE</text>
+        <text y="-46" class="title" textLength="76" lengthAdjust="spacingAndGlyphs">EXPERIENCE</text>
         <text y="25" class="value">3 YEARS</text>
         <text y="43" class="subtitle">Journey began 2022</text>
         <rect x="-43" y="51" width="86" height="17" rx="8.5" fill="#0b1020" stroke="#fff0a6" stroke-opacity=".8"/>
@@ -138,7 +138,7 @@
         </g>
         <circle cx="21" cy="1" r="11" fill="#d69cff" stroke="#0b1020" stroke-width="2"/>
         <text x="21" y="5" class="rank-badge">S</text>
-        <text y="-48" class="title">COMMITS</text>
+        <text y="-46" class="title" textLength="58" lengthAdjust="spacingAndGlyphs">COMMITS</text>
         <text y="25" class="value">170</text>
         <text y="43" class="subtitle">Runes forged</text>
         <rect x="-43" y="51" width="86" height="17" rx="8.5" fill="#0b1020" stroke="#d69cff" stroke-opacity=".8"/>
@@ -165,7 +165,7 @@
         </g>
         <circle cx="21" cy="1" r="11" fill="#d69cff" stroke="#0b1020" stroke-width="2"/>
         <text x="21" y="5" class="rank-badge">S</text>
-        <text y="-48" class="title">PULL REQUESTS</text>
+        <text y="-46" class="title" textLength="88" lengthAdjust="spacingAndGlyphs">PULL REQUESTS</text>
         <text y="25" class="value">26</text>
         <text y="43" class="subtitle">Bridges opened</text>
         <rect x="-43" y="51" width="86" height="17" rx="8.5" fill="#0b1020" stroke="#d69cff" stroke-opacity=".8"/>
@@ -192,7 +192,7 @@
         </g>
         <circle cx="21" cy="1" r="11" fill="#72e8dc" stroke="#0b1020" stroke-width="2"/>
         <text x="21" y="5" class="rank-badge">A+</text>
-        <text y="-48" class="title">REPOSITORIES</text>
+        <text y="-46" class="title" textLength="88" lengthAdjust="spacingAndGlyphs">REPOSITORIES</text>
         <text y="25" class="value">5</text>
         <text y="43" class="subtitle">5 to Mythic</text>
         <rect x="-43" y="51" width="86" height="17" rx="8.5" fill="#0b1020" stroke="#72e8dc" stroke-opacity=".8"/>
@@ -219,7 +219,7 @@
         </g>
         <circle cx="21" cy="1" r="11" fill="#8fa3b8" stroke="#0b1020" stroke-width="2"/>
         <text x="21" y="5" class="rank-badge">—</text>
-        <text y="-48" class="title">REVIEWS</text>
+        <text y="-46" class="title" textLength="58" lengthAdjust="spacingAndGlyphs">REVIEWS</text>
         <text y="25" class="value">0</text>
         <text y="43" class="subtitle">1 unlocks Arcane</text>
         <rect x="-43" y="51" width="86" height="17" rx="8.5" fill="#0b1020" stroke="#8fa3b8" stroke-opacity=".8"/>

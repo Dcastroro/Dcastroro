@@ -99,7 +99,7 @@
     <path d="M500 121 L510 149 L539 153 L517 172 L523 201 L500 185 L477 201 L483 172 L461 153 L490 149Z" fill="#fff0a6" fill-opacity=".18" stroke="#fff0a6"/>
     <text x="500" y="158" fill="#fff7d6" stroke="#111c30" stroke-width="4" paint-order="stroke" font-size="13" font-weight="800" letter-spacing="1.3">PRODUCTION</text>
     <text x="500" y="179" fill="#72e8dc" stroke="#111c30" stroke-width="4" paint-order="stroke" font-size="17" font-weight="800" letter-spacing="2.4">AI</text>
-    <text x="500" y="200" fill="#9abec3" stroke="#111c30" stroke-width="3" paint-order="stroke" font-size="8.5" letter-spacing=".7">RELIABLE · USEFUL · SAFE</text>
+    <text x="500" y="200" fill="#9abec3" stroke="#111c30" stroke-width="3" paint-order="stroke" font-size="8" textLength="96" lengthAdjust="spacingAndGlyphs">RELIABLE · USEFUL · SAFE</text>
   </g>
   <g transform="translate(190 82)">
     <g class="node" style="--delay:0ms"><g class="float" style="--float-delay:0ms">

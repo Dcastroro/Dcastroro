@@ -189,6 +189,7 @@ function trophySymbol(title, tierName) {
 const trophies = [
   {
     title: "EXPERIENCE",
+    titleWidth: 76,
     value: `${experience} YEARS`,
     subtitle: `Journey began ${joinedYear}`,
     x: 112,
@@ -201,6 +202,7 @@ const trophies = [
   },
   {
     title: "COMMITS",
+    titleWidth: 58,
     value: totals.commits.toLocaleString("en-US"),
     subtitle: "Runes forged",
     x: 306,
@@ -215,6 +217,7 @@ const trophies = [
   },
   {
     title: "PULL REQUESTS",
+    titleWidth: 88,
     value: totals.pullRequests.toLocaleString("en-US"),
     subtitle: "Bridges opened",
     x: 500,
@@ -229,6 +232,7 @@ const trophies = [
   },
   {
     title: "REPOSITORIES",
+    titleWidth: 88,
     value: stats.repositories.totalCount.toLocaleString("en-US"),
     subtitle:
       stats.repositories.totalCount < 10
@@ -246,6 +250,7 @@ const trophies = [
   },
   {
     title: "REVIEWS",
+    titleWidth: 58,
     value: totals.reviews.toLocaleString("en-US"),
     subtitle:
       totals.reviews === 0
@@ -265,7 +270,7 @@ const trophies = [
 
 const trophyMarkup = trophies
   .map(
-    ({ title, value, subtitle, x, y, tier }, index) => `
+    ({ title, titleWidth, value, subtitle, x, y, tier }, index) => `
       <g transform="translate(${x} ${y})">
       <g class="trophy" style="--delay:${index * 50}ms">
         <circle r="78" fill="url(#medallion)" stroke="${tier.color}" stroke-width="3"/>
@@ -283,7 +288,7 @@ const trophyMarkup = trophies
         </g>
         <circle cx="21" cy="1" r="11" fill="${tier.color}" stroke="#0b1020" stroke-width="2"/>
         <text x="21" y="5" class="rank-badge">${tier.rank}</text>
-        <text y="-48" class="title">${title}</text>
+        <text y="-46" class="title" textLength="${titleWidth}" lengthAdjust="spacingAndGlyphs">${title}</text>
         <text y="25" class="value">${value}</text>
         <text y="43" class="subtitle">${subtitle}</text>
         <rect x="-43" y="51" width="86" height="17" rx="8.5" fill="#0b1020" stroke="${tier.color}" stroke-opacity=".8"/>
@@ -324,7 +329,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" v
   </defs>
   <style>
     text { font-family: Georgia, "Times New Roman", serif; text-anchor: middle; }
-    .title { fill:#ffcf70; font-size:11px; font-weight:700; letter-spacing:.7px; }
+    .title { fill:#ffcf70; font-size:10px; font-weight:700; }
     .value { fill:#f8f1d4; font-size:21px; font-weight:700; }
     .subtitle { fill:#71d7cd; font-size:9px; font-style:italic; }
     .rank-badge { fill:#0b1020; font-family:"Segoe UI",sans-serif; font-size:9px; font-weight:900; }

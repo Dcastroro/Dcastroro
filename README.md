@@ -23,7 +23,7 @@ quality and measurable business outcomes.
 
 <div align="center">
 
-<img width="100%" src="./assets/capability-constellation.svg?v=overview-5" alt="Animated constellation of production AI, cybersecurity, web data, conversational RAG and Kiro with AWS capabilities" />
+<img width="100%" src="./assets/capability-constellation.svg?v=overview-6" alt="Animated constellation of production AI, cybersecurity, web data, conversational RAG and Kiro with AWS capabilities" />
 
 </div>
 
@@ -43,7 +43,7 @@ quality and measurable business outcomes.
 
 <div align="center">
 
-<img width="100%" src="./assets/adventure-trophies.svg?v=motion-5" alt="Live GitHub achievements displayed as fantasy tier medallions across a kingdom map" />
+<img width="100%" src="./assets/adventure-trophies.svg?v=motion-6" alt="Live GitHub achievements displayed as fantasy tier medallions across a kingdom map" />
 
 <sub>Live tiers generated from GitHub activity · refreshed automatically every 30 minutes</sub>
 
