@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="570" viewBox="0 0 1000 570" role="img" aria-labelledby="title desc">
+  <title id="title">Current mission and production method</title>
+  <desc id="desc">An animated field manual showing production AI systems, cybersecurity, web data, conversational RAG, leadership guardrails and a four-stage delivery path.</desc>
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#0b2030"/><stop offset="1" stop-color="#07131f"/></linearGradient>
+    <linearGradient id="gold"><stop stop-color="#fff0a6"/><stop offset="1" stop-color="#c68a2e"/></linearGradient>
+    <linearGradient id="cyan"><stop stop-color="#9efff5"/><stop offset="1" stop-color="#35aaa9"/></linearGradient>
+    <linearGradient id="violet"><stop stop-color="#edc9ff"/><stop offset="1" stop-color="#9461ce"/></linearGradient>
+    <radialGradient id="aura"><stop stop-color="#52d9d1" stop-opacity=".16"/><stop offset="1" stop-color="#52d9d1" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0v36" fill="none" stroke="#72e8dc" stroke-opacity=".045"/></pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      text{font-family:Arial,sans-serif}
+      .serif{font-family:Georgia,serif}
+      .panel{fill:#0b1b29;stroke:#34566b}
+      .card{fill:#0d2231;stroke:#396075}
+      .route{fill:none;stroke:#58d5ce;stroke-width:2;stroke-dasharray:4 8;opacity:.42}
+      .pulse{transform-box:fill-box;transform-origin:center;animation:pulse 4.4s cubic-bezier(.77,0,.175,1) infinite}
+      .float{transform-box:fill-box;transform-origin:center;animation:float 4.8s cubic-bezier(.77,0,.175,1) infinite}
+      .f2{animation-delay:-1.2s}.f3{animation-delay:-2.4s}.f4{animation-delay:-3.6s}
+      .packet{animation:packet 6s linear infinite}.p2{animation-delay:-2s}.p3{animation-delay:-4s}
+      .scan{animation:scan 5s cubic-bezier(.77,0,.175,1) infinite}
+      .spark{animation:twinkle 2.7s ease infinite alternate}
+      @keyframes pulse{0%,100%{transform:scale(1);opacity:.86}50%{transform:scale(1.055);opacity:1}}
+      @keyframes float{0%,100%{transform:translateY(-3px)}50%{transform:translateY(3px)}}
+      @keyframes packet{0%{transform:translateX(0);opacity:0}10%,90%{opacity:1}100%{transform:translateX(730px);opacity:0}}
+      @keyframes scan{0%,100%{transform:translateX(-60px);opacity:0}15%,85%{opacity:.65}50%{transform:translateX(60px)}}
+      @keyframes twinkle{from{opacity:.25}to{opacity:1}}
+      @media(prefers-reduced-motion:reduce){
+        .pulse,.float{animation:soft 5s linear infinite}.packet,.scan{display:none}
+        @keyframes soft{0%,100%{opacity:.88}50%{opacity:1}}
+      }
+    </style>
+  </defs>
+  <rect x="1" y="1" width="998" height="568" rx="19" fill="url(#bg)" stroke="#d3a13e" stroke-width="2"/>
+  <rect x="9" y="9" width="982" height="552" rx="14" fill="url(#grid)" stroke="#31516a"/>
+  <ellipse cx="500" cy="290" rx="430" ry="230" fill="url(#aura)"/>
+  <circle class="spark" cx="67" cy="57" r="2" fill="#fff0a6" filter="url(#glow)"/><circle class="spark" cx="918" cy="82" r="2" fill="#9efff5" filter="url(#glow)"/>
+
+  <text x="500" y="43" text-anchor="middle" class="serif" fill="#f8d77d" font-size="22" font-weight="700" letter-spacing="3">THE FIELD MANUAL</text>
+  <text x="500" y="65" text-anchor="middle" fill="#74ddd7" font-size="11" font-style="italic">from signal to reliable operating system</text>
+  <path d="M70 79H930" stroke="#d3a13e" stroke-opacity=".36"/>
+
+  <rect x="34" y="96" width="590" height="324" rx="15" class="panel"/>
+  <text x="58" y="126" class="serif" fill="#f5d47b" font-size="17" font-weight="700">SYSTEMS IN THE FORGE</text>
+  <text x="599" y="124" text-anchor="end" fill="#67d8d2" font-size="10">PRODUCTION · TRACEABLE · HUMAN-GUIDED</text>
+
+  <g transform="translate(55 145)">
+    <g class="float">
+      <rect width="260" height="105" rx="12" class="card"/>
+      <circle cx="37" cy="38" r="23" fill="#102c38" stroke="#62ded6"/>
+      <path d="M25 38h24M37 26v24M29 30l16 16M45 30 29 46" stroke="#9efff5" stroke-width="2" stroke-linecap="round"/>
+      <text x="72" y="31" fill="#9efff5" font-size="14" font-weight="700">AI ENGINEERING</text>
+      <text x="72" y="52" fill="#eef5f8" font-size="11">Production workflows</text>
+      <text x="20" y="82" fill="#8faeba" font-size="10">agents · evaluation · human oversight</text>
+    </g>
+  </g>
+  <g transform="translate(335 145)">
+    <g class="float f2">
+      <rect width="260" height="105" rx="12" class="card"/>
+      <circle cx="37" cy="38" r="23" fill="#241b38" stroke="#bd87e3"/>
+      <path d="M37 19c7 6 14 7 18 8v10c0 11-8 19-18 24-10-5-18-13-18-24V27c4-1 11-2 18-8Z" fill="none" stroke="#e5c1fb" stroke-width="2"/>
+      <path d="m29 38 6 6 11-13" fill="none" stroke="#e5c1fb" stroke-width="2"/>
+      <text x="72" y="31" fill="#d7aaf3" font-size="14" font-weight="700">QUALITY + CYBER</text>
+      <text x="72" y="52" fill="#eef5f8" font-size="11">Controlled automation</text>
+      <text x="20" y="82" fill="#8faeba" font-size="10">validation · monitoring · resilience</text>
+    </g>
+  </g>
+  <g transform="translate(55 270)">
+    <g class="float f3">
+      <rect width="260" height="105" rx="12" class="card"/>
+      <circle cx="37" cy="38" r="23" fill="#2c2515" stroke="#e0b54e"/>
+      <path d="M21 31h32M21 39h32M21 47h21" stroke="#ffe99a" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="48" cy="47" r="5" fill="none" stroke="#ffe99a" stroke-width="2"/>
+      <text x="72" y="31" fill="#f5d47b" font-size="14" font-weight="700">WEB DATA</text>
+      <text x="72" y="52" fill="#eef5f8" font-size="11">Responsible collection</text>
+      <text x="20" y="82" fill="#8faeba" font-size="10">scraping · quality · transformation</text>
+    </g>
+  </g>
+  <g transform="translate(335 270)">
+    <g class="float f4">
+      <rect width="260" height="105" rx="12" class="card"/>
+      <circle cx="37" cy="38" r="23" fill="#122d34" stroke="#62ded6"/>
+      <path d="M22 29h30v18H36l-8 7v-7h-6Z" fill="none" stroke="#9efff5" stroke-width="2"/>
+      <path d="M29 36h16M29 41h11" stroke="#9efff5" stroke-width="2"/>
+      <text x="72" y="31" fill="#9efff5" font-size="14" font-weight="700">CONVERSATIONAL RAG</text>
+      <text x="72" y="52" fill="#eef5f8" font-size="11">A/B/n traceability</text>
+      <text x="20" y="82" fill="#8faeba" font-size="10">retrieval · experiments · evidence</text>
+    </g>
+  </g>
+
+  <rect x="644" y="96" width="322" height="324" rx="15" class="panel"/>
+  <text x="805" y="126" text-anchor="middle" class="serif" fill="#dcb3f5" font-size="17" font-weight="700">OPERATING GUARDRAILS</text>
+  <g transform="translate(805 189)">
+    <g class="pulse">
+      <circle r="49" fill="#18213b" stroke="url(#violet)" stroke-width="2"/>
+      <circle r="38" fill="none" stroke="#c897e9" stroke-opacity=".35" stroke-dasharray="3 6"/>
+      <path d="M0-28c10 8 20 9 27 11v17c0 17-12 29-27 36C-15 29-27 17-27 0v-17c7-2 17-3 27-11Z" fill="#382551" stroke="#e0b8fa" stroke-width="2"/>
+      <path d="m-12 1 9 9 17-19" fill="none" stroke="#f2ddff" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </g>
+  <g fill="#f1f5f8" font-size="12">
+    <text x="685" y="275">◆ AI strategy &amp; adoption</text>
+    <text x="685" y="304">◆ Platform direction</text>
+    <text x="685" y="333">◆ Security-aware delivery</text>
+    <text x="685" y="362">◆ Engineering + business</text>
+  </g>
+  <rect x="680" y="383" width="250" height="22" rx="11" fill="#132a38" stroke="#55cbc5"/>
+  <g transform="translate(805 394)"><g class="scan"><rect x="-55" y="-7" width="110" height="14" rx="7" fill="#72e8dc" opacity=".13"/></g></g>
+  <text x="805" y="398" text-anchor="middle" fill="#7de5df" font-size="9" letter-spacing="1">AUTOMATION ≠ JUDGMENT</text>
+
+  <text x="500" y="455" text-anchor="middle" class="serif" fill="#f5d47b" font-size="16" font-weight="700" letter-spacing="2">THE DELIVERY PATH</text>
+  <path class="route" d="M112 505H888"/>
+  <circle class="packet" cx="112" cy="505" r="4" fill="#fff0a6" filter="url(#glow)"/>
+  <circle class="packet p2" cx="112" cy="505" r="4" fill="#72e8dc" filter="url(#glow)"/>
+  <circle class="packet p3" cx="112" cy="505" r="4" fill="#d69cff" filter="url(#glow)"/>
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <g transform="translate(112 505)"><circle r="22" fill="#10293a" stroke="#e3b94f" stroke-width="2"/><text y="4" fill="#fff0a6" font-size="12" font-weight="700">01</text><text y="43" fill="#eef5f8" font-size="11" font-weight="700">DISCOVER</text></g>
+    <g transform="translate(371 505)"><circle r="22" fill="#10293a" stroke="#65dcd5" stroke-width="2"/><text y="4" fill="#9efff5" font-size="12" font-weight="700">02</text><text y="43" fill="#eef5f8" font-size="11" font-weight="700">PROTOTYPE</text></g>
+    <g transform="translate(629 505)"><circle r="22" fill="#10293a" stroke="#b783dd" stroke-width="2"/><text y="4" fill="#e8c5fb" font-size="12" font-weight="700">03</text><text y="43" fill="#eef5f8" font-size="11" font-weight="700">MEASURE</text></g>
+    <g transform="translate(888 505)"><circle r="22" fill="#10293a" stroke="#e3b94f" stroke-width="2"/><text y="4" fill="#fff0a6" font-size="12" font-weight="700">04</text><text y="43" fill="#eef5f8" font-size="11" font-weight="700">STANDARDIZE</text></g>
+  </g>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="330" viewBox="0 0 1000 330" role="img" aria-labelledby="title desc">
+  <title id="title">Technical arsenal</title>
+  <desc id="desc">An animated technical arsenal covering AI and agents, AWS cloud platforms, and development and quality engineering.</desc>
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#0c2130"/><stop offset="1" stop-color="#07131f"/></linearGradient>
+    <linearGradient id="gold"><stop stop-color="#fff0a6"/><stop offset="1" stop-color="#bd7d25"/></linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0v30" fill="none" stroke="#75dfda" stroke-opacity=".04"/></pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      text{font-family:Arial,sans-serif}.serif{font-family:Georgia,serif}
+      .panel{fill:#0c1d2b;stroke:#37566a}
+      .orb{transform-box:fill-box;transform-origin:center;animation:orb 5s cubic-bezier(.77,0,.175,1) infinite}
+      .o2{animation-delay:-1.7s}.o3{animation-delay:-3.4s}
+      .ring{transform-box:fill-box;transform-origin:center;animation:spin 16s linear infinite}
+      .flow{animation:flow 5.5s linear infinite}.f2{animation-delay:-2.75s}
+      @keyframes orb{0%,100%{transform:scale(1);opacity:.86}50%{transform:scale(1.06);opacity:1}}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes flow{0%{transform:translateX(0);opacity:0}12%,88%{opacity:1}100%{transform:translateX(690px);opacity:0}}
+      @media(prefers-reduced-motion:reduce){.orb{animation:soft 5s linear infinite}.ring{animation:none}.flow{display:none}@keyframes soft{0%,100%{opacity:.88}50%{opacity:1}}}
+    </style>
+  </defs>
+  <rect x="1" y="1" width="998" height="328" rx="18" fill="url(#bg)" stroke="#d3a13e" stroke-width="2"/>
+  <rect x="9" y="9" width="982" height="312" rx="13" fill="url(#grid)" stroke="#31516a"/>
+  <text x="500" y="42" text-anchor="middle" class="serif" fill="#f5d47b" font-size="21" font-weight="700" letter-spacing="3">TECHNICAL ARSENAL</text>
+  <text x="500" y="62" text-anchor="middle" fill="#71dbd5" font-size="10" letter-spacing="1">TOOLS ARE CHOSEN FOR THE SYSTEM — NEVER THE OTHER WAY AROUND</text>
+  <path d="M85 78H915" stroke="#d3a13e" stroke-opacity=".32"/>
+  <circle class="flow" cx="108" cy="78" r="3" fill="#fff0a6" filter="url(#glow)"/><circle class="flow f2" cx="108" cy="78" r="3" fill="#72e8dc" filter="url(#glow)"/>
+
+  <g transform="translate(28 94)">
+    <rect width="300" height="205" rx="14" class="panel"/>
+    <g transform="translate(150 56)"><g class="orb"><circle r="34" fill="#17233b" stroke="#b884df" stroke-width="2"/><g class="ring"><circle r="27" fill="none" stroke="#d4a7ef" stroke-dasharray="3 6"/><circle cy="-27" r="3" fill="#e6c4fa"/></g><path d="M-13 8 0-17 13 8M-8 0H8" fill="none" stroke="#e6c4fa" stroke-width="2"/></g></g>
+    <text x="150" y="111" text-anchor="middle" fill="#d9b0f1" font-size="15" font-weight="700">AI + AGENTS</text>
+    <g text-anchor="middle" font-size="11">
+      <rect x="24" y="132" width="76" height="25" rx="12" fill="#241d38" stroke="#9566bd"/><text x="62" y="149" fill="#f0dcfa">Bedrock</text>
+      <rect x="112" y="132" width="76" height="25" rx="12" fill="#241d38" stroke="#9566bd"/><text x="150" y="149" fill="#f0dcfa">Kiro</text>
+      <rect x="200" y="132" width="76" height="25" rx="12" fill="#241d38" stroke="#9566bd"/><text x="238" y="149" fill="#f0dcfa">OpenAI</text>
+      <rect x="54" y="169" width="84" height="25" rx="12" fill="#132b36" stroke="#47aaa8"/><text x="96" y="186" fill="#a7eee9">RAG</text>
+      <rect x="162" y="169" width="84" height="25" rx="12" fill="#132b36" stroke="#47aaa8"/><text x="204" y="186" fill="#a7eee9">MCP</text>
+    </g>
+  </g>
+  <g transform="translate(350 94)">
+    <rect width="300" height="205" rx="14" class="panel"/>
+    <g transform="translate(150 56)"><g class="orb o2"><circle r="34" fill="#2b2517" stroke="#dfb24b" stroke-width="2"/><g class="ring"><circle r="27" fill="none" stroke="#f4d678" stroke-dasharray="3 6"/><circle cy="-27" r="3" fill="#fff0a6"/></g><path d="M-19 11 0-17 19 11M-12 11V2H12v9" fill="none" stroke="#ffe69a" stroke-width="2"/></g></g>
+    <text x="150" y="111" text-anchor="middle" fill="#f2cf6e" font-size="15" font-weight="700">CLOUD + PLATFORM</text>
+    <g text-anchor="middle" font-size="11">
+      <rect x="24" y="132" width="76" height="25" rx="12" fill="#2c2718" stroke="#b78629"/><text x="62" y="149" fill="#ffe9a1">AWS</text>
+      <rect x="112" y="132" width="76" height="25" rx="12" fill="#2c2718" stroke="#b78629"/><text x="150" y="149" fill="#ffe9a1">Lambda</text>
+      <rect x="200" y="132" width="76" height="25" rx="12" fill="#2c2718" stroke="#b78629"/><text x="238" y="149" fill="#ffe9a1">ECS</text>
+      <rect x="108" y="169" width="84" height="25" rx="12" fill="#132b36" stroke="#47aaa8"/><text x="150" y="186" fill="#a7eee9">Docker</text>
+    </g>
+  </g>
+  <g transform="translate(672 94)">
+    <rect width="300" height="205" rx="14" class="panel"/>
+    <g transform="translate(150 56)"><g class="orb o3"><circle r="34" fill="#122c35" stroke="#5bd4ce" stroke-width="2"/><g class="ring"><circle r="27" fill="none" stroke="#86eee8" stroke-dasharray="3 6"/><circle cy="-27" r="3" fill="#bafff9"/></g><path d="m-17 0 10 10L18-15M-17-14h10M7 14h10" fill="none" stroke="#a9fff8" stroke-width="2"/></g></g>
+    <text x="150" y="111" text-anchor="middle" fill="#8ce8e2" font-size="15" font-weight="700">DEVELOPMENT + QA</text>
+    <g text-anchor="middle" font-size="11">
+      <rect x="24" y="132" width="76" height="25" rx="12" fill="#132b36" stroke="#47aaa8"/><text x="62" y="149" fill="#a7eee9">TypeScript</text>
+      <rect x="112" y="132" width="76" height="25" rx="12" fill="#132b36" stroke="#47aaa8"/><text x="150" y="149" fill="#a7eee9">Python</text>
+      <rect x="200" y="132" width="76" height="25" rx="12" fill="#132b36" stroke="#47aaa8"/><text x="238" y="149" fill="#a7eee9">Node.js</text>
+      <rect x="108" y="169" width="84" height="25" rx="12" fill="#241d38" stroke="#9566bd"/><text x="150" y="186" fill="#f0dcfa">Playwright</text>
+    </g>
+  </g>
+</svg>
