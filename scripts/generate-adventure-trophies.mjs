@@ -88,6 +88,17 @@ const experience = Math.max(
   ),
 );
 
+function tierFor(value, thresholds) {
+  return thresholds.find((tier) => value >= tier.min);
+}
+
+const celestial = { rank: "S+", name: "CELESTIAL", color: "#fff0a6" };
+const mythic = { rank: "S", name: "MYTHIC", color: "#d69cff" };
+const legendary = { rank: "A+", name: "LEGENDARY", color: "#72e8dc" };
+const arcane = { rank: "A", name: "ARCANE", color: "#75a7ff" };
+const awakened = { rank: "B", name: "AWAKENED", color: "#a8bed1" };
+const dormant = { rank: "?", name: "DORMANT", color: "#788595" };
+
 const trophies = [
   {
     title: "EXPERIENCE",
@@ -95,7 +106,11 @@ const trophies = [
     subtitle: `Journey began ${joinedYear}`,
     x: 112,
     y: 145,
-    icon: "✦",
+    tier: tierFor(experience, [
+      { min: 3, ...celestial },
+      { min: 2, ...mythic },
+      { min: 1, ...legendary },
+    ]),
   },
   {
     title: "COMMITS",
@@ -103,7 +118,13 @@ const trophies = [
     subtitle: "Runes forged",
     x: 306,
     y: 295,
-    icon: "◆",
+    tier: tierFor(totals.commits, [
+      { min: 500, ...celestial },
+      { min: 100, ...mythic },
+      { min: 50, ...legendary },
+      { min: 10, ...arcane },
+      { min: 0, ...awakened },
+    ]),
   },
   {
     title: "PULL REQUESTS",
@@ -111,7 +132,13 @@ const trophies = [
     subtitle: "Bridges opened",
     x: 500,
     y: 145,
-    icon: "⚔",
+    tier: tierFor(totals.pullRequests, [
+      { min: 50, ...celestial },
+      { min: 15, ...mythic },
+      { min: 10, ...legendary },
+      { min: 5, ...arcane },
+      { min: 0, ...awakened },
+    ]),
   },
   {
     title: "REPOSITORIES",
@@ -119,7 +146,13 @@ const trophies = [
     subtitle: "Realms discovered",
     x: 694,
     y: 295,
-    icon: "⌂",
+    tier: tierFor(stats.repositories.totalCount, [
+      { min: 20, ...celestial },
+      { min: 10, ...mythic },
+      { min: 5, ...legendary },
+      { min: 2, ...arcane },
+      { min: 0, ...awakened },
+    ]),
   },
   {
     title: "REVIEWS",
@@ -127,22 +160,33 @@ const trophies = [
     subtitle: "Council verdicts",
     x: 888,
     y: 145,
-    icon: "✧",
+    tier: tierFor(totals.reviews, [
+      { min: 50, ...celestial },
+      { min: 20, ...mythic },
+      { min: 10, ...legendary },
+      { min: 1, ...arcane },
+      { min: 0, ...dormant },
+    ]),
   },
 ];
 
 const trophyMarkup = trophies
   .map(
-    ({ title, value, subtitle, x, y, icon }, index) => `
+    ({ title, value, subtitle, x, y, tier }, index) => `
       <g class="trophy" style="--delay:${index * 0.14}s" transform="translate(${x} ${y})">
-        <circle r="78" fill="url(#medallion)" stroke="#d8ad58" stroke-width="3"/>
-        <circle r="68" fill="none" stroke="#74552d" stroke-width="1.5" stroke-dasharray="3 5"/>
-        <path d="M-35 65 L-22 90 L0 76 L22 90 L35 65" fill="#5f234a" stroke="#d8ad58" stroke-width="2"/>
-        <circle cy="-17" r="30" fill="#11233f" stroke="#71d7cd" stroke-width="2"/>
-        <text y="-7" class="icon">${icon}</text>
+        <circle r="78" fill="url(#medallion)" stroke="${tier.color}" stroke-width="3"/>
+        <circle r="68" fill="none" stroke="${tier.color}" stroke-opacity=".55" stroke-width="1.5" stroke-dasharray="3 5"/>
+        <path d="M-35 65 L-22 90 L0 76 L22 90 L35 65" fill="#5f234a" stroke="${tier.color}" stroke-width="2"/>
+        <g filter="url(#glow)" stroke="${tier.color}" fill="none">
+          <path d="M0-52 L6-34 L24-42 L17-24 L36-18 L18-10" opacity=".75"/>
+          <path d="M0-52 L-6-34 L-24-42 L-17-24 L-36-18 L-18-10" opacity=".75"/>
+        </g>
+        <circle cy="-17" r="30" fill="#11233f" stroke="${tier.color}" stroke-width="2.5"/>
+        <text y="-7" class="rank" fill="${tier.color}">${tier.rank}</text>
         <text y="-56" class="title">${title}</text>
         <text y="34" class="value">${value}</text>
         <text y="54" class="subtitle">${subtitle}</text>
+        <text y="81" class="tier-name" fill="${tier.color}">${tier.name}</text>
       </g>
     `,
   )
@@ -181,7 +225,8 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" v
     .title { fill:#ffcf70; font-size:13px; font-weight:700; letter-spacing:1.3px; }
     .value { fill:#f8f1d4; font-size:24px; font-weight:700; }
     .subtitle { fill:#71d7cd; font-size:11px; font-style:italic; }
-    .icon { fill:#fff0a6; font-size:34px; filter:url(#glow); }
+    .rank { font-size:25px; font-weight:800; filter:url(#glow); }
+    .tier-name { font-size:10px; font-weight:700; letter-spacing:1.2px; }
     .trophy { opacity:1; }
     .road { stroke-dasharray:12 9; animation:march 8s linear infinite; }
     @keyframes march { to { stroke-dashoffset:-84; } }
