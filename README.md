@@ -15,31 +15,11 @@ quality and measurable business outcomes.
 
 </div>
 
-<table>
-<tr>
-<td width="33%" align="center">
+<div align="center">
 
-### Production
+<img width="100%" src="./assets/operating-pillars.svg?v=pillars-1" alt="Animated operating pillars: production, cross-functional enablement and responsible delivery" />
 
-<sub>reliable systems, not demos</sub>
-
-</td>
-<td width="33%" align="center">
-
-### Cross-functional
-
-<sub>engineering and business enablement</sub>
-
-</td>
-<td width="33%" align="center">
-
-### Responsible
-
-<sub>security-aware by design</sub>
-
-</td>
-</tr>
-</table>
+</div>
 
 <div align="center">
 
