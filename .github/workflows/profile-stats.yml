@@ -30,4 +30,6 @@ jobs:
           USERNAME: ${{ github.repository_owner }}
           BRANCH_NAME: ${{ github.ref_name }}
           UTC_OFFSET: 2
+          THEME: tokyonight
+          ANIMATION: stagger
           AUTO_PUSH: true
