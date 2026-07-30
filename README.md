@@ -71,7 +71,19 @@ OpenMetadata-based governance: data catalog, PII policies, access controls & res
 
 ---
 
-### 🏆 GitHub Trophies
+### 🗺️ The Achievement Realm
+
+<div align="center">
+
+<img width="100%" src="./assets/achievement-realm.webp" alt="An illustrated fantasy kingdom map connecting five achievement landmarks along a golden quest path" />
+
+<sub>Crystal Citadel · Commit Forge · Moonlit Bridge · Repository Archives · Council Tower</sub>
+
+</div>
+
+<br />
+
+#### 🏆 Live GitHub Trophies
 
 <div align="center">
 
