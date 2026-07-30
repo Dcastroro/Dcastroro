@@ -129,7 +129,7 @@ const mythic = { rank: "S", name: "MYTHIC", color: "#d69cff" };
 const legendary = { rank: "A+", name: "LEGENDARY", color: "#72e8dc" };
 const arcane = { rank: "A", name: "ARCANE", color: "#75a7ff" };
 const awakened = { rank: "B", name: "AWAKENED", color: "#a8bed1" };
-const dormant = { rank: "?", name: "DORMANT", color: "#788595" };
+const dormant = { rank: "—", name: "UNCHARTED", color: "#8fa3b8" };
 
 function tierSymbol(name) {
   const symbols = {
@@ -164,6 +164,26 @@ function tierSymbol(name) {
   };
 
   return symbols[name].replace(/[ \t]+$/gm, "").trim();
+}
+
+function trophySymbol(title, tierName) {
+  if (title === "REPOSITORIES") {
+    return `
+      <path d="M-22 17V-7L0-23 22-7v24H8V3H-8v14Z" fill="currentColor" fill-opacity=".22" stroke="currentColor" stroke-width="2"/>
+      <path d="M-15-12v-10h8v5M7-17v-5h8v10M-25-5 0-27 25-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M-4 17V7h8v10M-14-2h7M7-2h7" fill="none" stroke="currentColor" stroke-width="2"/>
+    `.replace(/[ \t]+$/gm, "").trim();
+  }
+
+  if (title === "REVIEWS") {
+    return `
+      <path d="M0-24V20M-18-14H18M-18-14-28 5M-18-14-8 5M18-14 8 5M18-14 28 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M-30 5H-6c-2 9-20 9-24 0ZM6 5h24c-4 9-22 9-24 0Z" fill="currentColor" fill-opacity=".25" stroke="currentColor" stroke-width="2"/>
+      <path d="M-12 22H12M-7 17H7" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    `.replace(/[ \t]+$/gm, "").trim();
+  }
+
+  return tierSymbol(tierName);
 }
 
 const trophies = [
@@ -210,7 +230,10 @@ const trophies = [
   {
     title: "REPOSITORIES",
     value: stats.repositories.totalCount.toLocaleString("en-US"),
-    subtitle: "Realms discovered",
+    subtitle:
+      stats.repositories.totalCount < 10
+        ? `${10 - stats.repositories.totalCount} to Mythic`
+        : "Realms shipped",
     x: 694,
     y: 295,
     tier: tierFor(stats.repositories.totalCount, [
@@ -224,7 +247,10 @@ const trophies = [
   {
     title: "REVIEWS",
     value: totals.reviews.toLocaleString("en-US"),
-    subtitle: "Council verdicts",
+    subtitle:
+      totals.reviews === 0
+        ? "1 unlocks Arcane"
+        : "Council verdicts",
     x: 888,
     y: 145,
     tier: tierFor(totals.reviews, [
@@ -252,7 +278,7 @@ const trophyMarkup = trophies
         <circle cy="-17" r="30" fill="#11233f" stroke="${tier.color}" stroke-width="2.5"/>
         <g transform="translate(0 -17)">
         <g class="sigil" style="color:${tier.color}" filter="url(#glow)">
-          ${tierSymbol(tier.name)}
+          ${trophySymbol(title, tier.name)}
         </g>
         </g>
         <circle cx="25" cy="1" r="13" fill="${tier.color}" stroke="#0b1020" stroke-width="2"/>

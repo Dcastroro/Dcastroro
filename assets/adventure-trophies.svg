@@ -185,16 +185,16 @@
         <circle cy="-17" r="30" fill="#11233f" stroke="#72e8dc" stroke-width="2.5"/>
         <g transform="translate(0 -17)">
         <g class="sigil" style="color:#72e8dc" filter="url(#glow)">
-          <path d="M-21 12 L-17-14 L-6-3 L0-21 L7-3 L18-14 L21 12Z" fill="currentColor" fill-opacity=".25" stroke="currentColor" stroke-width="2"/>
-      <path d="M-19 13 Q0 24 19 13 M-25-5 Q-34 2-24 12 M25-5 Q34 2 24 12" fill="none" stroke="currentColor" stroke-width="2"/>
-      <circle cy="4" r="5" fill="currentColor"/>
+          <path d="M-22 17V-7L0-23 22-7v24H8V3H-8v14Z" fill="currentColor" fill-opacity=".22" stroke="currentColor" stroke-width="2"/>
+      <path d="M-15-12v-10h8v5M7-17v-5h8v10M-25-5 0-27 25-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M-4 17V7h8v10M-14-2h7M7-2h7" fill="none" stroke="currentColor" stroke-width="2"/>
         </g>
         </g>
         <circle cx="25" cy="1" r="13" fill="#72e8dc" stroke="#0b1020" stroke-width="2"/>
         <text x="25" y="5" class="rank-badge">A+</text>
         <text y="-56" class="title">REPOSITORIES</text>
         <text y="34" class="value">5</text>
-        <text y="54" class="subtitle">Realms discovered</text>
+        <text y="54" class="subtitle">5 to Mythic</text>
         <rect x="-43" y="60" width="86" height="18" rx="9" fill="#0b1020" stroke="#72e8dc" stroke-opacity=".8"/>
         <text y="72" class="tier-name" fill="#72e8dc">LEGENDARY</text>
       </g>
@@ -202,27 +202,28 @@
     
       <g transform="translate(888 145)">
       <g class="trophy" style="--delay:200ms">
-        <circle r="78" fill="url(#medallion)" stroke="#788595" stroke-width="3"/>
-        <circle r="68" fill="none" stroke="#788595" stroke-opacity=".55" stroke-width="1.5" stroke-dasharray="3 5"/>
-        <path d="M-35 65 L-22 90 L0 76 L22 90 L35 65" fill="#5f234a" stroke="#788595" stroke-width="2"/>
-        <g filter="url(#glow)" stroke="#788595" fill="none">
+        <circle r="78" fill="url(#medallion)" stroke="#8fa3b8" stroke-width="3"/>
+        <circle r="68" fill="none" stroke="#8fa3b8" stroke-opacity=".55" stroke-width="1.5" stroke-dasharray="3 5"/>
+        <path d="M-35 65 L-22 90 L0 76 L22 90 L35 65" fill="#5f234a" stroke="#8fa3b8" stroke-width="2"/>
+        <g filter="url(#glow)" stroke="#8fa3b8" fill="none">
           <path d="M0-52 L6-34 L24-42 L17-24 L36-18 L18-10" opacity=".75"/>
           <path d="M0-52 L-6-34 L-24-42 L-17-24 L-36-18 L-18-10" opacity=".75"/>
         </g>
-        <circle cy="-17" r="30" fill="#11233f" stroke="#788595" stroke-width="2.5"/>
+        <circle cy="-17" r="30" fill="#11233f" stroke="#8fa3b8" stroke-width="2.5"/>
         <g transform="translate(0 -17)">
-        <g class="sigil" style="color:#788595" filter="url(#glow)">
-          <path d="M9-22 A25 25 0 1 0 20 16 A20 20 0 1 1 9-22Z" fill="currentColor" fill-opacity=".35" stroke="currentColor" stroke-width="2"/>
-      <path d="M-19 17 L-13 11 M18-18 L23-23 M-22-5 L-28-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <g class="sigil" style="color:#8fa3b8" filter="url(#glow)">
+          <path d="M0-24V20M-18-14H18M-18-14-28 5M-18-14-8 5M18-14 8 5M18-14 28 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M-30 5H-6c-2 9-20 9-24 0ZM6 5h24c-4 9-22 9-24 0Z" fill="currentColor" fill-opacity=".25" stroke="currentColor" stroke-width="2"/>
+      <path d="M-12 22H12M-7 17H7" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
         </g>
         </g>
-        <circle cx="25" cy="1" r="13" fill="#788595" stroke="#0b1020" stroke-width="2"/>
-        <text x="25" y="5" class="rank-badge">?</text>
+        <circle cx="25" cy="1" r="13" fill="#8fa3b8" stroke="#0b1020" stroke-width="2"/>
+        <text x="25" y="5" class="rank-badge">—</text>
         <text y="-56" class="title">REVIEWS</text>
         <text y="34" class="value">0</text>
-        <text y="54" class="subtitle">Council verdicts</text>
-        <rect x="-43" y="60" width="86" height="18" rx="9" fill="#0b1020" stroke="#788595" stroke-opacity=".8"/>
-        <text y="72" class="tier-name" fill="#788595">DORMANT</text>
+        <text y="54" class="subtitle">1 unlocks Arcane</text>
+        <rect x="-43" y="60" width="86" height="18" rx="9" fill="#0b1020" stroke="#8fa3b8" stroke-opacity=".8"/>
+        <text y="72" class="tier-name" fill="#8fa3b8">UNCHARTED</text>
       </g>
       </g>
     

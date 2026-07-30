@@ -43,7 +43,7 @@ quality and measurable business outcomes.
 
 <div align="center">
 
-<img width="100%" src="./assets/adventure-trophies.svg?v=motion-3" alt="Live GitHub achievements displayed as fantasy tier medallions across a kingdom map" />
+<img width="100%" src="./assets/adventure-trophies.svg?v=motion-4" alt="Live GitHub achievements displayed as fantasy tier medallions across a kingdom map" />
 
 <sub>Live tiers generated from GitHub activity · refreshed automatically every 30 minutes</sub>
 
