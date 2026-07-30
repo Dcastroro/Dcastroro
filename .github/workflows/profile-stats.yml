@@ -2,10 +2,17 @@ name: Refresh profile stats
 
 on:
   push:
+    branches:
+      - main
     paths:
       - ".github/workflows/profile-stats.yml"
   schedule:
-    - cron: "17 3 * * *"
+    # GitHub does not forward push events from other repositories to the
+    # profile repository, so poll twice an hour away from the busy :00 slot.
+    - cron: "17,47 * * * *"
+  repository_dispatch:
+    types:
+      - profile-stats-refresh
   workflow_dispatch:
 
 permissions:
@@ -20,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out profile repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Generate profile cards
         uses: vn7n24fzkq/github-profile-summary-cards@release
