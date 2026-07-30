@@ -139,7 +139,7 @@
         <circle cx="21" cy="1" r="11" fill="#d69cff" stroke="#0b1020" stroke-width="2"/>
         <text x="21" y="5" class="rank-badge">S</text>
         <text y="-46" class="title" textLength="58" lengthAdjust="spacingAndGlyphs">COMMITS</text>
-        <text y="25" class="value">173</text>
+        <text y="25" class="value">174</text>
         <text y="43" class="subtitle">Runes forged</text>
         <rect x="-43" y="51" width="86" height="17" rx="8.5" fill="#0b1020" stroke="#d69cff" stroke-opacity=".8"/>
         <text y="63" class="tier-name" fill="#d69cff">MYTHIC</text>
@@ -166,7 +166,7 @@
         <circle cx="21" cy="1" r="11" fill="#d69cff" stroke="#0b1020" stroke-width="2"/>
         <text x="21" y="5" class="rank-badge">S</text>
         <text y="-46" class="title" textLength="88" lengthAdjust="spacingAndGlyphs">PULL REQUESTS</text>
-        <text y="25" class="value">27</text>
+        <text y="25" class="value">28</text>
         <text y="43" class="subtitle">Bridges opened</text>
         <rect x="-43" y="51" width="86" height="17" rx="8.5" fill="#0b1020" stroke="#d69cff" stroke-opacity=".8"/>
         <text y="63" class="tier-name" fill="#d69cff">MYTHIC</text>
@@ -202,28 +202,28 @@
     
       <g transform="translate(888 145)">
       <g class="trophy" style="--delay:200ms">
-        <circle r="78" fill="url(#medallion)" stroke="#75a7ff" stroke-width="3"/>
-        <circle r="68" fill="none" stroke="#75a7ff" stroke-opacity=".55" stroke-width="1.5" stroke-dasharray="3 5"/>
-        <path d="M-35 65 L-22 90 L0 76 L22 90 L35 65" fill="#5f234a" stroke="#75a7ff" stroke-width="2"/>
-        <g filter="url(#glow)" stroke="#75a7ff" fill="none">
+        <circle r="78" fill="url(#medallion)" stroke="#72e8dc" stroke-width="3"/>
+        <circle r="68" fill="none" stroke="#72e8dc" stroke-opacity=".55" stroke-width="1.5" stroke-dasharray="3 5"/>
+        <path d="M-35 65 L-22 90 L0 76 L22 90 L35 65" fill="#5f234a" stroke="#72e8dc" stroke-width="2"/>
+        <g filter="url(#glow)" stroke="#72e8dc" fill="none">
           <path d="M0-52 L6-34 L24-42 L17-24 L36-18 L18-10" opacity=".75"/>
           <path d="M0-52 L-6-34 L-24-42 L-17-24 L-36-18 L-18-10" opacity=".75"/>
         </g>
-        <circle cy="-14" r="25" fill="#11233f" stroke="#75a7ff" stroke-width="2.5"/>
+        <circle cy="-14" r="25" fill="#11233f" stroke="#72e8dc" stroke-width="2.5"/>
         <g transform="translate(0 -14) scale(.78)">
-        <g class="sigil" style="color:#75a7ff" filter="url(#glow)">
+        <g class="sigil" style="color:#72e8dc" filter="url(#glow)">
           <path d="M0-24V20M-18-14H18M-18-14-28 5M-18-14-8 5M18-14 8 5M18-14 28 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
       <path d="M-30 5H-6c-2 9-20 9-24 0ZM6 5h24c-4 9-22 9-24 0Z" fill="currentColor" fill-opacity=".25" stroke="currentColor" stroke-width="2"/>
       <path d="M-12 22H12M-7 17H7" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
         </g>
         </g>
-        <circle cx="21" cy="1" r="11" fill="#75a7ff" stroke="#0b1020" stroke-width="2"/>
-        <text x="21" y="5" class="rank-badge">A</text>
+        <circle cx="21" cy="1" r="11" fill="#72e8dc" stroke="#0b1020" stroke-width="2"/>
+        <text x="21" y="5" class="rank-badge">A+</text>
         <text y="-46" class="title" textLength="58" lengthAdjust="spacingAndGlyphs">REVIEWS</text>
-        <text y="25" class="value">8</text>
+        <text y="25" class="value">14</text>
         <text y="43" class="subtitle">Council verdicts</text>
-        <rect x="-43" y="51" width="86" height="17" rx="8.5" fill="#0b1020" stroke="#75a7ff" stroke-opacity=".8"/>
-        <text y="63" class="tier-name" fill="#75a7ff">ARCANE</text>
+        <rect x="-43" y="51" width="86" height="17" rx="8.5" fill="#0b1020" stroke="#72e8dc" stroke-opacity=".8"/>
+        <text y="63" class="tier-name" fill="#72e8dc">LEGENDARY</text>
       </g>
       </g>
     
