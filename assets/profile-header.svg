@@ -29,15 +29,20 @@
   <style>
     text { font-family: "Segoe UI", Arial, sans-serif; text-anchor: middle; }
     .path { stroke-dasharray:12 9; }
-    .hero-1,.hero-2,.hero-3,.hero-4,.beacon {
-      animation:enter 600ms cubic-bezier(.23,1,.32,1) both;
+    .hero-1,.hero-2,.hero-3,.hero-4 {
+      opacity:1;
+      animation:hero-glow 6s cubic-bezier(.77,0,.175,1) infinite;
       transform-box:fill-box;
       transform-origin:center;
     }
-    .hero-2 { animation-delay:60ms; }
-    .hero-3 { animation-delay:120ms; }
-    .hero-4 { animation-delay:180ms; }
-    .beacon { animation-delay:240ms; }
+    .hero-2 { animation-delay:-1.5s; }
+    .hero-3 { animation-delay:-3s; }
+    .hero-4 { animation-delay:-4.5s; }
+    .beacon {
+      opacity:1;
+      transform-box:fill-box;
+      transform-origin:center;
+    }
     .beacon-glow {
       animation:breathe 4s cubic-bezier(.77,0,.175,1) infinite alternate;
       transform-box:fill-box;
@@ -45,9 +50,9 @@
     }
     .twinkle-a { animation:twinkle 2.8s ease infinite alternate; }
     .twinkle-b { animation:twinkle 3.6s ease 900ms infinite alternate-reverse; }
-    @keyframes enter {
-      from { opacity:0; transform:translateY(8px) scale(.98); }
-      to { opacity:1; transform:translateY(0) scale(1); }
+    @keyframes hero-glow {
+      0%,100% { opacity:.94; }
+      50% { opacity:1; }
     }
     @keyframes breathe {
       from { opacity:.68; transform:scale(.96); }
@@ -62,7 +67,7 @@
       to { opacity:1; }
     }
     @media (prefers-reduced-motion:reduce) {
-      .hero-1,.hero-2,.hero-3,.hero-4,.beacon {
+      .hero-1,.hero-2,.hero-3,.hero-4 {
         animation:fade 200ms ease both;
       }
       .beacon-glow,.twinkle-a,.twinkle-b {
@@ -72,15 +77,16 @@
       .route-scout { display:none; }
     }
   </style>
-  <rect x="2" y="2" width="996" height="276" rx="22" fill="url(#sky)" stroke="#d9a84f" stroke-width="3"/>
-  <rect x="13" y="13" width="974" height="254" rx="15" fill="url(#stars)" stroke="#6f522d"/>
+  <rect width="1000" height="280" rx="22" fill="url(#sky)"/>
+  <rect x="8" y="8" width="984" height="264" rx="18" fill="none" stroke="#d9a84f" stroke-width="2"/>
+  <rect x="16" y="16" width="968" height="248" rx="13" fill="url(#stars)" stroke="#5a7b83" stroke-opacity=".55"/>
   <path d="M0 246 Q105 175 215 238 T430 226 T650 239 T1000 211 V280 H0Z" fill="#091724"/>
   <path d="M0 258 Q130 205 245 254 T470 245 T710 254 T1000 231" fill="none" stroke="#164053" stroke-width="48" opacity=".75"/>
   <path d="M85 225 C180 184 233 211 315 194 S455 142 535 164 S655 218 744 179 S846 113 922 121" fill="none" stroke="#50341e" stroke-width="10"/>
   <path class="path" d="M85 225 C180 184 233 211 315 194 S455 142 535 164 S655 218 744 179 S846 113 922 121" fill="none" stroke="url(#gold)" stroke-width="4" filter="url(#glow)"/>
   <g class="route-scout" filter="url(#glow)">
-    <circle r="4" fill="#fff8cf">
-      <animateMotion dur="7s" repeatCount="indefinite" path="M85 225 C180 184 233 211 315 194 S455 142 535 164 S655 218 744 179 S846 113 922 121"/>
+    <circle cx="85" cy="225" r="4" fill="#fff8cf">
+      <animateMotion dur="7s" repeatCount="indefinite" path="M0 0 C95-41 148-14 230-31 S370-83 450-61 S570-7 659-46 S761-112 837-104"/>
     </circle>
   </g>
   <g fill="#fff8cf" filter="url(#glow)">

@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="./assets/profile-header.svg?v=motion-2" alt="David Castro — AI Systems, Automation and Enablement" />
+<img width="100%" src="./assets/profile-header.svg?v=header-3" alt="David Castro — AI Systems, Automation and Enablement" />
 
 <br />
 
