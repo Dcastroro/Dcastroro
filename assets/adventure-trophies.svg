@@ -78,8 +78,8 @@
   <path d="M112 145 C195 180 220 265 306 295 S420 180 500 145 S610 260 694 295 S790 185 888 145" fill="none" stroke="#4b311e" stroke-width="10" opacity=".9"/>
   <path class="road" d="M112 145 C195 180 220 265 306 295 S420 180 500 145 S610 260 694 295 S790 185 888 145" fill="none" stroke="url(#road)" stroke-width="4" filter="url(#glow)"/>
   <g class="route-scout" filter="url(#glow)">
-    <circle r="4" fill="#fff8cf">
-      <animateMotion dur="8s" repeatCount="indefinite" path="M112 145 C195 180 220 265 306 295 S420 180 500 145 S610 260 694 295 S790 185 888 145"/>
+    <circle cx="112" cy="145" r="4" fill="#fff8cf">
+      <animateMotion dur="8s" repeatCount="indefinite" path="M0 0 C83 35 108 120 194 150 S308 35 388 0 S498 115 582 150 S678 40 776 0"/>
     </circle>
   </g>
   <g fill="#fff8cf" filter="url(#glow)">
@@ -114,7 +114,8 @@
         <text y="-56" class="title">EXPERIENCE</text>
         <text y="34" class="value">3 YEARS</text>
         <text y="54" class="subtitle">Journey began 2022</text>
-        <text y="81" class="tier-name" fill="#fff0a6">CELESTIAL</text>
+        <rect x="-43" y="60" width="86" height="18" rx="9" fill="#0b1020" stroke="#fff0a6" stroke-opacity=".8"/>
+        <text y="72" class="tier-name" fill="#fff0a6">CELESTIAL</text>
       </g>
       </g>
     
@@ -140,7 +141,8 @@
         <text y="-56" class="title">COMMITS</text>
         <text y="34" class="value">163</text>
         <text y="54" class="subtitle">Runes forged</text>
-        <text y="81" class="tier-name" fill="#d69cff">MYTHIC</text>
+        <rect x="-43" y="60" width="86" height="18" rx="9" fill="#0b1020" stroke="#d69cff" stroke-opacity=".8"/>
+        <text y="72" class="tier-name" fill="#d69cff">MYTHIC</text>
       </g>
       </g>
     
@@ -166,7 +168,8 @@
         <text y="-56" class="title">PULL REQUESTS</text>
         <text y="34" class="value">23</text>
         <text y="54" class="subtitle">Bridges opened</text>
-        <text y="81" class="tier-name" fill="#d69cff">MYTHIC</text>
+        <rect x="-43" y="60" width="86" height="18" rx="9" fill="#0b1020" stroke="#d69cff" stroke-opacity=".8"/>
+        <text y="72" class="tier-name" fill="#d69cff">MYTHIC</text>
       </g>
       </g>
     
@@ -192,7 +195,8 @@
         <text y="-56" class="title">REPOSITORIES</text>
         <text y="34" class="value">5</text>
         <text y="54" class="subtitle">Realms discovered</text>
-        <text y="81" class="tier-name" fill="#72e8dc">LEGENDARY</text>
+        <rect x="-43" y="60" width="86" height="18" rx="9" fill="#0b1020" stroke="#72e8dc" stroke-opacity=".8"/>
+        <text y="72" class="tier-name" fill="#72e8dc">LEGENDARY</text>
       </g>
       </g>
     
@@ -217,7 +221,8 @@
         <text y="-56" class="title">REVIEWS</text>
         <text y="34" class="value">0</text>
         <text y="54" class="subtitle">Council verdicts</text>
-        <text y="81" class="tier-name" fill="#788595">DORMANT</text>
+        <rect x="-43" y="60" width="86" height="18" rx="9" fill="#0b1020" stroke="#788595" stroke-opacity=".8"/>
+        <text y="72" class="tier-name" fill="#788595">DORMANT</text>
       </g>
       </g>
     

@@ -43,7 +43,7 @@ quality and measurable business outcomes.
 
 <div align="center">
 
-<img width="100%" src="./assets/adventure-trophies.svg?v=motion-2" alt="Live GitHub achievements displayed as fantasy tier medallions across a kingdom map" />
+<img width="100%" src="./assets/adventure-trophies.svg?v=motion-3" alt="Live GitHub achievements displayed as fantasy tier medallions across a kingdom map" />
 
 <sub>Live tiers generated from GitHub activity · refreshed automatically every 30 minutes</sub>
 
@@ -57,7 +57,7 @@ quality and measurable business outcomes.
 
 <img width="100%" src="./profile-summary-card-output/tokyonight/0-profile-details.svg" alt="GitHub contribution activity" />
 
-<img width="100%" src="./assets/animated-ledger.svg?v=overview-3" alt="Animated engineering ledger with code composition and GitHub activity metrics" />
+<img width="100%" src="./assets/animated-ledger.svg?v=overview-4" alt="Animated engineering ledger with code composition and GitHub activity metrics" />
 
 </div>
 

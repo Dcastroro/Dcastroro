@@ -260,7 +260,8 @@ const trophyMarkup = trophies
         <text y="-56" class="title">${title}</text>
         <text y="34" class="value">${value}</text>
         <text y="54" class="subtitle">${subtitle}</text>
-        <text y="81" class="tier-name" fill="${tier.color}">${tier.name}</text>
+        <rect x="-43" y="60" width="86" height="18" rx="9" fill="#0b1020" stroke="${tier.color}" stroke-opacity=".8"/>
+        <text y="72" class="tier-name" fill="${tier.color}">${tier.name}</text>
       </g>
       </g>
     `,
@@ -347,8 +348,8 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" v
   <path d="M112 145 C195 180 220 265 306 295 S420 180 500 145 S610 260 694 295 S790 185 888 145" fill="none" stroke="#4b311e" stroke-width="10" opacity=".9"/>
   <path class="road" d="M112 145 C195 180 220 265 306 295 S420 180 500 145 S610 260 694 295 S790 185 888 145" fill="none" stroke="url(#road)" stroke-width="4" filter="url(#glow)"/>
   <g class="route-scout" filter="url(#glow)">
-    <circle r="4" fill="#fff8cf">
-      <animateMotion dur="8s" repeatCount="indefinite" path="M112 145 C195 180 220 265 306 295 S420 180 500 145 S610 260 694 295 S790 185 888 145"/>
+    <circle cx="112" cy="145" r="4" fill="#fff8cf">
+      <animateMotion dur="8s" repeatCount="indefinite" path="M0 0 C83 35 108 120 194 150 S308 35 388 0 S498 115 582 150 S678 40 776 0"/>
     </circle>
   </g>
   <g fill="#fff8cf" filter="url(#glow)">
@@ -381,7 +382,6 @@ const languageMarkup = topLanguages
         <text x="470" y="-7" class="percentage">${percentage}%</text>
         <rect x="78" y="4" width="392" height="12" rx="6" fill="#091522" stroke="#29475a"/>
         <rect class="language-bar" style="--delay:${index * 55}ms" x="78" y="4" width="${width}" height="12" rx="6" fill="${language.color}"/>
-        <circle class="language-spark" style="--delay:${index * 55}ms" cx="${78 + width}" cy="10" r="4" fill="${language.color}" filter="url(#glow)"/>
       </g>
     `;
   })
@@ -449,7 +449,7 @@ const ledgerSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="
     .percentage { fill:#88acb2; font-size:11px; text-anchor:end; }
     .metric-label { fill:#a9c7cb; font-size:10px; font-weight:700; letter-spacing:1px; }
     .metric-value { font-family:Georgia,serif; font-size:29px; font-weight:700; }
-    .language-bar,.language-spark {
+    .language-bar {
       animation:bar-enter 700ms cubic-bezier(.23,1,.32,1) both var(--delay);
       transform-box:fill-box;
       transform-origin:left center;
@@ -493,7 +493,7 @@ const ledgerSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="
       to { opacity:1; }
     }
     @media (prefers-reduced-motion:reduce) {
-      .language-bar,.language-spark,.metric {
+      .language-bar,.metric {
         animation:fade 200ms ease both;
         transform:none;
       }
@@ -511,8 +511,8 @@ const ledgerSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="
   <path d="M544 72 V316" stroke="#29475a" stroke-width="1"/>
   <path id="signal-path" d="M570 300 C620 265 655 315 705 275 S790 215 842 242 S918 194 966 214" fill="none" stroke="#72e8dc" stroke-opacity=".24" stroke-width="2"/>
   <g class="ledger-traveler" filter="url(#glow)">
-    <circle r="4" fill="#fff0a6">
-      <animateMotion dur="6.5s" repeatCount="indefinite" path="M570 300 C620 265 655 315 705 275 S790 215 842 242 S918 194 966 214"/>
+    <circle cx="570" cy="300" r="4" fill="#fff0a6">
+      <animateMotion dur="6.5s" repeatCount="indefinite" path="M0 0 C50-35 85 15 135-25 S220-85 272-58 S348-106 396-86"/>
     </circle>
   </g>
   <text x="54" y="48" fill="#fff7d6" font-family="Georgia,serif" font-size="20" font-weight="700" letter-spacing="2">CODE COMPOSITION</text>

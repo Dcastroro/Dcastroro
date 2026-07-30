@@ -25,7 +25,7 @@
     .percentage { fill:#88acb2; font-size:11px; text-anchor:end; }
     .metric-label { fill:#a9c7cb; font-size:10px; font-weight:700; letter-spacing:1px; }
     .metric-value { font-family:Georgia,serif; font-size:29px; font-weight:700; }
-    .language-bar,.language-spark {
+    .language-bar {
       animation:bar-enter 700ms cubic-bezier(.23,1,.32,1) both var(--delay);
       transform-box:fill-box;
       transform-origin:left center;
@@ -69,7 +69,7 @@
       to { opacity:1; }
     }
     @media (prefers-reduced-motion:reduce) {
-      .language-bar,.language-spark,.metric {
+      .language-bar,.metric {
         animation:fade 200ms ease both;
         transform:none;
       }
@@ -87,8 +87,8 @@
   <path d="M544 72 V316" stroke="#29475a" stroke-width="1"/>
   <path id="signal-path" d="M570 300 C620 265 655 315 705 275 S790 215 842 242 S918 194 966 214" fill="none" stroke="#72e8dc" stroke-opacity=".24" stroke-width="2"/>
   <g class="ledger-traveler" filter="url(#glow)">
-    <circle r="4" fill="#fff0a6">
-      <animateMotion dur="6.5s" repeatCount="indefinite" path="M570 300 C620 265 655 315 705 275 S790 215 842 242 S918 194 966 214"/>
+    <circle cx="570" cy="300" r="4" fill="#fff0a6">
+      <animateMotion dur="6.5s" repeatCount="indefinite" path="M0 0 C50-35 85 15 135-25 S220-85 272-58 S348-106 396-86"/>
     </circle>
   </g>
   <text x="54" y="48" fill="#fff7d6" font-family="Georgia,serif" font-size="20" font-weight="700" letter-spacing="2">CODE COMPOSITION</text>
@@ -101,7 +101,6 @@
         <text x="470" y="-7" class="percentage">66%</text>
         <rect x="78" y="4" width="392" height="12" rx="6" fill="#091522" stroke="#29475a"/>
         <rect class="language-bar" style="--delay:0ms" x="78" y="4" width="238" height="12" rx="6" fill="#3178c6"/>
-        <circle class="language-spark" style="--delay:0ms" cx="316" cy="10" r="4" fill="#3178c6" filter="url(#glow)"/>
       </g>
     
       <g transform="translate(0 155)">
@@ -109,7 +108,6 @@
         <text x="470" y="-7" class="percentage">11%</text>
         <rect x="78" y="4" width="392" height="12" rx="6" fill="#091522" stroke="#29475a"/>
         <rect class="language-bar" style="--delay:55ms" x="78" y="4" width="40" height="12" rx="6" fill="#663399"/>
-        <circle class="language-spark" style="--delay:55ms" cx="118" cy="10" r="4" fill="#663399" filter="url(#glow)"/>
       </g>
     
       <g transform="translate(0 198)">
@@ -117,7 +115,6 @@
         <text x="470" y="-7" class="percentage">11%</text>
         <rect x="78" y="4" width="392" height="12" rx="6" fill="#091522" stroke="#29475a"/>
         <rect class="language-bar" style="--delay:110ms" x="78" y="4" width="40" height="12" rx="6" fill="#f1e05a"/>
-        <circle class="language-spark" style="--delay:110ms" cx="118" cy="10" r="4" fill="#f1e05a" filter="url(#glow)"/>
       </g>
     
       <g transform="translate(0 241)">
@@ -125,7 +122,6 @@
         <text x="470" y="-7" class="percentage">8%</text>
         <rect x="78" y="4" width="392" height="12" rx="6" fill="#091522" stroke="#29475a"/>
         <rect class="language-bar" style="--delay:165ms" x="78" y="4" width="29" height="12" rx="6" fill="#89e051"/>
-        <circle class="language-spark" style="--delay:165ms" cx="107" cy="10" r="4" fill="#89e051" filter="url(#glow)"/>
       </g>
     
       <g transform="translate(0 284)">
@@ -133,7 +129,6 @@
         <text x="470" y="-7" class="percentage">3%</text>
         <rect x="78" y="4" width="392" height="12" rx="6" fill="#091522" stroke="#29475a"/>
         <rect class="language-bar" style="--delay:220ms" x="78" y="4" width="11" height="12" rx="6" fill="#e34c26"/>
-        <circle class="language-spark" style="--delay:220ms" cx="89" cy="10" r="4" fill="#e34c26" filter="url(#glow)"/>
       </g>
     
   
