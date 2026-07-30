@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="280" viewBox="0 0 1000 280" role="img" aria-labelledby="title desc">
+  <title id="title">David Castro — AI Systems Architect</title>
+  <desc id="desc">A professional fantasy-inspired banner showing a golden path through a constellation of AI systems.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#071321"/>
+      <stop offset=".55" stop-color="#102b3c"/>
+      <stop offset="1" stop-color="#1b132d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop stop-color="#bd7d2b"/>
+      <stop offset=".5" stop-color="#fff0a6"/>
+      <stop offset="1" stop-color="#d9a84f"/>
+    </linearGradient>
+    <radialGradient id="orb">
+      <stop stop-color="#fff8cf"/>
+      <stop offset=".25" stop-color="#72e8dc"/>
+      <stop offset="1" stop-color="#72e8dc" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="stars" width="85" height="62" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="15" r="1" fill="#c9f8ff" opacity=".55"/>
+      <circle cx="63" cy="44" r=".8" fill="#fff0a6" opacity=".45"/>
+    </pattern>
+  </defs>
+  <style>
+    text { font-family: "Segoe UI", Arial, sans-serif; text-anchor: middle; }
+    .path { stroke-dasharray:12 9; animation:march 9s linear infinite; }
+    .pulse { animation:pulse 3s ease-in-out infinite alternate; transform-origin:center; }
+    @keyframes march { to { stroke-dashoffset:-84; } }
+    @keyframes pulse { to { opacity:.65; } }
+    @media (prefers-reduced-motion:reduce) { .path,.pulse { animation:none; } }
+  </style>
+  <rect x="2" y="2" width="996" height="276" rx="22" fill="url(#sky)" stroke="#d9a84f" stroke-width="3"/>
+  <rect x="13" y="13" width="974" height="254" rx="15" fill="url(#stars)" stroke="#6f522d"/>
+  <path d="M0 246 Q105 175 215 238 T430 226 T650 239 T1000 211 V280 H0Z" fill="#091724"/>
+  <path d="M0 258 Q130 205 245 254 T470 245 T710 254 T1000 231" fill="none" stroke="#164053" stroke-width="48" opacity=".75"/>
+  <path d="M85 225 C180 184 233 211 315 194 S455 142 535 164 S655 218 744 179 S846 113 922 121" fill="none" stroke="#50341e" stroke-width="10"/>
+  <path class="path" d="M85 225 C180 184 233 211 315 194 S455 142 535 164 S655 218 744 179 S846 113 922 121" fill="none" stroke="url(#gold)" stroke-width="4" filter="url(#glow)"/>
+  <g fill="#fff0a6" filter="url(#glow)">
+    <circle cx="85" cy="225" r="5"/>
+    <circle cx="315" cy="194" r="5"/>
+    <circle cx="535" cy="164" r="5"/>
+    <circle cx="744" cy="179" r="5"/>
+    <circle cx="922" cy="121" r="6"/>
+  </g>
+  <circle class="pulse" cx="922" cy="121" r="38" fill="url(#orb)" opacity=".9"/>
+  <text x="500" y="72" fill="#fff7d6" font-family="Georgia,serif" font-size="38" font-weight="700" letter-spacing="5">DAVID CASTRO</text>
+  <text x="500" y="107" fill="#72e8dc" font-size="17" font-weight="600" letter-spacing="3">AI SYSTEMS · AUTOMATION · ENABLEMENT</text>
+  <text x="500" y="135" fill="#a9c7cb" font-family="Georgia,serif" font-size="13" font-style="italic">Turning ambitious AI quests into reliable production systems</text>
+  <g transform="translate(500 222)">
+    <rect x="-240" y="-18" width="150" height="30" rx="15" fill="#111c30" stroke="#d69cff"/>
+    <rect x="-75" y="-18" width="150" height="30" rx="15" fill="#111c30" stroke="#72e8dc"/>
+    <rect x="90" y="-18" width="150" height="30" rx="15" fill="#111c30" stroke="#fff0a6"/>
+    <text x="-165" y="2" fill="#e4c1ff" font-size="12" font-weight="700">PRODUCTION AI</text>
+    <text x="0" y="2" fill="#9af6ed" font-size="12" font-weight="700">QUALITY SYSTEMS</text>
+    <text x="165" y="2" fill="#fff0a6" font-size="12" font-weight="700">GROWTH PLATFORM</text>
+  </g>
+</svg>

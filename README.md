@@ -1,69 +1,97 @@
 <div align="center">
 
-<img src="https://github.com/Dcastroro/Dcastroro/raw/main/assets/banner-header.gif" alt="banner" />
+<img width="100%" src="./assets/profile-header.svg" alt="David Castro — AI Systems, Automation and Enablement" />
 
-# Hi, I'm David Castro 👋
+<br />
 
-### AI Enablement & Growth Infrastructure Lead
-**Production AI Agents · QA Automation · AdTech · Cross-Functional Automation**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-David_Castro-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/david-castro-rojo/)
+[![Location](https://img.shields.io/badge/Spain-Remote-72e8dc?style=flat-square&logo=googlemaps&logoColor=071321)](https://github.com/Dcastroro)
+[![Focus](https://img.shields.io/badge/Focus-Production_AI-d69cff?style=flat-square&logo=openai&logoColor=071321)](https://github.com/Dcastroro)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/david-castro-rojo/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/Dcastroro)
-[![Location](https://img.shields.io/badge/📍_Spain-Remote-lightgrey?style=flat)](https://github.com/Dcastroro)
+**AI Enablement & Growth Infrastructure Lead**
+
+I design and ship production AI systems that connect engineering,
+quality, governance and measurable business outcomes.
 
 </div>
 
 ---
 
-### 🧠 About Me
-
-- 🤖 **Hands-on AI builder** — shipping production AI agents with autonomous remediation and spec-to-feature delivery
-- 🏢 **AI Lead @ Refinery89 (AdTech)** — owning the AI roadmap on AWS Bedrock + Agent Core
-- 🧪 **QA Automation** — Playwright-based test frameworks, best practices & AI-assisted testing
-- 🌐 **AI Enablement** — governance, adoption workflows and AI Champions across Sales, Finance, Data, UX, Product & Engineering
-- 🎓 BSc Telecommunications Engineering · Universitat Oberta de Catalunya
-- 📍 Spain · Remote / León
-
----
-
-### 🚀 AI Systems in Production
+## ⚔️ Current Mission
 
 <table>
 <tr>
-<td width="33%">
+<td width="50%" valign="top">
 
-**⚡ Zero-Touch Auto-Remediation**
+### Building
 
-`Sentry → Bedrock → Code Fix → PR`
-
-Multi-agent system: error detection, fix generation & autonomous PRs. **60%+ reduction in manual triage.**
-
-![AWS Bedrock](https://img.shields.io/badge/AWS_Bedrock-232F3E?style=flat&logo=amazon-aws&logoColor=white)
-![Multi-Agent](https://img.shields.io/badge/Multi--Agent-412991?style=flat&logo=openai&logoColor=white)
+- Production agents with autonomous remediation
+- Spec-to-feature multi-agent delivery pipelines
+- Playwright quality systems with AI-assisted testing
+- Reusable automation for cross-functional teams
 
 </td>
-<td width="33%">
+<td width="50%" valign="top">
 
-**🏗️ Auto-Dev Pipeline**
+### Leading
 
-`Specs → Backend · UI · Tests · Docs`
-
-Orchestrator routing specs to specialized agents for full-stack autonomous development.
-
-![OpenSpec](https://img.shields.io/badge/OpenSpec-0052CC?style=flat)
-![Playwright](https://img.shields.io/badge/Playwright-45ba4b?style=flat&logo=playwright&logoColor=white)
+- AI roadmap and enablement in AdTech
+- AWS Bedrock and Agent Core adoption
+- Governance, PII policies and responsible AI
+- AI Champions across six business units
 
 </td>
-<td width="33%">
+</tr>
+</table>
 
-**🛡️ Auto-Governance Layer**
+> **Operating principle:** automation accelerates judgment; it does not replace it.
 
-`Safe AI adoption across 6 business units`
+---
 
-OpenMetadata-based governance: data catalog, PII policies, access controls & responsible AI.
+## 🏰 Systems in Production
 
-![OpenMetadata](https://img.shields.io/badge/OpenMetadata-1890FF?style=flat)
-![Responsible AI](https://img.shields.io/badge/Responsible_AI-green?style=flat)
+<table>
+<tr>
+<td width="33%" valign="top">
+
+### ⚡ Auto-Remediation
+
+`Sentry → Bedrock → Fix → PR`
+
+Multi-agent detection, diagnosis and autonomous pull requests.
+
+**Impact:** 60%+ less manual triage.
+
+![AWS Bedrock](https://img.shields.io/badge/AWS_Bedrock-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![Multi-Agent](https://img.shields.io/badge/Multi--Agent-412991?style=flat-square&logo=openai&logoColor=white)
+
+</td>
+<td width="33%" valign="top">
+
+### 🏗️ Auto-Dev Pipeline
+
+`Specs → Code → UI → Tests → Docs`
+
+An orchestrator routes work to specialized agents for complete feature delivery.
+
+**Focus:** consistency and reviewability.
+
+![OpenSpec](https://img.shields.io/badge/OpenSpec-0052CC?style=flat-square)
+![Playwright](https://img.shields.io/badge/Playwright-45BA4B?style=flat-square&logo=playwright&logoColor=white)
+
+</td>
+<td width="33%" valign="top">
+
+### 🛡️ Governance Layer
+
+`Catalog → Policy → Access → Audit`
+
+OpenMetadata-based controls for safe AI adoption across the organization.
+
+**Scope:** six business units.
+
+![OpenMetadata](https://img.shields.io/badge/OpenMetadata-1890FF?style=flat-square)
+![Responsible AI](https://img.shields.io/badge/Responsible_AI-2E8B57?style=flat-square)
 
 </td>
 </tr>
@@ -71,64 +99,101 @@ OpenMetadata-based governance: data catalog, PII policies, access controls & res
 
 ---
 
-### 🏆 Live GitHub Trophies
+## 🧭 How I Build
 
 <div align="center">
 
-<img width="100%" src="./assets/adventure-trophies.svg" alt="Live GitHub achievements displayed as medallions across an epic fantasy kingdom map" />
+`01 · DISCOVER`　→　`02 · PROTOTYPE`　→　`03 · MEASURE`　→　`04 · STANDARDIZE`
+
+<sub>Find the real constraint · Ship the smallest useful system · Prove impact · Turn it into a reusable operating model</sub>
 
 </div>
 
 ---
 
-### 📊 GitHub Stats
+## 🏆 Achievement Realm
 
 <div align="center">
 
-<img width="100%" src="./profile-summary-card-output/tokyonight/0-profile-details.svg?v=20260730" alt="GitHub contribution activity" />
+<img width="100%" src="./assets/adventure-trophies.svg" alt="Live GitHub achievements displayed as fantasy tier medallions across a kingdom map" />
 
-<img width="49%" src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg?v=20260730" alt="Top languages by repository" />
-<img width="49%" src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg?v=20260730" alt="Top languages by commits" />
-
-<img width="49%" src="./profile-summary-card-output/tokyonight/3-stats.svg?v=20260730" alt="GitHub stats" />
-<img width="49%" src="./profile-summary-card-output/tokyonight/4-productive-time.svg?v=20260730" alt="Most productive coding hours" />
+<sub>Live tiers generated from GitHub activity · refreshed automatically every 30 minutes</sub>
 
 </div>
 
 ---
 
-### 🛠️ Tech Stack
+## 📜 Explorer's Ledger
 
-**AI & Agents**
+<div align="center">
 
-![AWS Bedrock](https://img.shields.io/badge/AWS_Bedrock-232F3E?style=flat&logo=amazon-aws&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat)
-![MCP](https://img.shields.io/badge/MCP-181717?style=flat&logo=anthropic&logoColor=white)
+<img width="100%" src="./profile-summary-card-output/tokyonight/0-profile-details.svg" alt="GitHub contribution activity" />
 
-**Cloud & Platform**
+<img width="49%" src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" alt="Top languages by commits" />
+<img width="49%" src="./profile-summary-card-output/tokyonight/3-stats.svg" alt="GitHub statistics" />
 
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
-![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat&logo=aws-lambda&logoColor=white)
-![ECS](https://img.shields.io/badge/ECS-FF9900?style=flat&logo=amazon-aws&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-
-**Development & QA**
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![Playwright](https://img.shields.io/badge/Playwright-45ba4b?style=flat&logo=playwright&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+</div>
 
 ---
 
-### 📜 Certifications
+## 🛠️ Technical Arsenal
 
-- 🐍 **PCAP** — Python Essentials (OpenEDG)
-- 🏅 **PSM I** — Professional Scrum Master I
+<table>
+<tr>
+<td width="33%" valign="top">
+
+### AI & Agents
+
+![AWS Bedrock](https://img.shields.io/badge/AWS_Bedrock-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square)
+![MCP](https://img.shields.io/badge/MCP-181717?style=flat-square)
+
+</td>
+<td width="33%" valign="top">
+
+### Cloud & Platform
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat-square&logo=awslambda&logoColor=white)
+![ECS](https://img.shields.io/badge/ECS-FF9900?style=flat-square&logo=amazonecs&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+
+</td>
+<td width="33%" valign="top">
+
+### Development & QA
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-45BA4B?style=flat-square&logo=playwright&logoColor=white)
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🎓 Credentials
+
+- **BSc Telecommunications Engineering** — Universitat Oberta de Catalunya
+- **PCAP** — Python Essentials, OpenEDG
+- **PSM I** — Professional Scrum Master I
 
 ---
 
 <div align="center">
-<i>Builder mindset: prototype fast, measure impact, standardize into reusable operating models.</i>
+
+### Ready for the next quest?
+
+I enjoy turning difficult automation problems into systems teams can trust,
+measure and reuse.
+
+[![Let's connect](https://img.shields.io/badge/Let's_connect-LinkedIn-d9a84f?style=for-the-badge&logo=linkedin&logoColor=071321)](https://www.linkedin.com/in/david-castro-rojo/)
+
+<br />
+
+<sub>Based in León, Spain · Working remotely</sub>
+
 </div>
