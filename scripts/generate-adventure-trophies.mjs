@@ -208,7 +208,8 @@ const trophies = [
 const trophyMarkup = trophies
   .map(
     ({ title, value, subtitle, x, y, tier }, index) => `
-      <g class="trophy" style="--delay:${index * 0.14}s" transform="translate(${x} ${y})">
+      <g transform="translate(${x} ${y})">
+      <g class="trophy" style="--delay:${index * 50}ms">
         <circle r="78" fill="url(#medallion)" stroke="${tier.color}" stroke-width="3"/>
         <circle r="68" fill="none" stroke="${tier.color}" stroke-opacity=".55" stroke-width="1.5" stroke-dasharray="3 5"/>
         <path d="M-35 65 L-22 90 L0 76 L22 90 L35 65" fill="#5f234a" stroke="${tier.color}" stroke-width="2"/>
@@ -226,6 +227,7 @@ const trophyMarkup = trophies
         <text y="34" class="value">${value}</text>
         <text y="54" class="subtitle">${subtitle}</text>
         <text y="81" class="tier-name" fill="${tier.color}">${tier.name}</text>
+      </g>
       </g>
     `,
   )
@@ -266,11 +268,22 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" v
     .subtitle { fill:#71d7cd; font-size:11px; font-style:italic; }
     .rank-badge { fill:#0b1020; font-family:"Segoe UI",sans-serif; font-size:11px; font-weight:900; }
     .tier-name { font-size:10px; font-weight:700; letter-spacing:1.2px; }
-    .trophy { opacity:1; }
-    .road { stroke-dasharray:12 9; animation:march 8s linear infinite; }
-    @keyframes march { to { stroke-dashoffset:-84; } }
+    .trophy {
+      animation:trophy-enter 550ms cubic-bezier(.23,1,.32,1) both var(--delay);
+      transform-box:fill-box;
+      transform-origin:center;
+    }
+    .road { stroke-dasharray:12 9; }
+    @keyframes trophy-enter {
+      from { opacity:0; transform:translateY(8px) scale(.96); }
+      to { opacity:1; transform:translateY(0) scale(1); }
+    }
+    @keyframes trophy-fade {
+      from { opacity:.6; }
+      to { opacity:1; }
+    }
     @media (prefers-reduced-motion:reduce) {
-      .road { animation:none; }
+      .trophy { animation:trophy-fade 200ms ease both; }
     }
   </style>
   <rect x="2" y="2" width="996" height="416" rx="18" fill="url(#night)" stroke="#d8ad58" stroke-width="3"/>

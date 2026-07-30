@@ -44,5 +44,5 @@ jobs:
           BRANCH_NAME: ${{ github.ref_name }}
           UTC_OFFSET: 2
           THEME: tokyonight
-          ANIMATION: stagger
+          ANIMATION: none
           AUTO_PUSH: true

@@ -28,11 +28,29 @@
   </defs>
   <style>
     text { font-family: "Segoe UI", Arial, sans-serif; text-anchor: middle; }
-    .path { stroke-dasharray:12 9; animation:march 9s linear infinite; }
-    .pulse { animation:pulse 3s ease-in-out infinite alternate; transform-origin:center; }
-    @keyframes march { to { stroke-dashoffset:-84; } }
-    @keyframes pulse { to { opacity:.65; } }
-    @media (prefers-reduced-motion:reduce) { .path,.pulse { animation:none; } }
+    .path { stroke-dasharray:12 9; }
+    .hero-1,.hero-2,.hero-3,.hero-4,.beacon {
+      animation:enter 600ms cubic-bezier(.23,1,.32,1) both;
+      transform-box:fill-box;
+      transform-origin:center;
+    }
+    .hero-2 { animation-delay:60ms; }
+    .hero-3 { animation-delay:120ms; }
+    .hero-4 { animation-delay:180ms; }
+    .beacon { animation-delay:240ms; }
+    @keyframes enter {
+      from { opacity:0; transform:translateY(8px) scale(.98); }
+      to { opacity:1; transform:translateY(0) scale(1); }
+    }
+    @keyframes fade {
+      from { opacity:.6; }
+      to { opacity:1; }
+    }
+    @media (prefers-reduced-motion:reduce) {
+      .hero-1,.hero-2,.hero-3,.hero-4,.beacon {
+        animation:fade 200ms ease both;
+      }
+    }
   </style>
   <rect x="2" y="2" width="996" height="276" rx="22" fill="url(#sky)" stroke="#d9a84f" stroke-width="3"/>
   <rect x="13" y="13" width="974" height="254" rx="15" fill="url(#stars)" stroke="#6f522d"/>
@@ -47,11 +65,11 @@
     <circle cx="744" cy="179" r="5"/>
     <circle cx="922" cy="121" r="6"/>
   </g>
-  <circle class="pulse" cx="922" cy="121" r="38" fill="url(#orb)" opacity=".9"/>
-  <text x="500" y="72" fill="#fff7d6" font-family="Georgia,serif" font-size="38" font-weight="700" letter-spacing="5">DAVID CASTRO</text>
-  <text x="500" y="107" fill="#72e8dc" font-size="17" font-weight="600" letter-spacing="3">AI SYSTEMS · AUTOMATION · ENABLEMENT</text>
-  <text x="500" y="135" fill="#a9c7cb" font-family="Georgia,serif" font-size="13" font-style="italic">Turning ambitious AI quests into reliable production systems</text>
-  <g transform="translate(500 222)">
+  <circle class="beacon" cx="922" cy="121" r="38" fill="url(#orb)" opacity=".9"/>
+  <text class="hero-1" x="500" y="72" fill="#fff7d6" font-family="Georgia,serif" font-size="38" font-weight="700" letter-spacing="5">DAVID CASTRO</text>
+  <text class="hero-2" x="500" y="107" fill="#72e8dc" font-size="17" font-weight="600" letter-spacing="3">AI SYSTEMS · AUTOMATION · ENABLEMENT</text>
+  <text class="hero-3" x="500" y="135" fill="#a9c7cb" font-family="Georgia,serif" font-size="13" font-style="italic">Turning ambitious AI quests into reliable production systems</text>
+  <g class="hero-4" transform="translate(500 222)">
     <rect x="-240" y="-18" width="150" height="30" rx="15" fill="#111c30" stroke="#d69cff"/>
     <rect x="-75" y="-18" width="150" height="30" rx="15" fill="#111c30" stroke="#72e8dc"/>
     <rect x="90" y="-18" width="150" height="30" rx="15" fill="#111c30" stroke="#fff0a6"/>

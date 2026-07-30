@@ -15,6 +15,32 @@ quality, governance and measurable business outcomes.
 
 </div>
 
+<table>
+<tr>
+<td width="33%" align="center">
+
+### 60%+
+
+<sub>less manual triage</sub>
+
+</td>
+<td width="33%" align="center">
+
+### 6
+
+<sub>business units enabled</sub>
+
+</td>
+<td width="33%" align="center">
+
+### 3
+
+<sub>production system pillars</sub>
+
+</td>
+</tr>
+</table>
+
 ---
 
 ## ⚔️ Current Mission
