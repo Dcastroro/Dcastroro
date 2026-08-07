@@ -119,9 +119,9 @@
     
       <g transform="translate(0 241)">
         <text x="78" y="-7" class="language">PLpgSQL</text>
-        <text x="470" y="-7" class="percentage">4%</text>
+        <text x="470" y="-7" class="percentage">3%</text>
         <rect x="78" y="4" width="392" height="12" rx="6" fill="#091522" stroke="#29475a"/>
-        <rect class="language-bar" style="--delay:165ms" x="78" y="4" width="14" height="12" rx="6" fill="#336790"/>
+        <rect class="language-bar" style="--delay:165ms" x="78" y="4" width="11" height="12" rx="6" fill="#336790"/>
       </g>
     
       <g transform="translate(0 284)">
@@ -138,7 +138,7 @@
           <circle class="metric-orbit" cx="125" cy="23" r="12" fill="none" stroke="#d69cff" stroke-dasharray="3 5"/>
           <circle cx="125" cy="11" r="3" fill="#d69cff" filter="url(#glow)"/>
           <text x="18" y="29" class="metric-label">COMMITS</text>
-          <text x="18" y="67" class="metric-value" fill="#d69cff">200</text>
+          <text x="18" y="67" class="metric-value" fill="#d69cff">201</text>
         </g>
       </g>
     
@@ -158,7 +158,7 @@
           <circle class="metric-orbit" cx="125" cy="23" r="12" fill="none" stroke="#ffcf70" stroke-dasharray="3 5"/>
           <circle cx="125" cy="11" r="3" fill="#ffcf70" filter="url(#glow)"/>
           <text x="18" y="29" class="metric-label">REPOSITORIES</text>
-          <text x="18" y="67" class="metric-value" fill="#ffcf70">6</text>
+          <text x="18" y="67" class="metric-value" fill="#ffcf70">7</text>
         </g>
       </g>
     
