@@ -15,6 +15,16 @@ quality and measurable business outcomes.
 
 </div>
 
+## Selected Developer Tools
+
+Practical tools for repeatable setup, repository context and automation.
+
+| Project | What it does |
+| --- | --- |
+| [Env Contract Check](https://github.com/Dcastroro/env-contract-check) | Validates environment files against an example contract, with value-free diagnostics and CI-friendly JSON. |
+| [Repo Craft](https://github.com/Dcastroro/repo-craft) | Maps repository context and crafts evidence-backed skills for coding agents. |
+| [Claude Repo Skills](https://github.com/Dcastroro/claude-repo-skills) | Generates repository-aware Claude Code skills from existing project structure and documentation. |
+
 <div align="center">
 
 <img width="100%" src="./assets/operating-pillars.svg?v=pillars-1" alt="Animated operating pillars: production, cross-functional enablement and responsible delivery" />
