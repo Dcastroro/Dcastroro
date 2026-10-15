@@ -21,6 +21,7 @@ Practical tools for repeatable setup, repository context and automation.
 
 | Project | What it does |
 | --- | --- |
+| [Fixture Foundry](https://github.com/Dcastroro/fixture-foundry) | Streams reproducible synthetic JSONL/CSV fixtures with stable partitions, relational references and atomic file publication, without production data or runtime credentials. |
 | [Probe Harbor](https://github.com/Dcastroro/probe-harbor) | Checks service readiness with bounded HTTP/HTTPS probes, JSON assertions, cancellation and reports that omit URLs, headers and response bodies. |
 | [Change Scope](https://github.com/Dcastroro/change-scope) | Plans affected monorepo projects from local Git changes, propagates dependencies and emits bounded CI shards with conservative fallbacks. |
 | [Webhook Ledger](https://github.com/Dcastroro/webhook-ledger) | Coordinates local event receipts with SQLite deduplication, atomic worker leases and retries, without storing event payloads or raw IDs. |
@@ -38,7 +39,9 @@ Change Scope selects affected work before CI runs it, using committed policy and
 
 Probe Harbor adds a runtime readiness gate after service startup, with bounded requests and no service credentials. [See the readiness integration](https://github.com/Dcastroro/probe-harbor/blob/main/docs/ci.md).
 
-All eight tools share Windows/Linux CI, pinned workflow actions, bounded repository checks and source releases built from verified version tags. Release assets include SHA-256 checksums and the exact source commit. [Explore the release process](https://github.com/Dcastroro/repo-craft/blob/main/RELEASING.md).
+Fixture Foundry supplies reproducible synthetic inputs for those integration tests, with independent partitions and bounded streaming instead of copied production records. [See the fixture pipeline](https://github.com/Dcastroro/fixture-foundry/blob/main/docs/ci.md).
+
+All nine tools share Windows/Linux CI, pinned workflow actions, bounded repository checks and source releases built from verified version tags. Release assets include SHA-256 checksums and the exact source commit. [Explore the release process](https://github.com/Dcastroro/repo-craft/blob/main/RELEASING.md).
 
 <div align="center">
 
