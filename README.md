@@ -32,6 +32,8 @@ Task Relay can use Env Contract Check as a prerequisite: validate configuration 
 
 API Drift Guard adds a local API-contract check to that workflow, with no service credentials or remote reference fetching. [See the contract gate example](https://github.com/Dcastroro/api-drift-guard/blob/main/docs/automation.md).
 
+All six tools share Windows/Linux CI, pinned workflow actions, bounded repository checks and source releases built from verified version tags. Release assets include SHA-256 checksums and the exact source commit. [Explore the release process](https://github.com/Dcastroro/repo-craft/blob/main/RELEASING.md).
+
 <div align="center">
 
 <img width="100%" src="./assets/operating-pillars.svg?v=pillars-1" alt="Animated operating pillars: production, cross-functional enablement and responsible delivery" />
