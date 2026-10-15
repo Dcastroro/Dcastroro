@@ -21,6 +21,7 @@ Practical tools for repeatable setup, repository context and automation.
 
 | Project | What it does |
 | --- | --- |
+| [Webhook Ledger](https://github.com/Dcastroro/webhook-ledger) | Coordinates local event receipts with SQLite deduplication, atomic worker leases and retries, without storing event payloads or raw IDs. |
 | [API Drift Guard](https://github.com/Dcastroro/api-drift-guard) | Compares local OpenAPI contracts with conservative CI gates and reports that omit input names and values. |
 | [Task Relay](https://github.com/Dcastroro/task-relay) | Runs development task graphs with bounded parallelism, dependency checks, timeouts and JSON reports. |
 | [Env Contract Check](https://github.com/Dcastroro/env-contract-check) | Validates environment files against an example contract, with value-free diagnostics and CI-friendly JSON. |
