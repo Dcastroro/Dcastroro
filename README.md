@@ -21,6 +21,7 @@ Practical tools for repeatable setup, repository context and automation.
 
 | Project | What it does |
 | --- | --- |
+| [Change Scope](https://github.com/Dcastroro/change-scope) | Plans affected monorepo projects from local Git changes, propagates dependencies and emits bounded CI shards with conservative fallbacks. |
 | [Webhook Ledger](https://github.com/Dcastroro/webhook-ledger) | Coordinates local event receipts with SQLite deduplication, atomic worker leases and retries, without storing event payloads or raw IDs. |
 | [API Drift Guard](https://github.com/Dcastroro/api-drift-guard) | Compares local OpenAPI contracts with conservative CI gates and reports that omit input names and values. |
 | [Task Relay](https://github.com/Dcastroro/task-relay) | Runs development task graphs with bounded parallelism, dependency checks, timeouts and JSON reports. |
@@ -32,7 +33,9 @@ Task Relay can use Env Contract Check as a prerequisite: validate configuration 
 
 API Drift Guard adds a local API-contract check to that workflow, with no service credentials or remote reference fetching. [See the contract gate example](https://github.com/Dcastroro/api-drift-guard/blob/main/docs/automation.md).
 
-All six tools share Windows/Linux CI, pinned workflow actions, bounded repository checks and source releases built from verified version tags. Release assets include SHA-256 checksums and the exact source commit. [Explore the release process](https://github.com/Dcastroro/repo-craft/blob/main/RELEASING.md).
+Change Scope selects affected work before CI runs it, using committed policy and local Git history without runtime service credentials. [See the CI integration](https://github.com/Dcastroro/change-scope/blob/main/docs/ci.md).
+
+All seven tools share Windows/Linux CI, pinned workflow actions, bounded repository checks and source releases built from verified version tags. Release assets include SHA-256 checksums and the exact source commit. [Explore the release process](https://github.com/Dcastroro/repo-craft/blob/main/RELEASING.md).
 
 <div align="center">
 
