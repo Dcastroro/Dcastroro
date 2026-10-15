@@ -21,6 +21,7 @@ Practical tools for repeatable setup, repository context and automation.
 
 | Project | What it does |
 | --- | --- |
+| [Probe Harbor](https://github.com/Dcastroro/probe-harbor) | Checks service readiness with bounded HTTP/HTTPS probes, JSON assertions, cancellation and reports that omit URLs, headers and response bodies. |
 | [Change Scope](https://github.com/Dcastroro/change-scope) | Plans affected monorepo projects from local Git changes, propagates dependencies and emits bounded CI shards with conservative fallbacks. |
 | [Webhook Ledger](https://github.com/Dcastroro/webhook-ledger) | Coordinates local event receipts with SQLite deduplication, atomic worker leases and retries, without storing event payloads or raw IDs. |
 | [API Drift Guard](https://github.com/Dcastroro/api-drift-guard) | Compares local OpenAPI contracts with conservative CI gates and reports that omit input names and values. |
@@ -35,7 +36,9 @@ API Drift Guard adds a local API-contract check to that workflow, with no servic
 
 Change Scope selects affected work before CI runs it, using committed policy and local Git history without runtime service credentials. [See the CI integration](https://github.com/Dcastroro/change-scope/blob/main/docs/ci.md).
 
-All seven tools share Windows/Linux CI, pinned workflow actions, bounded repository checks and source releases built from verified version tags. Release assets include SHA-256 checksums and the exact source commit. [Explore the release process](https://github.com/Dcastroro/repo-craft/blob/main/RELEASING.md).
+Probe Harbor adds a runtime readiness gate after service startup, with bounded requests and no service credentials. [See the readiness integration](https://github.com/Dcastroro/probe-harbor/blob/main/docs/ci.md).
+
+All eight tools share Windows/Linux CI, pinned workflow actions, bounded repository checks and source releases built from verified version tags. Release assets include SHA-256 checksums and the exact source commit. [Explore the release process](https://github.com/Dcastroro/repo-craft/blob/main/RELEASING.md).
 
 <div align="center">
 
