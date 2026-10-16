@@ -23,6 +23,7 @@ Selected pull requests with reproducible tests and validation evidence:
 
 | Project | Contribution | Validation |
 | --- | --- | --- |
+| [FastMCP (TypeScript)](https://github.com/punkpeye/fastmcp/pull/436) | Avoid Windows-reserved ports in HTTP/HTTPS tests. | Reproduced before/after; upstream Node 24 CI and OpenAPI network checks pass. |
 | [npm/node-which](https://github.com/npm/node-which/pull/185) | Fix executable lookup in Windows workers when the environment uses `Path`. | Nine regression cases, including a real worker; full suite and 100% coverage. |
 | [claude-session-tidy](https://github.com/nrzz/claude-session-tidy/pull/5) | Search sessions by title and repair repository checks across Windows checkout formats. | Ten OS/Node CI combinations; integration tests on Linux and macOS. |
 | [gitwrapped](https://github.com/luciferalive/gitwrapped/pull/10) | Add Windows CI while preserving HTML escaping coverage. | Nine OS/Node CI combinations and demo freshness checks. |
