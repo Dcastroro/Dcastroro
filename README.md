@@ -23,10 +23,11 @@ Selected pull requests with reproducible tests and validation evidence:
 
 | Project | Contribution | Validation |
 | --- | --- | --- |
-| [FastMCP (TypeScript)](https://github.com/punkpeye/fastmcp/pull/436) | Avoid Windows-reserved ports in HTTP/HTTPS tests. | Reproduced before/after; upstream Node 24 CI and OpenAPI network checks pass. |
+| [FastMCP (TypeScript)](https://github.com/punkpeye/fastmcp/pull/436) | **Merged** — avoid Windows-reserved ports in HTTP/HTTPS tests. | Reproduced before/after; upstream CI passes; released in [4.22.12](https://github.com/punkpeye/fastmcp/releases/tag/v4.22.12). |
+| [FastMCP DiskStore](https://github.com/punkpeye/fastmcp/pull/438) | **Merged** — retry transient Windows atomic-rename failures while preserving the previous value and TTL. | 1,062 local tests pass; upstream CI passes; released in [4.23.1](https://github.com/punkpeye/fastmcp/releases/tag/v4.23.1). |
 | [npm/node-which](https://github.com/npm/node-which/pull/185) | Fix executable lookup in Windows workers when the environment uses `Path`. | Nine regression cases, including a real worker; full suite and 100% coverage. |
-| [claude-session-tidy](https://github.com/nrzz/claude-session-tidy/pull/5) | Search sessions by title and repair repository checks across Windows checkout formats. | Ten OS/Node CI combinations; integration tests on Linux and macOS. |
-| [gitwrapped](https://github.com/luciferalive/gitwrapped/pull/10) | Add Windows CI while preserving HTML escaping coverage. | Nine OS/Node CI combinations and demo freshness checks. |
+| [claude-session-tidy](https://github.com/nrzz/claude-session-tidy/pull/5) | Search sessions by title and repair repository checks across Windows checkout formats; maintainer feedback addressed. | [Ten OS/Node fork CI jobs pass](https://github.com/Dcastroro/claude-session-tidy/actions/runs/39108102573) on the revised commit; upstream approval pending. |
+| [gitwrapped](https://github.com/luciferalive/gitwrapped/pull/10) | **Merged** — add Windows CI while preserving HTML escaping coverage. | Nine OS/Node CI combinations and demo freshness checks. |
 
 ## Selected Developer Tools
 
