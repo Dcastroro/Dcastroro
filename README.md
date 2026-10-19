@@ -19,7 +19,7 @@ Follow for practical developer tools, tested automation and open-source contribu
 
 ## Open-source Contributions
 
-Selected pull requests with reproducible tests and validation evidence:
+Selected contributions and independent reviews with reproducible tests and validation evidence:
 
 | Project | Contribution | Validation |
 | --- | --- | --- |
@@ -27,6 +27,7 @@ Selected pull requests with reproducible tests and validation evidence:
 | [FastMCP DiskStore](https://github.com/punkpeye/fastmcp/pull/438) | **Merged** — retry transient Windows atomic-rename failures while preserving the previous value and TTL. | 1,062 local tests pass; upstream CI passes; released in [4.23.1](https://github.com/punkpeye/fastmcp/releases/tag/v4.23.1). |
 | [npm/node-which](https://github.com/npm/node-which/pull/185) | Fix executable lookup in Windows workers when the environment uses `Path`. | Nine regression cases, including a real worker; full suite and 100% coverage. |
 | [claude-session-tidy](https://github.com/nrzz/claude-session-tidy/pull/5) | **Merged** — search sessions by title and repair repository checks across Windows checkout formats. | [Upstream test matrix](https://github.com/nrzz/claude-session-tidy/actions/runs/39129092318) and [end-to-end checks](https://github.com/nrzz/claude-session-tidy/actions/runs/39129092310) pass on the merge; released in [1.2.0](https://github.com/nrzz/claude-session-tidy/releases/tag/v1.2.0), with contributor credit. |
+| [claude-session-tidy (review)](https://github.com/nrzz/claude-session-tidy/pull/7#discussion_r4307564195) | **Suggestion accepted** — make the real-CLI date fixtures relative to the clock, preventing the tests from ageing out. Implementation by @yoreva-01; review credited in [1.3.0](https://github.com/nrzz/claude-session-tidy/releases/tag/v1.3.0). | Updated commit: 204 local tests pass (12 platform/real-binary skips); all five date-filter tests also pass at a simulated 26 October 2026. Upstream CI passes. |
 | [gitwrapped](https://github.com/luciferalive/gitwrapped/pull/10) | **Merged** — add Windows CI while preserving HTML escaping coverage. | Nine OS/Node CI combinations and demo freshness checks. |
 | [Apprise](https://github.com/caronc/apprise/pull/1814) | **Merged** — renew the default-key persistent file actually read; maintainer extended renewal to work without a loaded cache. | [Upstream tests](https://github.com/caronc/apprise/actions/runs/39161947081), lint, CodeQL and RPM checks pass; 32 local persistence tests pass (one existing skip) on the revised commit. |
 
