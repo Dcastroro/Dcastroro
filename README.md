@@ -23,6 +23,7 @@ Selected contributions and independent reviews with reproducible tests and valid
 
 | Project | Contribution | Validation |
 | --- | --- | --- |
+| [finepack](https://github.com/Kikobeats/finepack/pull/126) | **Merged** — report CLI file-read failures clearly and exit unsuccessfully instead of showing an uncaught stack trace. | 17 local tests pass on Windows/Node 24 and Linux/Node 26; upstream test workflow passes. |
 | [FastMCP (TypeScript)](https://github.com/punkpeye/fastmcp/pull/436) | **Merged** — avoid Windows-reserved ports in HTTP/HTTPS tests. | Reproduced before/after; upstream CI passes; released in [4.22.12](https://github.com/punkpeye/fastmcp/releases/tag/v4.22.12). |
 | [FastMCP DiskStore](https://github.com/punkpeye/fastmcp/pull/438) | **Merged** — retry transient Windows atomic-rename failures while preserving the previous value and TTL. | 1,062 local tests pass; upstream CI passes; released in [4.23.1](https://github.com/punkpeye/fastmcp/releases/tag/v4.23.1). |
 | [npm/node-which](https://github.com/npm/node-which/pull/185) | Fix executable lookup in Windows workers when the environment uses `Path`. | Nine regression cases, including a real worker; full suite and 100% coverage. |
