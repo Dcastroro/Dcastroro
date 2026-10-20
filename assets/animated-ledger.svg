@@ -98,16 +98,16 @@
   
       <g transform="translate(0 112)">
         <text x="78" y="-7" class="language">TypeScript</text>
-        <text x="470" y="-7" class="percentage">64%</text>
+        <text x="470" y="-7" class="percentage">63%</text>
         <rect x="78" y="4" width="392" height="12" rx="6" fill="#091522" stroke="#29475a"/>
-        <rect class="language-bar" style="--delay:0ms" x="78" y="4" width="230" height="12" rx="6" fill="#3178c6"/>
+        <rect class="language-bar" style="--delay:0ms" x="78" y="4" width="227" height="12" rx="6" fill="#3178c6"/>
       </g>
     
       <g transform="translate(0 155)">
         <text x="78" y="-7" class="language">JavaScript</text>
-        <text x="470" y="-7" class="percentage">31%</text>
+        <text x="470" y="-7" class="percentage">32%</text>
         <rect x="78" y="4" width="392" height="12" rx="6" fill="#091522" stroke="#29475a"/>
-        <rect class="language-bar" style="--delay:55ms" x="78" y="4" width="112" height="12" rx="6" fill="#f1e05a"/>
+        <rect class="language-bar" style="--delay:55ms" x="78" y="4" width="115" height="12" rx="6" fill="#f1e05a"/>
       </g>
     
       <g transform="translate(0 198)">
