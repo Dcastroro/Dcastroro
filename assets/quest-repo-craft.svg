@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="140" viewBox="0 0 640 140" role="img" aria-labelledby="title desc">
+<title id="title">Repo Craft — Quest 01</title><desc id="desc">AGENT CONTEXT. A project card styled as a fantasy quest log, with an ornamental gold frame.</desc>
+<defs><linearGradient id="night" x2="1" y2="1"><stop stop-color="#102436"/><stop offset="1" stop-color="#101b2a"/></linearGradient><linearGradient id="gold"><stop stop-color="#9e7840"/><stop offset=".45" stop-color="#f0d595"/><stop offset="1" stop-color="#9e7840"/></linearGradient></defs>
+<path d="M18 2H622L638 18V122L622 138H18L2 122V18Z" fill="url(#night)" stroke="url(#gold)" stroke-width="2"/>
+<path d="M25 10H615L630 25V115L615 130H25L10 115V25Z" fill="none" stroke="#506071" stroke-opacity=".6"/>
+<path d="M16 29V16H29M611 16H624V29M16 111V124H29M611 124H624V111" fill="none" stroke="#dec17a" stroke-width="2"/>
+<path d="M50 27 55 32 50 37 45 32Z" fill="#bcebe5"/>
+<text x="68" y="37" fill="#dfc58d" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" letter-spacing="2">QUEST 01 / AGENT CONTEXT</text>
+<text x="34" y="91" fill="#fff3d6" font-family="Georgia,serif" font-size="40" font-weight="700">Repo Craft</text>
+<path d="M35 108H347m13 0h25" stroke="#b48f53" stroke-width="1" opacity=".7"/>
+<path d="m399 102 6 6-6 6-6-6Z" fill="#b48f53"/>
+<path d="M520 18 568 45V95L520 122 472 95V45Z" fill="#122c3e" stroke="#9c8257"/>
+<path d="M520 27 559 50V90L520 113 481 90V50Z" fill="none" stroke="#bcebe5" stroke-opacity=".35"/>
+<g transform="translate(520 71)" stroke="#bcebe5" stroke-width="2.3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M-29-23q15-7 29 0q14-7 29 0v49q-15-6-29 0q-14-6-29 0zM0-23v49M-20-10h11m-11 10h11M10-10h11M10 0h11"/></g>
+<path d="M592 28h14v14m-14 0 14-14" fill="none" stroke="#dfc58d" stroke-width="2"/>
+<path d="m447 31 2 5 5 2-5 2-2 5-2-5-5-2 5-2Z" fill="#bcebe5" opacity=".65"/>
+</svg>
