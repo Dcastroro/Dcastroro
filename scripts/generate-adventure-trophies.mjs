@@ -188,7 +188,7 @@ function trophySymbol(title, tierName) {
 
 const trophies = [
   {
-    title: "EXPERIENCE",
+    title: "ACCOUNT AGE",
     titleWidth: 76,
     value: `${experience} YEARS`,
     subtitle: `Journey began ${joinedYear}`,
@@ -300,8 +300,8 @@ const trophyMarkup = trophies
   .join("");
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img" aria-labelledby="title desc">
-  <title id="title">Dcastroro's live adventure trophies</title>
-  <desc id="desc">An epic fantasy map with live GitHub achievements for experience, commits, pull requests, repositories and reviews.</desc>
+  <title id="title">Dcastroro's activity trophies</title>
+  <desc id="desc">Custom RPG tiers based on GitHub account age and contribution activity. These are not official GitHub achievements.</desc>
   <defs>
     <linearGradient id="night" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#071321"/>
@@ -365,9 +365,9 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" v
       to { opacity:.9; }
     }
     @media (prefers-reduced-motion:reduce) {
-      .trophy { animation:trophy-fade 200ms ease both; }
+      .trophy { animation:none; }
       .sigil,.twinkle-a,.twinkle-b {
-        animation:twinkle 3s ease infinite alternate;
+        animation:none;
         transform:none;
       }
       .route-scout { display:none; }
@@ -390,7 +390,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" v
   </g>
   <path d="M20 390 L80 322 L125 372 L174 305 L230 390Z" fill="#0a1824" stroke="#29475a"/>
   <path d="M770 390 L820 315 L855 360 L912 292 L980 390Z" fill="#0a1824" stroke="#29475a"/>
-  <text x="500" y="35" fill="#f8f1d4" font-size="21" font-weight="700" letter-spacing="3">THE ACHIEVEMENT REALM</text>
+  <text x="500" y="35" fill="#f8f1d4" font-size="21" font-weight="700" letter-spacing="3">THE TROPHY ROOM</text>
   <text x="500" y="57" fill="#9bc9c6" font-size="12" font-style="italic">A live chronicle of the developer's journey</text>
   ${trophyMarkup}
 </svg>`;

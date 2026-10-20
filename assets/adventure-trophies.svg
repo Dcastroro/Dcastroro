@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img" aria-labelledby="title desc">
-  <title id="title">Dcastroro's live adventure trophies</title>
-  <desc id="desc">An epic fantasy map with live GitHub achievements for experience, commits, pull requests, repositories and reviews.</desc>
+  <title id="title">Dcastroro's activity trophies</title>
+  <desc id="desc">Custom RPG tiers based on GitHub account age and contribution activity. These are not official GitHub achievements.</desc>
   <defs>
     <linearGradient id="night" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#071321"/>
@@ -64,9 +64,9 @@
       to { opacity:.9; }
     }
     @media (prefers-reduced-motion:reduce) {
-      .trophy { animation:trophy-fade 200ms ease both; }
+      .trophy { animation:none; }
       .sigil,.twinkle-a,.twinkle-b {
-        animation:twinkle 3s ease infinite alternate;
+        animation:none;
         transform:none;
       }
       .route-scout { display:none; }
@@ -89,7 +89,7 @@
   </g>
   <path d="M20 390 L80 322 L125 372 L174 305 L230 390Z" fill="#0a1824" stroke="#29475a"/>
   <path d="M770 390 L820 315 L855 360 L912 292 L980 390Z" fill="#0a1824" stroke="#29475a"/>
-  <text x="500" y="35" fill="#f8f1d4" font-size="21" font-weight="700" letter-spacing="3">THE ACHIEVEMENT REALM</text>
+  <text x="500" y="35" fill="#f8f1d4" font-size="21" font-weight="700" letter-spacing="3">THE TROPHY ROOM</text>
   <text x="500" y="57" fill="#9bc9c6" font-size="12" font-style="italic">A live chronicle of the developer's journey</text>
   
       <g transform="translate(112 145)">
@@ -111,7 +111,7 @@
         </g>
         <circle cx="21" cy="1" r="11" fill="#fff0a6" stroke="#0b1020" stroke-width="2"/>
         <text x="21" y="5" class="rank-badge">S+</text>
-        <text y="-46" class="title" textLength="76" lengthAdjust="spacingAndGlyphs">EXPERIENCE</text>
+        <text y="-46" class="title" textLength="76" lengthAdjust="spacingAndGlyphs">ACCOUNT AGE</text>
         <text y="25" class="value">3 YEARS</text>
         <text y="43" class="subtitle">Journey began 2022</text>
         <rect x="-43" y="51" width="86" height="17" rx="8.5" fill="#0b1020" stroke="#fff0a6" stroke-opacity=".8"/>
