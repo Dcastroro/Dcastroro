@@ -2,126 +2,44 @@
 
 <img width="100%" src="./assets/profile-header.svg?v=header-3" alt="David Castro — AI Systems, Automation and Enablement" />
 
-<br />
+**AI Lead & AI Enablement Architect**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-David_Castro-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/david-castro-rojo/)
-[![Location](https://img.shields.io/badge/Spain-Remote-72e8dc?style=flat-square&logo=googlemaps&logoColor=071321)](https://github.com/Dcastroro)
-[![Focus](https://img.shields.io/badge/Focus-Production_AI-d69cff?style=flat-square&logo=openai&logoColor=071321)](https://github.com/Dcastroro)
+I build production AI systems and practical developer tools, focused on agents, MCP and reliable automation.
 
-**AI Enablement & Growth Infrastructure Lead**
-
-I design and ship production AI systems that connect engineering,
-quality and measurable business outcomes.
-
-Follow for practical developer tools, tested automation and open-source contributions.
+[LinkedIn](https://www.linkedin.com/in/david-castro-rojo/) · Spain · Remote
 
 </div>
+
+## Featured Projects
+
+### [Repo Craft](https://github.com/Dcastroro/repo-craft)
+
+Turn repository evidence into focused skills for coding agents. Includes a bounded, local context-debt scanner for Codex, Claude Code and Antigravity workflows.
+
+[Try the scanner](https://github.com/Dcastroro/repo-craft#context-debt-scanner)
+
+### [Change Scope](https://github.com/Dcastroro/change-scope)
+
+Select affected monorepo projects from Git changes, propagate dependencies and produce bounded CI matrices. Unknown ownership falls back to checking everything.
+
+[Run the demo](https://github.com/Dcastroro/change-scope#try-it) · [CI integration](https://github.com/Dcastroro/change-scope/blob/main/docs/ci.md)
+
+### [Probe Harbor](https://github.com/Dcastroro/probe-harbor)
+
+Check service readiness with bounded HTTP/HTTPS probes, JSON assertions, retries and cancellation. Reports omit endpoint URLs, headers and response bodies.
+
+[Run the local demo](https://github.com/Dcastroro/probe-harbor#try-the-local-demo)
+
+[All repositories →](https://github.com/Dcastroro?tab=repositories)
 
 ## Open-source Contributions
 
-Selected contributions and independent reviews with reproducible tests and validation evidence:
+Selected merged contributions, backed by reproducible regression tests:
 
-| Project | Contribution | Validation |
-| --- | --- | --- |
-| [finepack](https://github.com/Kikobeats/finepack/pull/126) | **Merged** — report CLI file-read failures clearly and exit unsuccessfully instead of showing an uncaught stack trace. | 17 local tests pass on Windows/Node 24 and Linux/Node 26; upstream test workflow passes. |
-| [FastMCP (TypeScript)](https://github.com/punkpeye/fastmcp/pull/436) | **Merged** — avoid Windows-reserved ports in HTTP/HTTPS tests. | Reproduced before/after; upstream CI passes; released in [4.22.12](https://github.com/punkpeye/fastmcp/releases/tag/v4.22.12). |
-| [FastMCP DiskStore](https://github.com/punkpeye/fastmcp/pull/438) | **Merged** — retry transient Windows atomic-rename failures while preserving the previous value and TTL. | 1,062 local tests pass; upstream CI passes; released in [4.23.1](https://github.com/punkpeye/fastmcp/releases/tag/v4.23.1). |
-| [npm/node-which](https://github.com/npm/node-which/pull/185) | Fix executable lookup in Windows workers when the environment uses `Path`. | Nine regression cases, including a real worker; full suite and 100% coverage. |
-| [claude-session-tidy](https://github.com/nrzz/claude-session-tidy/pull/5) | **Merged** — search sessions by title and repair repository checks across Windows checkout formats. | [Upstream test matrix](https://github.com/nrzz/claude-session-tidy/actions/runs/39129092318) and [end-to-end checks](https://github.com/nrzz/claude-session-tidy/actions/runs/39129092310) pass on the merge; released in [1.2.0](https://github.com/nrzz/claude-session-tidy/releases/tag/v1.2.0), with contributor credit. |
-| [claude-session-tidy (review)](https://github.com/nrzz/claude-session-tidy/pull/7#discussion_r4307564195) | **Suggestion accepted** — make the real-CLI date fixtures relative to the clock, preventing the tests from ageing out. Implementation by @yoreva-01; review credited in [1.3.0](https://github.com/nrzz/claude-session-tidy/releases/tag/v1.3.0). | Updated commit: 204 local tests pass (12 platform/real-binary skips); all five date-filter tests also pass at a simulated 26 October 2026. Upstream CI passes. |
-| [gitwrapped](https://github.com/luciferalive/gitwrapped/pull/10) | **Merged** — add Windows CI while preserving HTML escaping coverage. | Nine OS/Node CI combinations and demo freshness checks. |
-| [Apprise](https://github.com/caronc/apprise/pull/1814) | **Merged** — renew the default-key persistent file actually read; maintainer extended renewal to work without a loaded cache. | [Upstream tests](https://github.com/caronc/apprise/actions/runs/39161947081), lint, CodeQL and RPM checks pass; 32 local persistence tests pass (one existing skip) on the revised commit. |
+- **FastMCP (TypeScript):** [Windows-safe HTTP/HTTPS tests](https://github.com/punkpeye/fastmcp/pull/436) and [resilient DiskStore writes](https://github.com/punkpeye/fastmcp/pull/438).
+- **Apprise:** [default-key persistent-file renewal](https://github.com/caronc/apprise/pull/1814), with cache-handling refinements by the maintainer.
+- **claude-session-tidy:** [session-title filtering and Windows checks](https://github.com/nrzz/claude-session-tidy/pull/5).
 
-## Selected Developer Tools
+## Focus
 
-Practical tools for repeatable setup, repository context and automation.
-
-| Project | What it does |
-| --- | --- |
-| [Fixture Foundry](https://github.com/Dcastroro/fixture-foundry) | Streams reproducible synthetic JSONL/CSV fixtures with stable partitions, relational references and atomic file publication, without production data or runtime credentials. |
-| [Probe Harbor](https://github.com/Dcastroro/probe-harbor) | Checks service readiness with bounded HTTP/HTTPS probes, JSON assertions, cancellation and reports that omit URLs, headers and response bodies. |
-| [Change Scope](https://github.com/Dcastroro/change-scope) | Plans affected monorepo projects from local Git changes, propagates dependencies and emits bounded CI shards with conservative fallbacks. |
-| [Webhook Ledger](https://github.com/Dcastroro/webhook-ledger) | Coordinates local event receipts with SQLite deduplication, atomic worker leases and retries, without storing event payloads or raw IDs. |
-| [API Drift Guard](https://github.com/Dcastroro/api-drift-guard) | Compares local OpenAPI contracts with conservative CI gates and reports that omit input names and values. |
-| [Task Relay](https://github.com/Dcastroro/task-relay) | Runs development task graphs with bounded parallelism, dependency checks, timeouts and JSON reports. |
-| [Env Contract Check](https://github.com/Dcastroro/env-contract-check) | Validates environment files against an example contract, with value-free diagnostics and CI-friendly JSON. |
-| [Repo Craft](https://github.com/Dcastroro/repo-craft) | Maps repository context and crafts evidence-backed skills for coding agents. |
-| [Claude Repo Skills](https://github.com/Dcastroro/claude-repo-skills) | Generates repository-aware Claude Code skills from existing project structure and documentation. |
-
-Task Relay can use Env Contract Check as a prerequisite: validate configuration before starting tests or builds. [See the integration example](https://github.com/Dcastroro/task-relay/blob/main/docs/integrations.md).
-
-API Drift Guard adds a local API-contract check to that workflow, with no service credentials or remote reference fetching. [See the contract gate example](https://github.com/Dcastroro/api-drift-guard/blob/main/docs/automation.md).
-
-Change Scope selects affected work before CI runs it, using committed policy and local Git history without runtime service credentials. [See the CI integration](https://github.com/Dcastroro/change-scope/blob/main/docs/ci.md).
-
-Probe Harbor adds a runtime readiness gate after service startup, with bounded requests and no service credentials. [See the readiness integration](https://github.com/Dcastroro/probe-harbor/blob/main/docs/ci.md).
-
-Fixture Foundry supplies reproducible synthetic inputs for those integration tests, with independent partitions and bounded streaming instead of copied production records. [See the fixture pipeline](https://github.com/Dcastroro/fixture-foundry/blob/main/docs/ci.md).
-
-All nine tools share Windows/Linux CI, pinned workflow actions, bounded repository checks and source releases built from verified version tags. Release assets include SHA-256 checksums and the exact source commit. [Explore the release process](https://github.com/Dcastroro/repo-craft/blob/main/RELEASING.md).
-
-<div align="center">
-
-<img width="100%" src="./assets/operating-pillars.svg?v=pillars-1" alt="Animated operating pillars: production, cross-functional enablement and responsible delivery" />
-
-</div>
-
-<div align="center">
-
-<img width="100%" src="./assets/capability-constellation.svg?v=overview-6" alt="Animated constellation of production AI, cybersecurity, web data, conversational RAG and Kiro with AWS capabilities" />
-
-</div>
-
----
-
-<div align="center">
-
-<img width="100%" src="./assets/field-manual.svg?v=field-1" alt="Animated field manual showing production AI, cybersecurity, web data, conversational RAG and the path from discovery to standardization" />
-
-</div>
-
-<sub>Selected work is intentionally described at a high level. Internal architecture, controls and operational details are not disclosed.</sub>
-
----
-
-## 🏆 Achievement Realm
-
-<div align="center">
-
-<img width="100%" src="./assets/adventure-trophies.svg?v=motion-6" alt="Live GitHub achievements displayed as fantasy tier medallions across a kingdom map" />
-
-<sub>Live tiers generated from GitHub activity · refreshed automatically every 30 minutes</sub>
-
-</div>
-
----
-
-## 📜 Explorer's Ledger
-
-<div align="center">
-
-<img width="100%" src="./profile-summary-card-output/tokyonight/0-profile-details.svg" alt="GitHub contribution activity" />
-
-<img width="100%" src="./assets/animated-ledger.svg?v=overview-4" alt="Animated engineering ledger with code composition and GitHub activity metrics" />
-
-</div>
-
----
-
-## 🛠️ Technical Arsenal
-
-<div align="center">
-
-<img width="100%" src="./assets/technical-arsenal.svg?v=arsenal-1" alt="Animated technical arsenal covering AI and agents, AWS cloud platforms, and development and quality engineering" />
-
-</div>
-
----
-
-<div align="center">
-
-<a href="https://www.linkedin.com/in/david-castro-rojo/">
-  <img width="100%" src="./assets/quest-footer.svg?v=footer-1" alt="Credentials and invitation to connect with David Castro on LinkedIn" />
-</a>
-
-</div>
+Production AI · Agent systems · MCP · AWS Bedrock · Python · JavaScript/TypeScript · GitHub Actions
