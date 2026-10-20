@@ -14,17 +14,17 @@ I build production AI systems and practical developer tools.
 
 [![Repo Craft — Context for coding agents](./assets/project-repo-craft.svg)](https://github.com/Dcastroro/repo-craft)
 
-Turn local repository evidence into focused agent skills. [Try the scanner →](https://github.com/Dcastroro/repo-craft#context-debt-scanner)
+Turn local repository evidence into focused agent skills. [Try the scanner](https://github.com/Dcastroro/repo-craft#context-debt-scanner)
 
 [![Change Scope — Affected-project CI planning](./assets/project-change-scope.svg)](https://github.com/Dcastroro/change-scope)
 
-Plan affected projects from Git changes and their dependencies. [Run the demo](https://github.com/Dcastroro/change-scope#try-it) · [CI guide →](https://github.com/Dcastroro/change-scope/blob/main/docs/ci.md)
+Plan affected projects from Git changes and their dependencies. [Run the demo](https://github.com/Dcastroro/change-scope#try-it) · [CI guide](https://github.com/Dcastroro/change-scope/blob/main/docs/ci.md)
 
 [![Probe Harbor — Service readiness checks](./assets/project-probe-harbor.svg)](https://github.com/Dcastroro/probe-harbor)
 
-Check service readiness with bounded probes and reports that omit URLs, headers and response bodies. [Try the local demo →](https://github.com/Dcastroro/probe-harbor#try-the-local-demo)
+Check service readiness with bounded probes and reports that omit URLs, headers and response bodies. [Try the local demo](https://github.com/Dcastroro/probe-harbor#try-the-local-demo)
 
-[Explore all repositories →](https://github.com/Dcastroro?tab=repositories)
+[Explore all repositories](https://github.com/Dcastroro?tab=repositories)
 
 ## Accepted upstream
 
