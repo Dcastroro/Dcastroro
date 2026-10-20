@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="336" viewBox="0 0 980 336" role="img" aria-labelledby="title desc"><title id="title">David Castro — Useful AI. Reliable systems.</title><desc id="desc">AI engineering, agents, MCP and automation. A simple context, build and verify workflow.</desc><g font-family="Segoe UI, Arial, sans-serif">
+<rect x="1" y="1" width="978" height="334" rx="22" fill="#0e1a1b" stroke="#355450" stroke-width="2"/>
+<path d="M650 1V335" stroke="#355450" stroke-dasharray="3 9"/>
+<text x="40" y="48" fill="#baf3cf" font-size="21" font-weight="700" letter-spacing="3">DAVID CASTRO</text>
+<text x="40" y="149" fill="#f5f5ec" font-size="78" font-weight="700" letter-spacing="-3">Useful AI.</text>
+<text x="40" y="232" fill="#f5f5ec" font-size="66" font-weight="700" letter-spacing="-3">Reliable systems.</text>
+<rect x="42" y="258" width="72" height="5" rx="2.5" fill="#ffd08a"/>
+<text x="40" y="301" fill="#b4c9c1" font-size="20" font-weight="600" letter-spacing="2">AGENTS / MCP / AUTOMATION</text>
+<text x="690" y="48" fill="#b4c9c1" font-size="16" letter-spacing="2">FROM IDEA TO DELIVERY</text>
+<path d="M808 126V155M808 210V239" stroke="#355450" stroke-width="2"/>
+<rect x="690" y="80" width="244" height="54" rx="10" fill="#142628" stroke="#355450"/><circle cx="718" cy="107" r="6" fill="#baf3cf"/><text x="741" y="114" font-size="19" fill="#f5f5ec" font-weight="600" letter-spacing="1">CONTEXT</text><text x="899" y="114" font-size="17" fill="#b4c9c1">01</text><rect x="690" y="164" width="244" height="54" rx="10" fill="#142628" stroke="#355450"/><circle cx="718" cy="191" r="6" fill="#ffd08a"/><text x="741" y="198" font-size="19" fill="#f5f5ec" font-weight="600" letter-spacing="1">BUILD</text><text x="899" y="198" font-size="17" fill="#b4c9c1">02</text><rect x="690" y="248" width="244" height="54" rx="10" fill="#142628" stroke="#355450"/><circle cx="718" cy="275" r="6" fill="#b2d5ff"/><text x="741" y="282" font-size="19" fill="#f5f5ec" font-weight="600" letter-spacing="1">VERIFY</text><text x="899" y="282" font-size="17" fill="#b4c9c1">03</text>
+</g></svg>

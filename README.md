@@ -1,45 +1,37 @@
 <div align="center">
 
-<img width="100%" src="./assets/profile-header.svg?v=header-3" alt="David Castro — AI Systems, Automation and Enablement" />
+<img src="./assets/profile-splash.svg" width="100%" alt="David Castro — Useful AI. Reliable systems. Agents, MCP and automation." />
 
 **AI Lead & AI Enablement Architect**
 
-I build production AI systems and practical developer tools, focused on agents, MCP and reliable automation.
+I build production AI systems and practical developer tools.
 
-[LinkedIn](https://www.linkedin.com/in/david-castro-rojo/) · Spain · Remote
+[Connect on LinkedIn](https://www.linkedin.com/in/david-castro-rojo/) · Spain · Remote
 
 </div>
 
-## Featured Projects
+## Selected work
 
-### [Repo Craft](https://github.com/Dcastroro/repo-craft)
+[![Repo Craft — Context for coding agents](./assets/project-repo-craft.svg)](https://github.com/Dcastroro/repo-craft)
 
-Turn repository evidence into focused skills for coding agents. Includes a bounded, local context-debt scanner for Codex, Claude Code and Antigravity workflows.
+Turn local repository evidence into focused agent skills. [Try the scanner →](https://github.com/Dcastroro/repo-craft#context-debt-scanner)
 
-[Try the scanner](https://github.com/Dcastroro/repo-craft#context-debt-scanner)
+[![Change Scope — Affected-project CI planning](./assets/project-change-scope.svg)](https://github.com/Dcastroro/change-scope)
 
-### [Change Scope](https://github.com/Dcastroro/change-scope)
+Plan affected projects from Git changes and their dependencies. [Run the demo](https://github.com/Dcastroro/change-scope#try-it) · [CI guide →](https://github.com/Dcastroro/change-scope/blob/main/docs/ci.md)
 
-Select affected monorepo projects from Git changes, propagate dependencies and produce bounded CI matrices. Unknown ownership falls back to checking everything.
+[![Probe Harbor — Service readiness checks](./assets/project-probe-harbor.svg)](https://github.com/Dcastroro/probe-harbor)
 
-[Run the demo](https://github.com/Dcastroro/change-scope#try-it) · [CI integration](https://github.com/Dcastroro/change-scope/blob/main/docs/ci.md)
+Check service readiness with bounded probes and reports that omit URLs, headers and response bodies. [Try the local demo →](https://github.com/Dcastroro/probe-harbor#try-the-local-demo)
 
-### [Probe Harbor](https://github.com/Dcastroro/probe-harbor)
+[Explore all repositories →](https://github.com/Dcastroro?tab=repositories)
 
-Check service readiness with bounded HTTP/HTTPS probes, JSON assertions, retries and cancellation. Reports omit endpoint URLs, headers and response bodies.
+## Accepted upstream
 
-[Run the local demo](https://github.com/Dcastroro/probe-harbor#try-the-local-demo)
-
-[All repositories →](https://github.com/Dcastroro?tab=repositories)
-
-## Open-source Contributions
-
-Selected merged contributions, backed by reproducible regression tests:
-
-- **FastMCP (TypeScript):** [Windows-safe HTTP/HTTPS tests](https://github.com/punkpeye/fastmcp/pull/436) and [resilient DiskStore writes](https://github.com/punkpeye/fastmcp/pull/438).
-- **Apprise:** [default-key persistent-file renewal](https://github.com/caronc/apprise/pull/1814), with cache-handling refinements by the maintainer.
+- **FastMCP:** [Windows-safe HTTP/HTTPS tests](https://github.com/punkpeye/fastmcp/pull/436) and [resilient DiskStore writes](https://github.com/punkpeye/fastmcp/pull/438).
+- **Apprise:** [persistent-file renewal](https://github.com/caronc/apprise/pull/1814), with cache-handling refinements by the maintainer.
 - **claude-session-tidy:** [session-title filtering and Windows checks](https://github.com/nrzz/claude-session-tidy/pull/5).
 
-## Focus
+---
 
-Production AI · Agent systems · MCP · AWS Bedrock · Python · JavaScript/TypeScript · GitHub Actions
+**Working with** Python · JavaScript/TypeScript · AWS Bedrock · MCP · GitHub Actions
