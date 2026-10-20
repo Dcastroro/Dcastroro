@@ -32,6 +32,8 @@ Check service readiness with bounded probes and reports that omit URLs, headers 
 - **Apprise:** [persistent-file renewal](https://github.com/caronc/apprise/pull/1814), with cache-handling refinements by the maintainer.
 - **claude-session-tidy:** [session-title filtering and Windows checks](https://github.com/nrzz/claude-session-tidy/pull/5).
 
+- **fsspec:** [flush cached ZIP writes on explicit filesystem close](https://github.com/fsspec/filesystem_spec/pull/2312).
+
 ## Trophy room
 
 <img src="./assets/adventure-trophies.svg" width="100%" alt="RPG activity trophies for account age, commits, pull requests, repositories and reviews. Custom ranks, separate from official GitHub achievements." />
