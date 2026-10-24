@@ -105,9 +105,9 @@
     
       <g transform="translate(0 155)">
         <text x="78" y="-7" class="language">JavaScript</text>
-        <text x="470" y="-7" class="percentage">34%</text>
+        <text x="470" y="-7" class="percentage">33%</text>
         <rect x="78" y="4" width="392" height="12" rx="6" fill="#091522" stroke="#29475a"/>
-        <rect class="language-bar" style="--delay:55ms" x="78" y="4" width="122" height="12" rx="6" fill="#f1e05a"/>
+        <rect class="language-bar" style="--delay:55ms" x="78" y="4" width="119" height="12" rx="6" fill="#f1e05a"/>
       </g>
     
       <g transform="translate(0 198)">
