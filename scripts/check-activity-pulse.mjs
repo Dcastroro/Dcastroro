@@ -11,8 +11,8 @@ try {
     const result = await page.evaluate(() => {
       const root = document.querySelector('svg');
       return {title: root?.querySelector('title')?.textContent, desc: root?.querySelector('desc')?.textContent,
-        labels: [...root.querySelectorAll('.label')].map(node => node.textContent),
-        counts: [...root.querySelectorAll('.number')].map(node => node.textContent)};
+        labels: [...(root?.querySelectorAll('.label') ?? [])].map(node => node.textContent),
+        counts: [...(root?.querySelectorAll('.number') ?? [])].map(node => node.textContent)};
     });
     assert.equal(result.title, 'Public engineering activity');
     assert.match(result.desc, /Last 30 UTC calendar days/);

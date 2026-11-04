@@ -17,11 +17,14 @@ const counts = await Promise.all(searches.map(async ([label, query]) => {
   const url = new URL('https://api.github.com/search/issues');
   url.searchParams.set('q', query);
   url.searchParams.set('per_page', '1');
-  const response = await fetch(url, {headers: {Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json', 'User-Agent': 'profile-activity-pulse'}});
-  if (!response.ok) throw new Error(`GitHub search failed for ${label}: ${response.status}`);
-  const data = await response.json();
-  if (data.incomplete_results || !Number.isSafeInteger(data.total_count)) throw new Error(`Incomplete GitHub data for ${label}`);
-  return {label, count: data.total_count};
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    const response = await fetch(url, {headers: {Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json', 'User-Agent': 'profile-activity-pulse'}});
+    if (!response.ok) throw new Error(`GitHub search failed for ${label}: ${response.status}`);
+    const data = await response.json();
+    if (!data.incomplete_results && Number.isSafeInteger(data.total_count)) return {label, count: data.total_count};
+    if (attempt < 3) await new Promise(resolve => setTimeout(resolve, 1000 * attempt));
+  }
+  throw new Error(`Incomplete GitHub data for ${label} after 3 attempts`);
 }));
 
 const cards = counts.map(({label, count}, i) => {
