@@ -26,6 +26,14 @@ Check service readiness with bounded probes and reports that omit URLs, headers 
 
 [Explore all repositories](https://github.com/Dcastroro?tab=repositories)
 
+## Engineering pulse
+
+![Public GitHub activity during the last 30 UTC calendar days](./assets/activity-pulse.svg)
+
+Counts cover public GitHub pull requests and issues. The panel refreshes daily from GitHub search.
+
+[![Profile browser checks](https://github.com/Dcastroro/Dcastroro/actions/workflows/profile-browser-check.yml/badge.svg)](https://github.com/Dcastroro/Dcastroro/actions/workflows/profile-browser-check.yml) Playwright checks the panel in Chromium at mobile and desktop widths. Follow the badge for actual run details.
+
 ## Co-op contributions
 
 - **FastMCP:** [Windows-safe HTTP/HTTPS tests](https://github.com/punkpeye/fastmcp/pull/436) and [resilient DiskStore writes](https://github.com/punkpeye/fastmcp/pull/438).
