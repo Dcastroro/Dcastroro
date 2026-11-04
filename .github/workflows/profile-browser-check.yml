@@ -1,0 +1,24 @@
+name: Profile browser checks
+on:
+  push:
+    branches: [main]
+    paths: ['assets/activity-pulse.svg', 'scripts/check-activity-pulse.mjs', '.github/workflows/profile-browser-check.yml']
+  pull_request:
+    paths: ['assets/activity-pulse.svg', 'scripts/check-activity-pulse.mjs', '.github/workflows/profile-browser-check.yml']
+  schedule:
+    - cron: '23 5 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  playwright:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save --no-package-lock playwright@1.56.1
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/check-activity-pulse.mjs

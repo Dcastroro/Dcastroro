@@ -7,6 +7,7 @@ on:
     paths:
       - ".github/workflows/profile-stats.yml"
       - "scripts/generate-adventure-trophies.mjs"
+      - "scripts/generate-activity-pulse.mjs"
   schedule:
     # GitHub does not forward push events from other repositories to the
     # profile repository, so poll twice an hour away from the busy :00 slot.
@@ -46,6 +47,20 @@ jobs:
             echo "Animated profile visuals are already current."
           else
             git commit -m "Refresh animated profile visuals"
+            git push
+          fi
+
+      - name: Generate public activity pulse
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+        run: node scripts/generate-activity-pulse.mjs
+
+      - name: Commit public activity pulse
+        run: |
+          git add assets/activity-pulse.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh public activity pulse"
             git push
           fi
 
