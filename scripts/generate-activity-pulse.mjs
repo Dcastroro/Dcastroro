@@ -14,7 +14,7 @@ const searches = [
   ['PUBLIC ISSUES OPENED', `is:issue is:public author:${login} created:>=${since}`],
 ];
 const accents = ['#72e8dc', '#d7c5f1', '#f1d28f'];
-if (searches.length !== accents.length) {
+if (searches.length !== 3 || accents.length !== 3) {
   throw new Error('Update the activity card layout and palette when changing the number of searches');
 }
 const counts = await Promise.all(searches.map(async ([label, query]) => {
