@@ -26,7 +26,7 @@ Explore real GitHub repository activity, open work and recent commits. [Open the
 
 [![Browser Quality Lab — Playwright testing](./assets/quest-browser-quality.svg)](https://github.com/Dcastroro/browser-quality-lab)
 
-Cross-browser checks for user flows, keyboard interaction and API recovery, with reproducible local tests and CI.
+Cross-browser checks for user flows, keyboard interaction and API recovery, with reproducible local tests and CI. [Try the live demo](https://dcastroro.github.io/browser-quality-lab/)
 
 [![Probe Harbor — Service readiness checks](./assets/quest-probe-harbor.svg)](https://github.com/Dcastroro/probe-harbor)
 
