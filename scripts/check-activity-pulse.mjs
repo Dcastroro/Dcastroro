@@ -16,7 +16,7 @@ try {
     });
     assert.equal(result.title, 'Public engineering activity');
     assert.match(result.desc, /Last 30 UTC calendar days/);
-    assert.equal(result.labels.length, 3);
+    assert.deepEqual(result.labels, ['PUBLIC PRS OPENED', 'PUBLIC PRS MERGED', 'PUBLIC ISSUES OPENED']);
     assert.ok(result.counts.every(value => /^[\d,]+$/.test(value)));
     const encoded = (await readFile('assets/activity-pulse.svg')).toString('base64');
     await page.goto('about:blank');
