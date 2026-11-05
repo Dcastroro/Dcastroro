@@ -20,11 +20,11 @@ Turn local repository evidence into focused agent skills. [Try the scanner](http
 
 Plan affected projects from Git changes and their dependencies. [Run the demo](https://github.com/Dcastroro/change-scope#try-it) · [CI guide](https://github.com/Dcastroro/change-scope/blob/main/docs/ci.md)
 
-**[Repository Pulse — Public data dashboard](https://github.com/Dcastroro/repository-pulse)**
+[![Repository Pulse — Public data dashboard](./assets/quest-repository-pulse.svg)](https://github.com/Dcastroro/repository-pulse)
 
 Explore real GitHub repository activity, open work and recent commits. [Open the live demo](https://dcastroro.github.io/repository-pulse/)
 
-**[Browser Quality Lab — Playwright testing](https://github.com/Dcastroro/browser-quality-lab)**
+[![Browser Quality Lab — Playwright testing](./assets/quest-browser-quality.svg)](https://github.com/Dcastroro/browser-quality-lab)
 
 Cross-browser checks for user flows, keyboard interaction and API recovery, with reproducible local tests and CI.
 
