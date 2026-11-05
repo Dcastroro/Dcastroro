@@ -32,6 +32,8 @@ Explore real GitHub repository activity, open work and recent commits. [Open the
 
 Cross-browser checks for user flows, keyboard interaction and API recovery, with reproducible local tests and CI. [Try the live demo](https://dcastroro.github.io/browser-quality-lab/)
 
+**New: [MCP Recovery Lab](https://github.com/Dcastroro/mcp-recovery-lab)** — test how agents handle temporary and persistent tool failures with a local, simulated MCP server.
+
 [Explore all repositories](https://github.com/Dcastroro?tab=repositories)
 
 ## Field notes
