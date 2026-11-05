@@ -13,6 +13,10 @@ const searches = [
   ['PUBLIC PRS MERGED', `is:pr is:public author:${login} merged:>=${since}`],
   ['PUBLIC ISSUES OPENED', `is:issue is:public author:${login} created:>=${since}`],
 ];
+const accents = ['#72e8dc', '#d7c5f1', '#f1d28f'];
+if (searches.length !== 3 || accents.length !== 3) {
+  throw new Error('Update the activity card layout and palette when changing the number of searches');
+}
 const counts = await Promise.all(searches.map(async ([label, query]) => {
   const url = new URL('https://api.github.com/search/issues');
   url.searchParams.set('q', query);
@@ -29,7 +33,6 @@ const counts = await Promise.all(searches.map(async ([label, query]) => {
 
 const cards = counts.map(({label, count}, i) => {
   const y = 96 + i * 64;
-  const accents = ['#72e8dc', '#d7c5f1', '#f1d28f'];
   const accent = accents[i];
   return `<g transform="translate(32 ${y})"><path d="M0 0H576V56H0Z" fill="#102539" fill-opacity=".85" stroke="#4a5964"/><path d="M0 0V56" stroke="${accent}" stroke-opacity=".8" stroke-width="3"/><path d="M20 23l5 5-5 5-5-5Z" fill="${accent}" opacity=".8"/><text x="38" y="35" class="label">${label}</text><text x="552" y="40" class="number" text-anchor="end" fill="${accent}">${count.toLocaleString('en-US')}</text></g>`;
 }).join('');
