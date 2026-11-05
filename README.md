@@ -20,6 +20,10 @@ Turn local repository evidence into focused agent skills. [Try the scanner](http
 
 Plan affected projects from Git changes and their dependencies. [Run the demo](https://github.com/Dcastroro/change-scope#try-it) · [CI guide](https://github.com/Dcastroro/change-scope/blob/main/docs/ci.md)
 
+[![Probe Harbor — Service readiness checks](./assets/quest-probe-harbor.svg)](https://github.com/Dcastroro/probe-harbor)
+
+Check service readiness with bounded probes and reports that omit URLs, headers and response bodies. [Try the local demo](https://github.com/Dcastroro/probe-harbor#try-the-local-demo)
+
 [![Repository Pulse — Public data dashboard](./assets/quest-repository-pulse.svg)](https://github.com/Dcastroro/repository-pulse)
 
 Explore real GitHub repository activity, open work and recent commits. [Open the live demo](https://dcastroro.github.io/repository-pulse/)
@@ -28,17 +32,13 @@ Explore real GitHub repository activity, open work and recent commits. [Open the
 
 Cross-browser checks for user flows, keyboard interaction and API recovery, with reproducible local tests and CI. [Try the live demo](https://dcastroro.github.io/browser-quality-lab/)
 
-[![Probe Harbor — Service readiness checks](./assets/quest-probe-harbor.svg)](https://github.com/Dcastroro/probe-harbor)
-
-Check service readiness with bounded probes and reports that omit URLs, headers and response bodies. [Try the local demo](https://github.com/Dcastroro/probe-harbor#try-the-local-demo)
-
 [Explore all repositories](https://github.com/Dcastroro?tab=repositories)
 
-## Engineering pulse
+## Field notes
 
 ![Public GitHub activity during the last 30 UTC calendar days](./assets/activity-pulse.svg)
 
-Counts cover public GitHub pull requests and issues. The panel refreshes daily from GitHub search.
+Public pull requests and issues from the last 30 UTC days, refreshed daily from GitHub search. [Explore repository activity](https://dcastroro.github.io/repository-pulse/).
 
 [![Profile browser checks](https://github.com/Dcastroro/Dcastroro/actions/workflows/profile-browser-check.yml/badge.svg)](https://github.com/Dcastroro/Dcastroro/actions/workflows/profile-browser-check.yml) Playwright checks the panel in Chromium at mobile and desktop widths. Follow the badge for actual run details.
 
@@ -47,7 +47,6 @@ Counts cover public GitHub pull requests and issues. The panel refreshes daily f
 - **FastMCP:** [Windows-safe HTTP/HTTPS tests](https://github.com/punkpeye/fastmcp/pull/436) and [resilient DiskStore writes](https://github.com/punkpeye/fastmcp/pull/438).
 - **Apprise:** [persistent-file renewal](https://github.com/caronc/apprise/pull/1814), with cache-handling refinements by the maintainer.
 - **claude-session-tidy:** [session-title filtering and Windows checks](https://github.com/nrzz/claude-session-tidy/pull/5).
-
 - **fsspec:** [flush cached ZIP writes on explicit filesystem close](https://github.com/fsspec/filesystem_spec/pull/2312).
 
 ## Trophy room

@@ -28,15 +28,18 @@ const counts = await Promise.all(searches.map(async ([label, query]) => {
 }));
 
 const cards = counts.map(({label, count}, i) => {
-  const x = 28 + i * 308;
-  return `<g transform="translate(${x} 92)"><rect width="282" height="120" rx="14" fill="#11263a" stroke="#315367"/><text x="20" y="32" class="label">${label}</text><text x="20" y="88" class="number">${count.toLocaleString('en-US')}</text><path d="M226 30h32M242 14v32" stroke="#72e8dc" opacity=".45"/></g>`;
+  const y = 96 + i * 64;
+  const accents = ['#72e8dc', '#d7c5f1', '#f1d28f'];
+  const accent = accents[i];
+  return `<g transform="translate(32 ${y})"><path d="M0 0H576V56H0Z" fill="#102539" fill-opacity=".85" stroke="#4a5964"/><path d="M0 0V56" stroke="${accent}" stroke-opacity=".8" stroke-width="3"/><path d="M20 23l5 5-5 5-5-5Z" fill="${accent}" opacity=".8"/><text x="38" y="35" class="label">${label}</text><text x="552" y="40" class="number" text-anchor="end" fill="${accent}">${count.toLocaleString('en-US')}</text></g>`;
 }).join('');
 const description = counts.map(({label, count}) => `${label}: ${count}`).join('; ');
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="980" height="270" viewBox="0 0 980 270" role="img" aria-labelledby="title desc">
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="640" height="330" viewBox="0 0 640 330" role="img" aria-labelledby="title desc">
 <title id="title">Public engineering activity</title><desc id="desc">${description}. Last 30 UTC calendar days through ${today}.</desc>
-<rect x="2" y="2" width="976" height="266" rx="20" fill="#0b192b" stroke="#d9a84f" stroke-width="2"/>
-<style>text{font-family:Arial,sans-serif}.heading{fill:#fff4d4;font-size:23px;font-weight:700}.sub{fill:#9ec9cb;font-size:13px}.label{fill:#b8d1d7;font-size:12px;font-weight:700;letter-spacing:.6px}.number{fill:#72e8dc;font-size:38px;font-weight:700}</style>
-<text x="28" y="41" class="heading">ENGINEERING PULSE</text><text x="28" y="66" class="sub">Public GitHub activity · last 30 UTC calendar days</text>
-${cards}<text x="28" y="244" class="sub">GitHub search · ${since} to ${today} UTC · refreshed daily</text></svg>`;
+<defs><linearGradient id="night" x2="1" y2="1"><stop stop-color="#102436"/><stop offset="1" stop-color="#101b2a"/></linearGradient><linearGradient id="gold"><stop stop-color="#9e7840"/><stop offset=".45" stop-color="#f0d595"/><stop offset="1" stop-color="#9e7840"/></linearGradient></defs>
+<path d="M18 2H622L638 18V312L622 328H18L2 312V18Z" fill="url(#night)" stroke="url(#gold)" stroke-width="2"/><path d="M25 10H615L630 25V305L615 320H25L10 305V25Z" fill="none" stroke="#506071" stroke-opacity=".6"/>
+<style>text{font-family:Arial,sans-serif}.heading{fill:#fff4d4;font-family:Georgia,serif;font-size:29px;font-weight:700}.sub{fill:#b8d1d0;font-size:16px}.label{fill:#c7d9da;font-size:18px;font-weight:700;letter-spacing:.5px}.number{font-family:Georgia,serif;font-size:32px;font-weight:700}</style>
+<path d="M36 32l6 6-6 6-6-6Z" fill="#72e8dc"/><text x="55" y="46" class="heading">Field notes</text><text x="55" y="72" class="sub">Public GitHub activity · last 30 UTC calendar days</text>
+${cards}<path d="M32 292H608" stroke="#b48f53" stroke-opacity=".45"/><text x="32" y="314" class="sub">GitHub search · ${since} to ${today} UTC · refreshed daily</text></svg>`;
 await writeFile('assets/activity-pulse.svg', svg);
 console.log(`Public activity rendered for ${since} to ${today}`);
