@@ -32,9 +32,24 @@ Explore real GitHub repository activity, open work and recent commits. [Open the
 
 Cross-browser checks for user flows, keyboard interaction and API recovery, with reproducible local tests and CI. [Try the live demo](https://dcastroro.github.io/browser-quality-lab/)
 
-**New: [MCP Recovery Lab](https://github.com/Dcastroro/mcp-recovery-lab)** — test how agents handle temporary and persistent tool failures with a local, simulated MCP server.
+**[MCP Recovery Lab](https://github.com/Dcastroro/mcp-recovery-lab#try-it)** — run a scripted agent against a simulated MCP server and see how it handles rate limits, stale reads, denied access and malformed responses.
 
 [Explore all repositories](https://github.com/Dcastroro?tab=repositories)
+
+## Developer toolbox
+
+**Agent workflows**
+
+- [SDD Starter](https://github.com/Dcastroro/sdd-starter#try-it) — start with a spec, link it to implementation tasks, and check the result in CI.
+- [Claude Repo Skills](https://github.com/Dcastroro/claude-repo-skills#usage) — generate Claude Code skills from a repository’s structure and documentation.
+
+**CI, APIs and test data**
+
+- [Env Contract Check](https://github.com/Dcastroro/env-contract-check#try-it-in-a-minute) — catch missing environment variables before startup.
+- [Task Relay](https://github.com/Dcastroro/task-relay#define-your-workflow) — run dependent tasks with bounded parallelism and timeouts.
+- [Webhook Ledger](https://github.com/Dcastroro/webhook-ledger#try-it) — coordinate webhook deduplication and retries with SQLite.
+- [API Drift Guard](https://github.com/Dcastroro/api-drift-guard#compare-your-contracts) — compare OpenAPI contracts locally and flag breaking changes in CI.
+- [Fixture Foundry](https://github.com/Dcastroro/fixture-foundry#quick-start) — generate reproducible synthetic data as JSONL or CSV.
 
 ## Field notes
 
@@ -46,10 +61,17 @@ Public pull requests and issues from the last 30 UTC days, refreshed daily from 
 
 ## Co-op contributions
 
-- **FastMCP:** [Windows-safe HTTP/HTTPS tests](https://github.com/punkpeye/fastmcp/pull/436) and [resilient DiskStore writes](https://github.com/punkpeye/fastmcp/pull/438).
-- **Apprise:** [persistent-file renewal](https://github.com/caronc/apprise/pull/1814), with cache-handling refinements by the maintainer.
-- **claude-session-tidy:** [session-title filtering and Windows checks](https://github.com/nrzz/claude-session-tidy/pull/5).
-- **fsspec:** [flush cached ZIP writes on explicit filesystem close](https://github.com/fsspec/filesystem_spec/pull/2312).
+### Merged upstream
+
+- **MCP:** [mcp-proxy now includes `uv` and `uvx` in its container](https://github.com/sparfenyuk/mcp-proxy/pull/268). FastMCP gained [Windows-safe HTTP/HTTPS tests](https://github.com/punkpeye/fastmcp/pull/436) and [retries for transient DiskStore write failures](https://github.com/punkpeye/fastmcp/pull/438).
+- **Storage:** [rclone applies metadata options to Internet Archive server-side copies](https://github.com/rclone/rclone/pull/10159). [fsspec flushes cached ZIP writes on explicit close](https://github.com/fsspec/filesystem_spec/pull/2312).
+- **Automation:** [Apprise renews persistent files read with the default key](https://github.com/caronc/apprise/pull/1814). [claude-session-tidy adds session-title filtering](https://github.com/nrzz/claude-session-tidy/pull/5).
+
+### In review
+
+- [Lobster #224](https://github.com/openclaw/lobster/pull/224) — keeps Windows line endings from breaking terminal tables.
+- [ClawHub #4835](https://github.com/openclaw/clawhub/pull/4835) — returns a nonzero exit status when an explicitly requested tag is missing.
+
 
 ## Trophy room
 
