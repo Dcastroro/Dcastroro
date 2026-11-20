@@ -63,6 +63,7 @@ Public pull requests and issues from the last 30 UTC days, refreshed daily from 
 
 ### Merged upstream
 
+- **CLI:** [ClawHub returns a nonzero exit status when `inspect` cannot resolve an explicitly requested tag](https://github.com/openclaw/clawhub/pull/4835).
 - **MCP:** [mcp-proxy now includes `uv` and `uvx` in its container](https://github.com/sparfenyuk/mcp-proxy/pull/268). FastMCP gained [Windows-safe HTTP/HTTPS tests](https://github.com/punkpeye/fastmcp/pull/436) and [retries for transient DiskStore write failures](https://github.com/punkpeye/fastmcp/pull/438).
 - **Storage:** [rclone applies metadata options to Internet Archive server-side copies](https://github.com/rclone/rclone/pull/10159). [fsspec flushes cached ZIP writes on explicit close](https://github.com/fsspec/filesystem_spec/pull/2312).
 - **Automation:** [Apprise renews persistent files read with the default key](https://github.com/caronc/apprise/pull/1814). [claude-session-tidy adds session-title filtering](https://github.com/nrzz/claude-session-tidy/pull/5).
@@ -70,7 +71,7 @@ Public pull requests and issues from the last 30 UTC days, refreshed daily from 
 ### In review
 
 - [Lobster #224](https://github.com/openclaw/lobster/pull/224) — keeps Windows line endings from breaking terminal tables.
-- [ClawHub #4835](https://github.com/openclaw/clawhub/pull/4835) — returns a nonzero exit status when an explicitly requested tag is missing.
+- [Swift #193](https://github.com/ncw/swift/issues/193) — reported an incorrect read position after seeking to EOF. An [upstream fix is open](https://github.com/ncw/swift/pull/194).
 
 
 ## Trophy room
