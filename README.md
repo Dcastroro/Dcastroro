@@ -69,8 +69,13 @@ Public pull requests and issues from the last 30 UTC days, refreshed daily from 
 - **Storage:** [rclone applies metadata options to Internet Archive server-side copies](https://github.com/rclone/rclone/pull/10159). [fsspec flushes cached ZIP writes on explicit close](https://github.com/fsspec/filesystem_spec/pull/2312).
 - **Automation:** [Apprise renews persistent files read with the default key](https://github.com/caronc/apprise/pull/1814). [claude-session-tidy adds session-title filtering](https://github.com/nrzz/claude-session-tidy/pull/5).
 
+### Review contributions
+
+- [claude-session-tidy #7](https://github.com/nrzz/claude-session-tidy/pull/7#discussion_r4307564195) — identified and validated a date-dependent CLI test failure. The PR author applied the fix, which shipped in [v1.3.0](https://github.com/nrzz/claude-session-tidy/releases/tag/v1.3.0).
+
 ### In review
 
+- [MCP Atlassian #1764](https://github.com/sooperset/mcp-atlassian/pull/1764) — return stored Jira comment visibility in read and write responses. [GitHub checks passed](https://github.com/sooperset/mcp-atlassian/pull/1764/checks). Live Jira validation is pending.
 - [Swift #193](https://github.com/ncw/swift/issues/193) — reported an incorrect read position after seeking to EOF. An [upstream fix is open](https://github.com/ncw/swift/pull/194).
 
 
